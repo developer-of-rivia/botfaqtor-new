@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Botdetector</title>
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <!--header start-->
+    <header class="profile">
+        <div class="logo-brand-profile">
+            <a href="index.html"><img src="../img/brand_botfaqtor.svg" alt="" class="img-fluid"></a>
+        </div>
+        <div class="nav-proj">
+            <div class="mobi-nav-proj">
+                <i class="ico-list"></i>
+                <span>Проекты</span>
+            </div>
+            <ul class="items-proj">
+                <li>
+                    <a href="">
+                        <img src="../img/direct_blue.svg">
+                        <span>Защита Яндекс.Директ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/ads_blue.svg">
+                        <span>Защита Google Ads</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/blocking_blue.svg">
+                        <span>Антибот для сайта</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/antibanner_blue.svg">
+                        <span>Защита баннера</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="">
+                        <img src="../img/link_blue.svg">
+                        <span>Сокращение ссылок <del>beta</del> </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 
+            <div class="action">
+            <span class="btn btn-transparent" style="text-transform: capitalize;"><i class="ico-person"></i>Войти</span>
+            <span class="btn btn-primary" style="text-transform: capitalize;">Регистрация</span>
+            </div>
+            -->
+
+        <div class="ml-auto login-container d-inline-flex">
+            <div class="login-container__info">
+
+                <div class="person-content">
+                    <span class="foto-person"><img src="../img/avatar.png" alt=""></span>
+                    <span class="login">test@botfaqtor.ru</span>
+                    <span class="balance">10 000 000 проверок</span>
+                </div>
+                <span class="ico-down-arr"></span>
+            </div>
+            <span class="icon-hidden-menu"></span>
+            <ul class="dropdown-content">
+                <li>
+                    <span class="login mob">test@botfaqtor.ru</span>
+                    <span class="balance mob">10 000 000 проверок</span>
+                    <strong>Базовый тариф</strong>
+                </li>
+                <li class="item-list">Пополнить счет</li>
+                <li class="item-list">История операций</li>
+                <li class="item-list">Настройки</li>
+                <li class="item-list">Выйти</li>
+            </ul>
+        </div>
+    </header>
+    <!--header end-->
+    <div class="m-dropdown-proj">
+        <div class="row">
+            <div class="col-md-2 ">
+                <a href="">
+                    <img src="../img/antibanner_blue.svg" alt="">
+                    <span>Защита баннера</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="">
+                    <img src="../img/blocking_blue.svg" alt="">
+                    <span>Антибот для сайта</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="">
+                    <img src="../img/istoch_blue.svg" alt="">
+                    <span>Проверка источников трафика</span>
+                </a>
+            </div>
+            <div class="col-md-2 ">
+                <a href="">
+                    <img src="../img//direct_blue.svg" alt="">
+                    <span>Защита от скликивания рекламных объявлений в Яндекс.Директ <del>beta</del></span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="disabled lock">
+                    <img src="../img/ads_blue.svg" alt="">
+                    <span>Защита от скликивания рекламных объявлений в GoogleADS</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="disabled lock">
+                    <img src="../img/video_blue.svg" alt="">
+                    <span>Защита видео</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="disabled lock">
+                    <img src="../img/celev_toc_blue.svg" alt="">
+                    <span>Защита целевых точек на сайте</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="disabled">
+                    <img src="../img/parser_blue.svg" alt="">
+                    <span>Защита от парсинга</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="disabled">
+                    <img src="../img/reiting_blue.svg" alt="">
+                    <span>Рейтинг источников трафика</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--sidebar start-->
+    <div class="sidebar">
+
+        <button class="btn-prof btn-green add-site">Добавить ссылки</button>
+        <div class="sidebar-menu-accordion">
+            <ul>
+                <li>
+                    <a href="index.html"><i class="ico8pl"></i>Сводка</a>
+                </li>
+                <li class="active">
+                    <a href="my-url.html"><i class="ico10pl"></i>Мои ссылки</a>
+                </li>
+                <li>
+                    <a href="sources.html"><i class="ico11pl"></i>Отчеты </a>
+                    <ul class="sub-menu">
+                        <li><a href="sources.html"><i class="ico0pl"></i>Источники</a></li>
+                        <li><a href="type-bots.html"><i class="ico1pl"></i>Типы ботов</a></li>
+                        <li><a href="inappropriate-traffic.html"><i class="inappr"></i>Нецелевой трафик</a></li>
+                        <li><a href="entry-points.html"><i class="ico2pl"></i>Посадочные страницы</a></li>
+                        <li><a href="geo.html"><i class="ico3pl"></i>География</a></li>
+                        <li><a href="utm.html"><i class="ico13pl"></i>Метки UTM</a></li>
+                        <li><a href="ip_bots.html"><i class="ico15pl"></i>IP Ботов</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-menu-accordion pos-bottom">
+            <ul>
+                <li>
+                    <a href="contacts.html"><i class="ico13pl"></i>Генератор UTM-меток</a>
+                </li>
+                <li>
+                    <a href="contacts.html"><i class="ico135pl"></i>Проверка источников трафика</a>
+                </li>
+                <li>
+                    <a href=""><i class="ico20pl"></i>Вопрос/Ответ</a>
+                </li>
+                <li>
+                    <a href="contacts.html"><i class="ico6pl"></i>О компании</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--sidebar end-->
+    <!--content start-->
+    <div class="content">
+
+        <div class="container-fluid my-url ">
+            <div class="row">
+                <div class="col-12 fcd">
+                    <div class="widget-container addlinkurl open">
+                        <div class="form-control urltim">
+                            <div class="cdInputFix">
+                                <textarea class="form-item" name="" wrap="off">https://pro-biz.pro/</textarea>
+                                <div class="placehold">Укажите длинный URL</div>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            <button class="btn-prof btn-green">Сохранить ссылку</button>
+                            <button class="btn-prof btn-red">Отменить</button>
+                        </div>
+                        
+
+                        <div class="clear"></div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-control ">
+                                    <div class="cdInputFix">
+                                        <input class="form-item" name="" value="Pro Business, маркетинговое агентство полного цикла." type="text">
+                                        <div class="placehold">Заголовок (Title)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-control ">
+                                    <div class="cdInputFix">
+                                        <input class="form-item" name="" value="blog, Test" type="text">
+                                        <div class="placehold">Добавить тег</div>
+                                    </div>
+                                    <button class="tagbutt"></button>
+                                </div>
+                                <div class="tags">
+                                    <span class="tag">blog<i class="close"></i></span>
+                                    <span class="tag">Test<i class="close"></i></span>
+                                    <span class="tag">Test<i class="close"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2>Мои ссылки</h2>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="row bar-button-search">
+                                <div class="col-12 col-sm-6">
+                                    <button class="btn-prof btn-red ">Удалить выбранные</button>
+                                    <button class="btn-prof btn-blue tagadd">Добавить тег</button>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-control search-table">
+                                        <input class="form-item" name="input-site" value="" type="text"
+                                            placeholder="Поиск по: названию, тегу, url">
+                                        <span class="icon-search"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rotate-block"><img src="img/rotate.svg" alt=""><span>Для просмотра таблицы поверните
+                            горизонтально ваше устройства</span></div>
+                    <div class="tablemys">
+                        <!-- ТУТ БУДЕТ СПИННЕР -->
+
+                        <table class="lg-table rotate-phone">
+                            <thead>
+                                <tr>
+                                    <th class="auto-clipping">
+                                        <label class="checkbox seckond-chek" style="margin-bottom: 0px;">
+                                            <input [checked]="isSelectAllItems" (change)="onSelectAllItems()"
+                                                type="checkbox">
+                                            <span class="custom-checkbox"></span>Мои ссылки <span><i
+                                                    class="ico-down"></i></span>
+                                        </label>
+                                    </th>
+                                    <th data-balloon-length="large" data-balloon="Доступ" data-balloon-pos="up">
+                                        <span>Короткая ссылки</span></th>
+                                    <th data-balloon-length="large" data-balloon="Трафик" data-balloon-pos="up">
+                                        <strong class="ico-stat-09"></strong>
+                                        <span>Трафик</span>
+                                    </th>
+                                    <th data-balloon-length="large" data-balloon="Целевой трафик" data-balloon-pos="up"
+                                        class="text-green"><strong class="ico-stat-01"></strong> <span>Люди</span>
+                                    </th>
+
+                                    <th data-balloon-length="large" data-balloon="Боты" data-balloon-pos="up"
+                                        class="text-red"><strong class="ico-stat-03"></strong> <span>Боты</span></th>
+
+                                    <th>Дата создания</th>
+
+                                    <th class="text-right"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox" checked=""><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                        <div class="tags">
+                                            <span class="tag">blog<i class="close"></i></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>ier</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                        <div class="tags">
+                                            <span class="tag">blog<i class="close"></i></span>
+                                            <span class="tag">Test<i class="close"></i></span>
+                                            <span class="tag">Test<i class="close"></i></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>ojmg</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>Сегодня 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>ijmg</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>img</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>ieg</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>img</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>ier</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>img</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>ojmg</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>ieg</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>ier</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>img</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>ier</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-clipping">
+                                        <div class="lable">
+                                            <label class="checkbox seckond-chek"><input type="checkbox"><span
+                                                    class="custom-checkbox"></span></label>
+                                        </div>
+                                        <div class="name-site">Pro Business, маркетинговое агентство полного цикла.
+                                        </div>
+                                        <span class="truncate link-site">
+                                            <img src="https://pro-biz.pro/img/favicon/favicon.ico" alt="">
+                                            <a href="#" class="link-mysite" target="_blank">https://pro-biz.pro/</a>
+                                            <span class="hidden-link"><a href="" target="_blank"><i
+                                                        class="icon-link"></i></a></span>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="new-link">
+                                            <a href="#">btfr.cc/<b>ier</b></a>
+                                            <button class="btn-prof btn-blue control copy"><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="btn-prof btn-green control share"><i
+                                                    class="icon-share"></i></button>
+                                            <button class="btn-prof btn-gray control"><i class="icon-edit"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-green">
+                                                    +7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="result-info">
+                                            <div class="count-info">
+                                                2584
+                                                <div class="count-procent text-red">
+                                                    -7.86%
+                                                </div>
+                                            </div>
+                                            <div class="count-diagram">
+                                                <div class="days-container">
+                                                    <div class="one-day" style="height:45%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:34%"></div>
+                                                    <div class="one-day" style="height:69%"></div>
+                                                    <div class="one-day" style="height:100%"></div>
+                                                    <div class="one-day" style="height:57%"></div>
+                                                    <div class="one-day" style="height:30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>08.06.2020 11:09</td>
+                                    <td class="text-right">
+                                        <button class="btn-prof btn-red control"><i class="icon-del"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--content end-->
+
+    <div class="popup__content__quest"><i class="popup__tail"></i>
+        <div class="popup__content__tag">
+
+            <div class="form-control popup-addtag">
+                <div class="cdInputFix">
+                    <input class="form-item" name="" value="" type="text">
+                    <div class="placehold">Добавить тег</div>
+                </div>
+                <button class="tagbutt"></button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="../main.js"></script>
+
+</html>

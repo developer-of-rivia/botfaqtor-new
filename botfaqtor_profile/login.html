@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="login-page">
+        <div class="table">
+            <div class="tableCell">
+                <div class="logo-login">
+                    <a href="/"><img src="img/logo-login.svg" alt=""></a>
+                </div>
+                <div class="tabs">
+                    
+                    <div class="tab">
+                        <input type="radio" id="tab2" name="tab-group" checked>
+                        <label for="tab2" class="tab-title">Войти</label>
+                        <section class="tab-content">
+                            <div class="alert-login error">Произошла непредвиденная ошибка авторизации.</div>
+                            <form action="1">
+                                <div class="form-control">
+                                    <input type="text" placeholder="E-mail">
+                                </div>
+                                <div class="form-control">
+                                    <input type="password" placeholder="Пароль">
+                                </div>
+                                <button type="submit">Войти</button>
+                            </form>
+
+                            <button type="submit" class="activation">Отправить письмо активации</button>
+
+                            <a href="#" class="recover">Забыли пароль?</a>
+                        </section>
+                    </div>
+
+                    <div class="tab">
+                        <input type="radio" id="tab1" name="tab-group">
+                        <label for="tab1" class="tab-title">Регистрация</label>
+                        <section class="tab-content">
+                            <div class="alert-login success">Поздравляем, остался один шаг, на <u>test@botfaqtor.ru</u> отправлено письмо для активации Вашей учетной записи.</div>
+                            <form action="2">
+                                <div class="form-control">
+                                    <input type="text" placeholder="E-mail *">
+                                </div>
+                                <div class="form-control">
+                                    <input type="password" placeholder="Пароль *" value="maasf" class="error-input">
+                                    <span class="form-notice text-error">
+                                        Пароль должен содержать не менее 6 символов
+                                    </span>
+                                </div>
+                                <div class="form-control">
+                                    <input type="password" placeholder="Подтвердите пароль *">
+                                </div>
+
+                                <fieldset>
+                                    <legend>Для оперативной связи</legend>
+                                    <div class="form-control">
+                                        <input type="text" placeholder="Телефон">
+                                    </div>
+                                    <div class="form-control">
+                                        <input type="text" placeholder="Telegram">
+                                    </div>
+                                    <div class="form-control">
+                                        <input type="text" placeholder="Skype">
+                                    </div>
+                                </fieldset>
+
+                                <button type="submit">Зарегистрироваться</button>
+                            </form>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

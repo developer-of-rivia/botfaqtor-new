@@ -1,0 +1,484 @@
+.btf__pay-bill .btf__pay-method {
+    background: #f5f5f5;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btf__hint-icon__quest {
+    position: relative;
+    top: -3px;
+    left: 3px;
+}
+
+.btf__pay-bill .select-tarif-pay {
+    background-color: #D4F3E8;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.btf__pay-bill .select-tarif-pay h3 {
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
+.btf__pay-bill .select-tarif-pay a {
+    color: #333333;
+}
+
+.btf__pay-bill .btf__pay-method .btf__pay-title {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.btf__pay-bill .btf__pay-method .btf__pay-title img {
+    display: block;
+}
+
+.btf__pay-bill .btf__pay-method .btf__pay-title span {
+    padding-left: 15px;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.btf__pay-bill .btf__pay-method .btf__ico-pay-arr {
+    justify-content: flex-end;
+    max-width: 30px !important;
+}
+
+.btf__pay-bill .btf__pay-method .btf__pay-content .btf__form-p,
+.btf__pay-bill .btf__pay-method .btf__pay-content .btf__content-p {
+    padding: 0px 15px 15px 15px;
+}
+
+
+.btf__pay-tar {
+    font-size: 16px;
+    padding: 15px;
+    background-color: #ECECEC;
+    margin-bottom: 0;
+}
+
+.btf__pay-tar .btf__row {
+    margin-bottom: 7.5px;
+}
+
+.btf__pay-tar .btf__row:last-child {
+    margin-bottom: 0px;
+}
+
+.btf__pay-bill .btf__pay-method .btf__pay-content .btf__content-p::before {
+    content: "";
+    border-top: 1px solid #ECECEC;
+    width: 100%;
+    display: block;
+}
+
+.btf__pay-bill .btf__pay-method .btf__pay-content {
+    max-height: 1px;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 500ms ease-out 100ms, opacity 0.3s ease-out 100ms;
+}
+
+.btf__pay-bill .btf__pay-method .btf__pay-content.btf__open-content {
+    max-height: 760px !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    transition: max-height 500ms ease-out 100ms, opacity 0.3s ease-out 100ms;
+}
+
+.btf__pay-bill .btf__pay-content .btf__form-control .btf__form-notice {
+    padding: 5px 0 0 0;
+}
+
+.btf__pay-bill .btf__pay-method .btf__pay-content .btf__calc-pr {
+    display: flex;
+    align-items: center;
+    margin-top: 31px;
+}
+
+.btf__pay-bill .btf__pay-method .btf__pay-content .btf__calc-pr span {
+    margin: 0px 0px 0px 0px;
+}
+
+.btf__pay-bill .btf__pay-method .btf__pay-content .btf__calc-pr img {
+    height: 16px;
+    margin-right: 5px;
+    float: left;
+}
+
+.btf__pay-bill .btf__pay-method p,
+.btf__pay-bill .btf__pay-method .btf__lable {
+    margin-top: 15px;
+}
+
+.btf__pay-bill .btf__pay-method .btf__lable {
+    display: flex;
+}
+
+.btf__pay-method.btf__active-header .btf__ico-pay-arr:after {
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+.btf__pay-bill .btf__pay-method .btf__pay-content .btf__calc-pr>span {
+    display: block;
+    margin-right: 15px;
+}
+
+.btf__pay-bill .btf__pay-method .btf__pay-content .btf__calc-pr>span:last-child {
+    margin-right: 0px;
+}
+
+.btf__pay-bill .btf__pay-method .btf__edoblock,
+.btf__pay-bill .btf__pay-method .btf__autopay {
+    background-color: #ECECEC;
+    margin-bottom: 15px;
+    overflow: hidden;
+    height: 0;
+}
+
+.btf__pay-bill .btf__pay-method .btf__edoblock.btf__open,
+.btf__pay-bill .btf__pay-method .btf__autopay.btf__open {
+    height: auto;
+    min-height: 55px;
+    padding: 15px 0 0 0;
+    opacity: 1;
+}
+
+.btf__pay-bill .btf__pay-method .btf__autopay .btf__status .btf__flickers-red,
+.btf__pay-bill .btf__pay-method .btf__autopay .btf__status .btf__flickers-green {
+    right: 7px;
+    top: -1px;
+}
+
+.btf__pay-bill .btf__pay-method .btf__autopay .btf__button-line {
+    margin-top: 25px;
+}
+
+.btf__form-item.btf__inn {
+    width: 270px;
+}
+
+.btf__lable-autopay {
+    margin-top: 0 !important;
+}
+
+.btf__table-tariffs-flex {
+    display: flex;
+}
+
+.btf__table-tariff.btf__col-table-3 {
+    width: 25%;
+}
+
+.btf__table-tariff {
+    text-align: center !important;
+    border: 1px solid #f5f5f5;
+}
+
+.btf__table-tariff .btf__line {
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+}
+
+.btf__table-tariff .btf__units .btf__line {
+    background-color: #CBCBCB;
+}
+
+.btf__table-tariff .btf__price .btf__line {
+    background-color: #27C58B;
+}
+
+.btf__table-tariff button.btf__line-green:disabled {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.btf__table-tariff button.btf__line-green:hover:disabled {
+    color: #27C58B;
+}
+
+.btf__table-tariff button.btf__line-red:hover:disabled {
+    color: #e26565;
+}
+
+.btf__table1p tr:first-child th:first-child {
+    font-size: 30px;
+    line-height: 115%;
+    font-weight: 300;
+    color: #ccc;
+    vertical-align: top;
+}
+
+.btf__table-tariff.btf__col-table-3 tr:first-child th {
+    height: 170px;
+    vertical-align: top;
+}
+
+.btf__table-tariff:first-child th,
+.btf__table-tariff:first-child td {
+    width: 230px;
+    text-align: left;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+    border-left: none;
+    width: 40%;
+    text-align: left;
+}
+
+.btf__table-tariff.btf__col-table-3:first-child tr td {
+    text-align: left !important;
+}
+
+.btf__table-tariff.btf__col-table-3 tr td {
+    height: 70px;
+    text-align: center;
+}
+
+.btf__table-tariff.btf__col-table-3 tr:nth-child(2) td {
+    height: 120px;
+    text-align: center;
+}
+
+.btf__proj-name {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 37px;
+}
+
+td .btf__proj-name:first-child {
+    margin-bottom: 15px;
+}
+
+td .btf__proj-name:last-child {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.btf__table-tariff:nth-child(1) thead tr td,
+.btf__table-tariff:nth-child(1) thead tr:nth-child(2) th {
+    text-align: left;
+}
+
+.btf__table-tariff thead tr:nth-child(2) th {
+    color: #364952;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.btf__table-tariff tbody tr:nth-child(2n) td {
+    background-color: #f5f5f5;
+}
+
+.btf__proj-name img {
+    width: 25px;
+    float: left;
+}
+
+.btf__proj-name span {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.btf__table-tariff .btf__title {
+    color: #333333;
+    margin-top: 8px;
+    font-size: 30px;
+    font-weight: 400;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.btf__table-tariff .btf__units {
+    font-weight: 400;
+    color: #364952;
+    border-bottom: 1px solid #f5f5f5;
+    text-align: center;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btf__table-tariff .btf__price {
+    padding: 10px 0 0 0;
+    text-align: center;
+    color: #27C58B;
+    font-size: 28px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.btf__table-tariff th,
+.btf__table-tariff td {
+    padding: 15px !important;
+}
+
+.btf__table-tariff.btf__active {
+    border-radius: 5px;
+    border: 5px solid #27c58b;
+}
+
+.btf__table-tariff.btf__col-table-3 tr td.btf__foot-td {
+    height: 210px;
+    vertical-align: middle;
+}
+
+.btf__foo-rt {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.btf__foo-rt:last-child {
+    margin-bottom: 0;
+}
+
+.btf__table-tariff .btf__price sup {
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+.btf__saas {
+    text-align: center;
+    margin-left: 30px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+}
+
+.btf__pay-saas {
+    border: 5px solid #e26565;
+}
+
+.btf__table-tariff.btf__col-table-3.btf__saas {
+    width: 33.333%;
+}
+
+.btf__saas th {
+    position: relative;
+}
+
+.btf__saas tr td {
+    text-align: center !important;
+    height: 257px !important;
+    background-color: #D8F2EC;
+}
+
+.btf__saas tr td.btf__foot-td {
+    height: 210px !important;
+    background-color: #ffffff !important;
+}
+
+.btf__saas .btf__saas-line {
+    padding: 25px;
+    border-bottom: 1px solid #27C58B;
+}
+
+.btf__saas .btf__saas-line:last-child {
+    border-bottom: none;
+}
+
+.btf__table-tariff .btf__foot-td button {
+    margin: 30px 0;
+}
+
+.btf__table-tariff .btf__foot-td .btf__foo-green {
+    color: #27C58B;
+    font-weight: 700;
+}
+
+.btf__table-tariff .btf__foot-td .btf__foo-dark strong {
+    display: block;
+}
+
+.btf__table-tariff .btf__foot-td .btf__foo {
+    color: #9D9D9D;
+}
+
+.btf__saas .btf__foot-td .btf__foo {
+    color: #9D9D9D;
+    background-color: #F5F5F5;
+    padding: 7px 15px;
+    margin-left: -15px;
+    width: calc(100% + 30px);
+}
+
+.btf__saas .btf__foot-td .btf__foo a {
+    color: #9D9D9D;
+}
+
+.btf__sale {
+    position: absolute;
+    background-image: url(/img/sale.svg);
+    background-size: contain;
+    width: 120px;
+    height: 120px;
+    z-index: 96;
+    top: -20px;
+    right: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    transform: rotate(-15deg);
+}
+
+.btf__sale::after {
+    content: "";
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #ffffff;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -45px;
+    margin-top: -48px;
+}
+
+.btf__sale * {
+    width: 100%;
+    display: block;
+    color: #ffffff;
+}
+
+.btf__sale span {
+    font-size: 14px;
+    margin-top: 35px;
+}
+
+.btf__sale div {
+    font-size: 28px;
+    line-height: 120%;
+    margin-bottom: 45px;
+}

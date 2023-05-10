@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Botdetector</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css-new/main.css">
+</head>
+
+<body>
+<!--header start-->
+<header class="profile head-my-site">
+    <div class="logo-brand-profile">
+        <a href="index.html"><img src="img/brand_botfaqtor.svg" alt="" class="img-fluid"></a>
+    </div>
+    <div class="nav-proj">
+        <div class="mobi-nav-proj">
+            <i class="ico-list"></i>
+            <span>Проекты</span>
+        </div>
+        <ul class="items-proj">
+            <li class="active">
+                <a href="">
+                    <img src="img/blocking_blue.svg">
+                    <span>Антибот для сайта</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/direct_blue.svg">
+                    <span>Защита Яндекс.Директ</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/ads_blue.svg">
+                    <span>Защита Google Ads</span>
+                </a>
+            </li>
+            <li class="mob-sub">
+                <a href="">
+                    <img src="img/antibanner_blue.svg">
+                    <span>Защита баннера</span>
+                </a>
+            </li>
+            <li class="mob-sub">
+                <a href="">
+                    <img src="img/link_blue.svg">
+                    <span>Сокращение ссылок</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="items-proj">
+            <li>
+                <a href="">
+                    <img src="img/antibanner_blue.svg">
+                    <span>Защита баннера</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/link_blue.svg">
+                    <span>Сокращение ссылок</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 
+<div class="action">
+<span class="btn btn-transparent" style="text-transform: capitalize;"><i class="ico-person"></i>Войти</span>
+<span class="btn btn-primary" style="text-transform: capitalize;">Регистрация</span>
+</div>
+-->
+    <div class="block-balance-col">
+        <div class="balance-content">
+            <div class="ico-wallet"></div>
+            <div class="sum-balance"><span>100 000, 66</span> ₽</div>
+            <span class="ico-down-arr"></span>
+        </div>
+        <ul class="dropdown-content">
+            <div class="popup_tail"></div>
+            <li class="item-list">Пополнить счет</li>
+            <li class="item-list">История операций</li>
+
+            <li class="auto-pay-block">
+                <div class="row">
+                    <div class="col">Автоплатёж <span class="text-red">выключен</span></div>
+                    <div class="col"><button class="btn">Настроить</button></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="ml-auto login-container d-inline-flex">
+        <div class="login-container__info">
+            <div class="person-content">
+                <span class="login">test@botfaqtor.ru</span>
+                <span class="balance">Базовый тариф</span>
+            </div>
+            <span class="ico-down-arr"></span>
+        </div>
+        <ul class="dropdown-content">
+            <div class="popup_tail"></div>
+            <li class="item-list">Настройки</li>
+            <li class="item-list">Выйти</li>
+        </ul>
+    </div>
+    <div class="user-menu">
+        <div class="user-menu-content">
+            <div class="user-ico"></div>
+            <span class="ico-down-arr"></span>
+        </div>
+
+        <ul class="dropdown-content">
+            <div class="popup_tail"></div>
+            <div class="person-user-menu">
+                <span class="person-login">test@botfaqtor.ru</span>
+                <span class="person-balance">Базовый тариф</span>
+            </div>
+            <li class="item-list">Настройки</li>
+            <li class="item-list">Выйти</li>
+        </ul>
+    </div>
+
+</header>
+<!--header end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+        <button class="btn-prof btn-green add-site">Добавить сайт</button>
+        <div class="sidebar-menu-accordion">
+            <ul>
+                <li>
+                    <a href="mysites.html"><i class="ico10pl"></i>Мои сайты</a>
+                </li>
+                <li>
+                    <a href="sources.html"><i class="ico11pl"></i>Отчеты </a>
+                    <ul class="sub-menu">
+                        <li><a href="sources.html"><i class="ico0pl"></i>Источники</a></li>
+                        <li><a href="type-bots.html"><i class="ico1pl"></i>Типы ботов</a></li>
+                        <li><a href="type-bots.html"><i class="ico4pl"></i>Поисковые роботы</a></li>
+                        <li><a href="entry-points.html"><i class="ico2pl"></i>Посадочные страницы</a></li>
+                        <li><a href="geo.html"><i class="ico3pl"></i>География</a></li>
+                        <li><a href="utm.html"><i class="ico13pl"></i>Метки UTM</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="blocking.html"><i class="ico12pl"></i>Блокировки</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="sidebar-menu-accordion pos-bottom">
+            <ul>
+                <li>
+                    <a href=""><i class="ico20pl"></i>Вопрос/Ответ</a>
+                </li>
+                <li>
+                    <a href="contacts.html"><i class="ico6pl"></i>О компании</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--sidebar end-->
+
+
+    <!--content start-->
+    <div class="content">
+
+
+        <div class="b-page__counter">
+            <div class="container-filter">
+                <div class="filter-toolbar">
+                    <div class="site-web">
+                        <div class="dropdown sitename">
+                            <button class="dropbtn">
+                                <span class="hidden-inp">
+                                    456tutyutyutyu
+                                </span>
+                                <span class="ico-down-arr"></span>
+                                <span class="tooltip tooltip-filter-right" data-bem="Выберите страницу"></span>
+                            </button>
+                            <div class="popup_tail"></div>
+                            <ul class="dropdown-content">
+                                <li class="dropdown-search">
+                                    <div class="form-control search-table">
+                                        <input class="form-item" name="input-site" value="" type="text"
+                                            placeholder="Поиск">
+                                        <span class="icon-search"></span>
+                                    </div>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="preloader-container">
+                                    <div class="preloader-css"> <span></span> <span></span> <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="url-site">456.ru</div>
+                    </div>
+                </div>
+            </div>
+            <span class="filter-menu"><i class="ico-filter"></i></span>
+        </div>
+
+        <div class="container-fluid blockscript metrika add-metrika">
+            <div class="row">
+                <div class="col-12">
+                    <a href="#" class="goBack">вернуться на мои сайты</a>
+                    <h2>Редактирование сайта - https://www.factum.ru/</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="blocs-direct-setting active">
+                        <div class="title row">
+                            <div class="col-10">
+                                <div class="ico">1</div>
+                                <span>Введите название и адрес сайта</span>
+                            </div>
+                            <div class="col-2">
+                                <div class="status green">Готово</div>
+                            </div>
+                        </div>
+                        <div class="content-blocks row ng-pristine ng-invalid ng-touched">
+                            <div class="col-12">
+                                <div class="row blocs-count-name">
+                                    <div class="col-md-4">
+                                        <div class="form-control">
+                                            <div class="cdInputFix">
+                                                <input class="form-item ng-pristine ng-valid ng-touched"
+                                                    value="https://www.factum.ru/" name="Description" type="text">
+                                                <div class="placehold">Название сайта</div>
+                                            </div>
+                                        </div>
+                                        <div class="form-control">
+                                            <div class="cdInputFix">
+                                                <input class="form-item ng-untouched ng-pristine ng-invalid"
+                                                    value="https://www.factum.ru/" name="DomainName" type="text">
+                                                <div class="placehold">Домен или полный путь сайта</div>
+                                            </div>
+                                            <span class="tooltip form-absol" data-balloon-length="medium"
+                                                data-balloon-pos="up"
+                                                data-balloon="Адрес вашего сайта. Например, https://example.com или https://example.com/category/">
+                                                <i class="ico-tipsGray"></i> </span>
+                                        </div>
+
+                                        <div class="clear"></div>
+
+                                        <div class="text-left">
+                                            <button class="btn-prof btn-gray" disabled="">Создать счетчик</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="alertbloks">
+                                            <div class="alert-blocks-warning">
+                                                <span class="big">Важно!</span>
+                                                Вы должны иметь доступ к коду сайта. Страницы социальных сетей и
+                                                youtube каналы добавить нельзя.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="blocs-direct-setting active">
+                        <div class="title row">
+                            <div class="col-10">
+                                <div class="ico">2</div>
+                                <span>Выберите интересующий сервис</span>
+                            </div>
+                            <div class="col-2">
+                                <div class="status green">Готово</div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-12">
+                                <span class="direct-alert yelbg">
+                                    <span class="big">Важно!</span>
+                                    При <strong>Выкл.</strong> сервиса все данные к учетным записям в Botfaqtor
+                                    будут удалены.
+                                </span>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="project-activate">
+                                    <div class="item blocs-direct-setting active">
+                                        <div class="logo">
+                                            <img src="img/blocking_blue.svg">
+                                        </div>
+                                        <div class="text">
+                                            <h2>Антибот для сайта</h2>
+                                            <p>Анализирует весь трафик на сайте и блокирует ботов. Возможно гибко
+                                                настроить
+                                                блокировку
+                                                ботов по: посадочным страницам, гео, источникам (не защищает от
+                                                скликивания
+                                                <strong>Я.Директ</strong> и <strong>Google ADS</strong>).</p>
+                                        </div>
+                                        <div class="switch-act">
+                                            <span class="text-green">Вкл.</span>
+                                            <div class="switch">
+                                                <input class="switch__input" type="checkbox" checked id="sw01">
+                                                <label class="switch__label" for="sw01"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item blocs-direct-setting">
+                                        <div class="logo">
+                                            <img src="img/direct_blue.svg">
+                                        </div>
+                                        <div class="text">
+                                            <h2>Защита от скликивания Я.Директ</h2>
+                                            <p>Позволяет сэкономить до 30% вашего рекламного бюджета. А именно,
+                                                рекламные объявления защищаемых рекламных кампаний Я.Директ не будут
+                                                показываться ботам, обнаруженным на вашем сайте. Также ваша реклама
+                                                перестанет показываться ботам, которых мы поймали во всем нашем
+                                                сервисе. Их там уже более 6 млн.
+                                            </p>
+                                        </div>
+                                        <div class="switch-act">
+                                            <span class="text-gray">Выкл.</span>
+                                            <div class="switch">
+                                                <input class="switch__input" type="checkbox" id="sw02">
+                                                <label class="switch__label" for="sw02"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item blocs-direct-setting">
+                                        <div class="logo">
+                                            <img src="img/ads_blue.svg">
+                                        </div>
+                                        <div class="text">
+                                            <h2>Защита от скликивания Google ADS</h2>
+                                            <p>Позволяет сэкономить до 30% вашего рекламного бюджета. А именно,
+                                                рекламные объявления защищаемых рекламных кампаний Google.ADS не
+                                                будут показываться ботам, обнарженным на вашем сайте.</p>
+                                        </div>
+                                        <div class="switch-act">
+                                            <span class="text-gray">Выкл.</span>
+                                            <div class="switch">
+                                                <input class="switch__input" type="checkbox" id="sw03">
+                                                <label class="switch__label" for="sw03"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="blocs-direct-setting active">
+                        <div class="title row">
+                            <div class="col-10">
+                                <div class="ico">3</div>
+                                <span>Настройка защиты</span>
+                            </div>
+                            <div class="col-2">
+                                <div class="status green">Готово</div>
+                            </div>
+                        </div>
+                        <div class="tabs-setting">
+                            <div class="tab-head">
+                                <div class="title-sett active" id="t1">
+                                    <span class="connect"><img src="img/blocking_blue.svg"><span></span></span>
+                                    Антибот для сайта
+                                </div>
+                                <div class="title-sett" id="t2">
+                                    <span class="add-connect"><img src="img/direct_blue.svg"><span></span></span>
+                                    Защита от скликивания Я.Директ
+                                </div>
+                                <div class="title-sett" id="t3">
+                                    <span class="not-connect"><img src="img/ads_blue.svg"><span></span></span>
+                                    Защита Google ADS
+                                </div>
+                            </div>
+                            <div class="tab-sett active" id="t1">
+                                <div class="cont-tab">
+                                    <div class="row blocs-count-setting">
+                                        <div class="col-12">
+                                            <div class="blocking-page">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h3>Настройка параметров блокировки ботов на
+                                                                    вашем сайте</h3>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <p class="blocking-page-text">При одновременном включении защиты рекламы и блокировки в сервисе Антибот, обнаруженные боты не будут видеть ваш сайт, поэтому не будут добавляться в сегмент защищаемого сайта. Но они будут отправлены в общий сегмент нашего сервиса, который автоматически добавляется в корректировки ставок защищаемых вами рекламных кампаний. Итог: заблокированным ботам также не будет показываться ваша реклама</p>
+                                                            </div>
+                                                            <div class="col-12 mb-2">
+                                                                <span class="direct-alert yelbg">
+                                                                    По умолчанию для вашего сайта добавлена
+                                                                    блокировка всех ботов,
+                                                                    но вы можете <a href="">Добавить свою
+                                                                        блокировку</a>.
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="rotate-block">
+                                                            <img src="img/rotate.svg" alt="">
+                                                            <span>Для просмотра таблицы поверните горизонтально
+                                                                ваше устройства</span>
+                                                        </div>
+                                                        <table class="lg-table rotate-phone">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Описание блокировки</th>
+                                                                    <th class="text-left">Статус</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="auto-clipping"><span
+                                                                            class="truncate">Блокировка 1</span>
+                                                                    </td>
+                                                                    <td class="text-left">
+                                                                        <div class="switch">
+                                                                            <input type="checkbox" id="switch1"
+                                                                                class="switch__input" checked="">
+                                                                            <label for="switch1"
+                                                                                class="switch__label"></label>
+                                                                        </div><span
+                                                                            class="text-green d-none d-md-inline-block">Подключено</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="auto-clipping"><span
+                                                                            class="truncate">Блокировка 2</span>
+                                                                    </td>
+                                                                    <td class="text-left">
+                                                                        <div class="switch">
+                                                                            <input type="checkbox" id="switch2"
+                                                                                class="switch__input">
+                                                                            <label for="switch2"
+                                                                                class="switch__label"></label>
+                                                                        </div><span
+                                                                            class="text-red d-none d-md-inline-block">Выключено</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="auto-clipping"><span
+                                                                            class="truncate">Блокировка 2</span>
+                                                                    </td>
+                                                                    <td class="text-left">
+                                                                        <div class="switch">
+                                                                            <input type="checkbox" id="switch2"
+                                                                                class="switch__input">
+                                                                            <label for="switch2"
+                                                                                class="switch__label"></label>
+                                                                        </div><span
+                                                                            class="text-red d-none d-md-inline-block">Выключено</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="auto-clipping"><span
+                                                                            class="truncate">Блокировка 2</span>
+                                                                    </td>
+                                                                    <td class="text-left">
+                                                                        <div class="switch">
+                                                                            <input type="checkbox" id="switch2"
+                                                                                class="switch__input">
+                                                                            <label for="switch2"
+                                                                                class="switch__label"></label>
+                                                                        </div><span
+                                                                            class="text-red d-none d-md-inline-block">Выключено</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <!--
+                                                        <div class="row block-nocontent">
+                                                            <div class="col-sm-6"><img src="img/img-blocks.svg" alt=""></div>
+                                                            <div class="col-sm-6">
+                                                                <h2>Система блокирует ранее<br> распознанных ботов.</h2>
+                                                                <p>На сайте <strong>http://fotosuvenir46.ru</strong> не настроено ни одной блокировки.</p>
+                                                                <button class="btn-prof btn-red panel-open add-blocking">Добавить блокировку</button>
+                                                            </div>
+                                                        </div>
+                                            -->
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="tab-sett" id="t2">
+                                <div class="cont-tab">
+                                    <div class="blocs-direct-setting">
+                                        <div class="title row ">
+                                            <div class="col-10">
+                                                <div class="ico">1</div>
+                                                <span>Разрешите Botfaqtor API доступ к
+                                                    Яндекс.Метрика и загрузить список счетчиков</span>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="status green">Готово</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <span class="direct-alert">Для подключения сервиса
+                                                    “защиты объявлений от скликивания” нам необходимо получить
+                                                    доступ к API вашей Я.Метрики.</span>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="item-yandex-b">
+                                                            <img alt="" src="img/metrika-ico.png">
+                                                            <div class="tex-ya">
+                                                                <div>Доступ к
+                                                                    <a target="blink"
+                                                                        href="https://metrika.yandex.ru/stat/direct_summary?period=today&amp;id=53909506">Яндекс.Метрика</a>
+                                                                    <span>разрешен</span>
+                                                                </div>
+                                                                <a class="cancel"
+                                                                    href="javascript: void(0);">отменить</a>
+                                                                <div class="prof-ya">Service-center5 • 53909506
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="blocs-direct-setting active" name="campaigns">
+                                        <div class="title row">
+                                            <div class="col-10">
+                                                <div class="ico">2</div>
+                                                <span>Разрешите Botfaqtor API доступ к Яндекс.Директ и загрузить
+                                                    список рекламных компаний</span>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="status green">Готово</div>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="row">
+                                            <div class=" col-12">
+                                                <span class="direct-alert">Для защиты рекламных кампаний нам
+                                                    необходимо получить доступ к API вашего Я.Директа.</span>
+                                            </div>
+                                        </div>
+                                        <div class="row direct-ya">
+                                            <div class="col-4">
+                                                <div class="item-yandex-b">
+                                                    <img alt="" src="img/direct-ico.png">
+                                                    <div class="tex-ya">
+                                                        <div>Доступ к
+                                                            <a target="blink"
+                                                                href="https://direct.yandex.ru/dna/grid/campaigns?ulogin=Service-center5">Яндекс.Директ
+                                                            </a>
+                                                            <span>разрешен</span></div>
+                                                        <a class="cancel" href="javascript: void(0);">отменить</a>
+                                                        <div class="prof-ya">Service-center5 <span
+                                                                class="acc-group">ServiceService-dfr</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <button class="btn-prof btn-green add-direct-akk">Добавить еще
+                                                    один</button>
+                                                <span class="tooltip" data-balloon-length="medium" data-balloon-pos="up"
+                                                    data-balloon="Автоматическое программное обеспечение, имитирующее поведение пользователя.">
+                                                    <i class="ico-tipsGray"></i> </span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="direct-ya-cont">
+                                            <div class="row ">
+                                                <div class="col-12">
+                                                    <span class="direct-alert yelbg">Для получения списка ваших
+                                                        активных
+                                                        рекламных кампаний, пожалуйста, нажмите на кнопку
+                                                        <strong>“Обновить”</strong>
+                                                        и выберите кампании, которые хотите защитить от
+                                                        скликивания.</span>
+                                                </div>
+                                            </div>
+                                            <div class="row direct-company">
+                                                <div class="col-11">
+                                                    <button>Обновить</button>
+
+                                                    <span class="info-direct-comp">Последняя загрузка
+                                                        12.08.2020 10:52</span>
+                                                </div>
+                                            </div>
+                                            <div class="row align-and">
+                                                <div class="col-6">
+                                                    <h3>Какую кампанию хотите защитить?</h3>
+                                                </div>
+                                                <div class="col-6 text-right">
+                                                    <div class="what-types-camp">
+                                                        <div class="camp-ho"><i class="ico-tipsGray"></i>Какие типы
+                                                            кампаний можно защитить?</div>
+                                                        <ul class="dropdown-content">
+                                                            <div class="popup_tail"></div>
+                                                            <li class="p">Текстово-графическая кампания</li>
+                                                            <li class="p">Реклама мобильных приложений</li>
+                                                            <li class="p">Кампания "Смарт-баннеры"</li>
+                                                            <li class="p">Кампания "Динамические объявления"</li>
+                                                            <li class="p">Баннер на поиске</li>
+                                                            <li class="m">Медийная кампания</li>
+                                                            <li class="m">Медийная кампания на Главной</li>
+                                                            <li class="m">Кампания с фиксированным СРМ</li>
+                                                            <li class="m">Кампании созданные через мастера кампаний</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row direct-item-company">
+                                                <div class="col-12">
+                                                    <div class="row filter-searchFull">
+                                                        <div class="col-4">
+                                                            <label class="checkbox" style="margin-bottom: 0px;">
+                                                                <input type="checkbox">
+                                                                <span class="custom-checkbox"></span>
+                                                                <div><strong>Выбрать все (10 из 120)</strong></div>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-8 text-right">
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <div class="form-control search-table">
+                                                                        <input class="form-item" name="input-site"
+                                                                            value="" type="text" placeholder="Поиск">
+                                                                        <span class="icon-search"></span>
+
+                                                                    </div>
+                                                                </div>
+                                                                <!--
+                                                                <div class="col-auto">
+                                                                    <div class="dropdown targetname">
+                                                                        <button class="dropbtn">
+                                                                            <span class="hidden-inp">Выбраны все
+                                                                                кампании</span>
+                                                                            <span class="ico-down-arr"></span>
+                                                                            <span class="tooltip tooltip-filter-right"
+                                                                                data-balloon-length="medium"
+                                                                                data-balloon-pos="down"
+                                                                                data-balloon="Выберите кампанию"><i
+                                                                                    class="ico-tips"></i></span>
+                                                                        </button>
+
+                                                                        <div class="block_tail">
+                                                                            <div class="popup_tail"></div>
+                                                                        </div>
+                                                                        <ul class="dropdown-content"
+                                                                            id="website-dropdown">
+                                                                            <li class="dropdown-search"
+                                                                                nothidecombodropdown=""></li>
+
+                                                                            <li class="item-list" title="Все цели">
+                                                                                <span class="filtrable"
+                                                                                    style="align-items: flex-start;display: table-cell; vertical-align: middle;"><label></label>Все
+                                                                                    кампании</span>
+                                                                            </li>
+
+                                                                            <li class="item-list"
+                                                                                title="Текстово-графическая кампания">
+                                                                                <span class="filtrable"
+                                                                                    style="align-items: flex-start;display: table-cell; vertical-align: middle;"><label></label>Текстово-графическая
+                                                                                    кампания</span>
+                                                                            </li>
+                                                                            <li class="item-list"
+                                                                                title="Реклама мобильных приложений">
+                                                                                <span class="filtrable"
+                                                                                    style="align-items: flex-start;display: table-cell; vertical-align: middle;"><label></label>Реклама
+                                                                                    мобильных приложений</span>
+                                                                            </li>
+                                                                            <li class="item-list" title="Поисковая">
+                                                                                <span class="filtrable"
+                                                                                    style="align-items: flex-start;display: table-cell; vertical-align: middle;"><label></label>Поисковая</span>
+                                                                            </li>
+                                                                        </ul>
+
+                                                                    </div>
+                                                                </div>
+                                                                -->
+                                                                <div class="col-auto">
+                                                                    <div class="radio-buttons-wrapper direct-stat">
+                                                                        <input type="radio" class="radio-button" name="333" value="1" id="button2" checked="">
+                                                                        <label for="button2">Все</label>
+                                                                        <input type="radio" class="radio-button" name="333" value="2" id="button3">
+                                                                        <label for="button3">Активные</label>
+                                                                        <input type="radio" class="radio-button" name="333" value="3" id="button4">
+                                                                        <label for="button4">Не активные</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
+                                                <div class="item-company">
+                                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                                        <input type="checkbox">
+                                                        <span class="custom-checkbox"></span>
+                                                        <div class="comp-direct-info">
+                                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                                class="ico-comp-direct textcampaign"
+                                                                data-balloon="Текстово-графические объявления">
+                                                                <i></i>
+                                                            </div>
+                                                            <div class="comp-diret-title">
+                                                                <span title="Либхер"> Либхер</span>
+                                                                <div class="ico-comp-id">№ 47956176</div>
+                                                                <div class="ico-comp-status on"> Активна</div>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="item-company">
+                                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                                        <input type="checkbox">
+                                                        <span class="custom-checkbox"></span>
+                                                        <div class="comp-direct-info">
+                                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                                class="ico-comp-direct textcampaign"
+                                                                data-balloon="Текстово-графические объявления">
+                                                                <i></i>
+                                                            </div>
+                                                            <div class="comp-diret-title">
+                                                                <span title="Миле"> Миле</span>
+                                                                <div class="ico-comp-id">№ 47956307</div>
+                                                                <div class="ico-comp-status on"> Активна</div>
+                                                            </div>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="add-report-rca">
+                                                <div class="row">
+                                                    <div class="col-10">
+                                                        <h3>Подключить отчет по "Площадкам РСЯ"</h3>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div class="switch-act">
+                                                            <span class="text-green">Вкл.</span>
+                                                            <div class="switch">
+                                                                <input class="switch__input" type="checkbox" checked="" id="s301">
+                                                                <label class="switch__label" for="s301"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p>Для получения данных в отчете надо добавить обязательный параметр<br> <strong>&y_ref={source}</strong> во все ваши ссылки Я.Директ</p>
+                                                        <span class="direct-alert yelbg"><strong>ВАЖНО!</strong> Все объявления будут отправлены на модерацию!</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-left box">
+                                                <button class="btn-prof btn-green" disabled>Сохранить</button>
+                                                <div class="box">
+                                                    <div class="preloader-css">
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                        <span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="code-check saved">
+                                                    Сохранено 20 из 122
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="blocs-direct-setting">
+                                        <div class="title row ">
+                                            <div class="col-10">
+                                                <div class="ico">3</div>
+                                                <span>Дополнительные настройки</span>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="status green">Готово</div>
+                                            </div>
+                                        </div>
+                                        <!-- -->
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <!---->
+                                                <div class="additional" style="background: #fff;">
+                                                    <div class="add-report-rca">
+                                                        <div class="add-report-rca__row">
+                                                            <div class="additional__how-title">
+                                                                Периодическая проверка эффективности
+                                                            </div>
+                                                            <div class="switch-act">
+                                                                <span class="text-green">Вкл.</span>
+                                                                <div class="switch">
+                                                                    <input class="switch__input" type="checkbox"
+                                                                        checked="" id="s30100">
+                                                                    <label class="switch__label" for="s30100"></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="add-report-rca__text">
+                                                            Раз в месяц Botfaqotor.ru будет отключать защиту рекламных кампаний на сутки для оценки эффективности работы сервиса.
+                                                        </p>
+                                                        <div class="add-peport__alert">
+                                                            <div class="add-report__alert-icon">
+                                                                <img src="img/additional-icon.svg">
+                                                            </div>
+                                                            <div class="add-report__alert-text">
+                                                                Данная функция позволяет понять на сколько процентов увеличивается фродовый трафик при отключенной защите в Яндекс Директ. <a target="_blank" href="https://botfaqtor.ru/blog/docs/direct-efficiency/#direct-efficiency-all">Как работает?</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!---->
+                                            </div>
+                                        </div>
+                                        <!---->
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-sett" id="t3">
+                                <div class="cont-tab">
+                                    <div class="blocs-direct-setting active">
+                                        <div class="title row">
+                                            <div class="col-10">
+                                                <div class="ico">1</div>
+                                                <span>Разрешите Botfaqtor API доступ к Google.Analytics и
+                                                    загрузить
+                                                    список счетчиков</span>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="status green">Готово</div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <span class="direct-alert">Для подключения сервиса “защиты
+                                                    объявлений от скликивания” нам необходимо получить доступ к
+                                                    API
+                                                    вашей Google.Analytics.</span>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button class="google__signin">Войти через Google</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+
+                                        <div class="row">
+                                            <div class="col-12">
+                                              <h3 class="err">Возможные причины:</h3>
+                                            </div>
+                                            <div class="col-12">
+                                        
+                                              <li>Указанный счетчик не найден.</li>
+                                              <li>Ваша учетная запись не имеет прав на редактирование счетчика.</li>
+                                              <li>Вы недавно зарегистрировали счетчик и он создался в GA4, тогда вам необходимо выполнить <a href="https://botfaqtor.ru/blog/docs/universal-analytics-google-analytics-4/" target="blink">следующее</a>.
+                                              </li>
+                                            </div>
+                                          </div>
+
+                                    </div>
+
+                                    <div class="blocs-direct-setting active" name="campaigns">
+                                        <div class="title row">
+                                            <div class="col-10">
+                                                <div class="ico">2</div>
+                                                <span>Разрешите Botfaqtor API доступ к
+                                                    Google.AdWords и загрузить список рекламных компаний</span>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="status green">Готово</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class=" col-12">
+                                                <span class="direct-alert">Для защиты рекламных кампаний нам
+                                                    необходимо получить доступ к API вашего
+                                                    Google.AdWords.</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="item-yandex-b">
+                                                    <img alt="" src="img/googleads-ico.png">
+                                                    <div class="tex-ya">
+                                                        <div>Доступ к
+                                                            <a target="blink"
+                                                                href="https://direct.yandex.ru/dna/grid/campaigns?ulogin=unknown">Google.AdWords
+                                                            </a>
+                                                            <span>разрешен</span></div>
+                                                        <a class="cancel" href="javascript: void(0);">отменить</a>
+                                                        <div class="prof-ya">156-657-7137</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="row top20">
+                                            <div class="col-12">
+                                                <span class="direct-alert yelbg">Для получения списка ваших
+                                                    активных
+                                                    рекламных кампаний, пожалуйста, нажмите на кнопку
+                                                    <strong>“Обновить”</strong>
+                                                    и выберите кампании, которые хотите защитить от
+                                                    скликивания.</span>
+                                            </div>
+                                        </div>
+                                        <div class="row direct-company">
+                                            <div class="col-11">
+                                                <button>Обновить</button>
+                                                <span class="info-direct-comp">Последняя загрузка 26.08.2020
+                                                    10:46</span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row align-and">
+                                            <div class="col-6">
+                                                <h3>Какую кампанию хотите защитить?</h3>
+                                            </div>
+                                            <div class="col-6 text-right">
+                                                <div class="what-types-camp">
+                                                    <div class="camp-ho"><i class="ico-tipsGray"></i>Какие типы
+                                                        кампаний можно защитить?</div>
+                                                    <ul class="dropdown-content">
+                                                        <div class="popup_tail"></div>
+                                                        <li class="p">Текстово-графическая кампания</li>
+                                                        <li class="p">Реклама мобильных приложений</li>
+                                                        <li class="p">Кампания "Смарт-баннеры"</li>
+                                                        <li class="p">Кампания "Динамические объявления"</li>
+                                                        <li class="p">Баннер на поиске</li>
+                                                        <li class="m">Медийная кампания</li>
+                                                        <li class="m">Медийная кампания на Главной</li>
+                                                        <li class="m">Кампания с фиксированным СРМ</li>
+                                                        <li class="m">Кампании созданные через мастера кампаний</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row direct-item-company">
+                                            <div class="col-12">
+                                                <div class="row filter-searchFull">
+                                                    <div class="col-4">
+                                                        <label class="checkbox" style="margin-bottom: 0px;">
+                                                            <input type="checkbox">
+                                                            <span class="custom-checkbox"></span>
+                                                            <div><strong>Выбрать все (10 из 120)</strong></div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-8 text-right">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="form-control search-table">
+                                                                    <input class="form-item" name="input-site"
+                                                                        value="" type="text" placeholder="Поиск">
+                                                                    <span class="icon-search"></span>
+
+                                                                </div>
+                                                            </div>
+                                                           
+                                                            <div class="col-auto">
+                                                                <div class="dropdown targetname">
+                                                                    <button class="dropbtn">
+                                                                        <span class="hidden-inp">Выбраны все
+                                                                            кампании</span>
+                                                                        <span class="ico-down-arr"></span>
+                                                                        <span class="tooltip tooltip-filter-right"
+                                                                            data-balloon-length="medium"
+                                                                            data-balloon-pos="down"
+                                                                            data-balloon="Выберите кампанию"><i
+                                                                                class="ico-tips"></i></span>
+                                                                    </button>
+
+                                                                    <div class="block_tail">
+                                                                        <div class="popup_tail"></div>
+                                                                    </div>
+                                                                    <ul class="dropdown-content"
+                                                                        id="website-dropdown">
+                                                                        <li class="dropdown-search"
+                                                                            nothidecombodropdown=""></li>
+
+                                                                        <li class="item-list" title="Все цели">
+                                                                            <span class="filtrable"
+                                                                                style="align-items: flex-start;display: table-cell; vertical-align: middle;"><label></label>Все
+                                                                                кампании</span>
+                                                                        </li>
+
+                                                                        <li class="item-list"
+                                                                            title="Текстово-графическая кампания">
+                                                                            <span class="filtrable"
+                                                                                style="align-items: flex-start;display: table-cell; vertical-align: middle;"><label></label>Текстово-графическая
+                                                                                кампания</span>
+                                                                        </li>
+                                                                        <li class="item-list"
+                                                                            title="Реклама мобильных приложений">
+                                                                            <span class="filtrable"
+                                                                                style="align-items: flex-start;display: table-cell; vertical-align: middle;"><label></label>Реклама
+                                                                                мобильных приложений</span>
+                                                                        </li>
+                                                                        <li class="item-list" title="Поисковая">
+                                                                            <span class="filtrable"
+                                                                                style="align-items: flex-start;display: table-cell; vertical-align: middle;"><label></label>Поисковая</span>
+                                                                        </li>
+                                                                    </ul>
+
+                                                                </div>
+                                                            </div>
+                                                        
+                                                            <div class="col-auto">
+                                                                <div class="radio-buttons-wrapper direct-stat">
+                                                                    <input type="radio" class="radio-button" name="333" value="1" id="button2" checked="">
+                                                                    <label for="button2">Все</label>
+                                                                    <input type="radio" class="radio-button" name="333" value="2" id="button3">
+                                                                    <label for="button3">Активные</label>
+                                                                    <input type="radio" class="radio-button" name="333" value="3" id="button4">
+                                                                    <label for="button4">Не активные</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span
+                                                                title="Ремаркетинг - 30 сек на сайте - Россия - М - 25-54">
+                                                                Ремаркетинг - 30 сек на сайте -
+                                                                Россия - М - 25-54</span>
+                                                            <div class="ico-comp-id">№ 9106924494</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Поиск - ИД общие - Спб - М -
+                                                                25-54</span>
+                                                            <div class="ico-comp-id">№ 10290399026</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Поиск - ППР общие - Россия - М
+                                                                - 25-54 - Россия</span>
+                                                            <div class="ico-comp-id">№ 10290402233</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Поиск - ИД горячие - Спб - М -
+                                                                25-54</span>
+                                                            <div class="ico-comp-id">№ 10291372540</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Поиск - ППР общие - Москва, Спб
+                                                                - М - 25-54</span>
+                                                            <div class="ico-comp-id">№ 10291372546</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Поиск - ИД общие - Москва - М -
+                                                                25-54</span>
+                                                            <div class="ico-comp-id">№ 10291372780</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Поиск - ППР горячие - Россия -
+                                                                М - 25-54</span>
+                                                            <div class="ico-comp-id">№ 10296727659</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Поиск - ИД горячие - Москва - М
+                                                                - 25-54</span>
+                                                            <div class="ico-comp-id">№ 10296727806</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Поиск - ППР горячие - Москва,
+                                                                Спб - М - 25-54</span>
+                                                            <div class="ico-comp-id">№ 10296727809</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Поиск - ИД общие - Россия - М -
+                                                                25-54</span>
+                                                            <div class="ico-comp-id">№ 10296727884</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Поиск - ИД горячие - Россия - М
+                                                                - 25-54</span>
+                                                            <div class="ico-comp-id">№ 10296727890</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Геодезическое сопровождение -
+                                                                Мск, Спб - М - 25-54_Москва и область</span>
+                                                            <div class="ico-comp-id">№ 10652918539</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Геодезическое сопровождение -
+                                                                Россия - М - 25-54_Россия</span>
+                                                            <div class="ico-comp-id">№ 10654273574</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Исполнительная/геодезическая
+                                                                съемка - М -25-54 - Москва и область</span>
+                                                            <div class="ico-comp-id">№ 10654274078</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="item-company">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div class="comp-direct-info">
+                                                        <div data-balloon-length="large" data-balloon-pos="up"
+                                                            class="ico-comp-direct textcampaign"
+                                                            data-balloon="Текстово-графические объявления">
+                                                            <i></i>
+                                                        </div>
+                                                        <div class="comp-diret-title">
+                                                            <span title="Поиск - ИД общие - Спб - М - 25-54">
+                                                                Исполнительная/геодезическая
+                                                                съемка - Россия - М - 25-54_Россия</span>
+                                                            <div class="ico-comp-id">№ 10654274081</div>
+                                                            <div> </div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="text-left box">
+                                            <button class="btn-prof btn-green" disabled="">Сохранить</button>
+                                            <div class="box">
+                                                <div class="preloader-css">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <div class="code-check saved">
+                                                Сохранено!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="blocs-direct-setting active">
+                        <div class="title row">
+                            <div class="col-10">
+                                <div class="ico">4</div>
+                                <span>Для регистрации трафика, установите код на сайт</span>
+                            </div>
+                            <div class="col-2">
+                                <div class="status green">Готово</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row bg-script">
+                                    <div class="col-12">
+                                        <div class="code">
+                                            <h2 class="setting-h2" style="margin: 15px 0 0 0;">
+                                                Обязательный код счетчика
+                                            </h2>
+                                            <div class="code-inner">
+                                                <textarea
+                                                    readonly="">&lt;script type="text/javascript"&gt;(function(){var randomh=Math.random();var e=document.getElementsByTagName("script")[0];var d=document.createElement("script"); d.src="https://scripts.witstroom.com/direct/1669" +"?"+ randomh + ""; d.type = "text/javascript"; d.async = true;d.defer = true;e.parentNode.insertBefore(d,e);})();&lt;/script&gt;</textarea>
+                                                <button class="code-copy clipboard__target"
+                                                    data-copy-tooltip="Copied...">Скопировать код</button>
+                                            </div>
+                                            <h4>Чтобы начать анализ трафика вашего сайта, разместите этот
+                                                скрипт перед тегом <strong>&lt;/head&gt;</strong>. Вы можете
+                                                разместить код в <strong>&lt;/body&gt;</strong>, сервис будет
+                                                корректно работать, за исключением блокировки ботов в разделе
+                                                "антибот для сайта"</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="check-code">Проверить код</button>
+                            </div>
+                            <div class="col-6 alert-posit">
+                                <div class="alertbloks">
+                                    <div class="alert-blocks-info">
+                                        <span class="big">Внимание!</span>
+                                        Для правильной работы системы Botfaqtor установите на&nbsp;
+                                        https://www.factum.ru/
+                                        &nbsp;следующие скрипты.
+                                    </div>
+                                    <div class="alert-blocks-warning">
+                                        <span class="big">Важно!</span>
+                                        Вы должны иметь доступ к коду сайта. Страницы социальных сетей и youtube
+                                        каналы добавить нельзя.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row integrations">
+                            <div class="col-12">
+                                <div class="row ">
+                                    <div class="col-sm-12 col-md-12">
+                                        <h2>Плагины для CMS</h2>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="row item-mod">
+                                    <div class="col-12">
+                                        <div class="blocks-item">
+                                            <div class="integrations__blocks-item">
+                                                <img class="help" src="img/wordpress.png"
+                                                    title="Скачать плагин botfaqtor для Wordpress">
+                                                <a href="" target="blink" class="btn"
+                                                    title="Скачать плагин botfaqtor для Wordpress">Скачать
+                                                    плагин WordPress</a>
+                                            </div>
+                                        </div>
+                                        <div class="blocks-item">
+                                            <div class="integrations__blocks-item">
+                                                <img class="help" src="img/gtm.png"
+                                                    title="Официальный шаблон Google Tag Manager – Botfaqtor code">
+                                                <a href="https://botfaqtor.ru/docs/gtm-template/" target="blink"
+                                                    class="btn"
+                                                    title="Официальный шаблон Google Tag Manager – Botfaqtor code">Google
+                                                    Tag Manager (GTM)</a>
+                                            </div>
+                                            <span class="id">ID сайта: <strong>234234</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="https://botfaqtor.ru/blog/faq-add-counter/" target="blink">Как
+                                            установить скрипт на других CMS?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- New block -->
+                <div class="col-12">
+                    <div class="blocs-direct-setting active additional-direct-setting">
+                        <div class="title row">
+                            <div class="col-10">
+                                <div class="ico">5</div>
+                                <span>Дополнительные настройки</span>
+                            </div>
+                            <div class="col-2">
+                                <div class="status green">Сохранено</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <!---->
+                                <div class="additional">
+                                    <div class="add-report-rca">
+                                        <div class="add-report-rca__row">
+                                            <div class="additional__how-title">
+                                                Отправка еженедельного отчета на почту
+                                            </div>
+                                            <div class="switch-act">
+                                                <span class="text-green">Вкл.</span>
+                                                <div class="switch">
+                                                    <input class="switch__input" type="checkbox"
+                                                        checked="" id="s30100">
+                                                    <label class="switch__label" for="s30100"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="add-report-rca__text">
+                                            Раз в месяц Botfaqotor.ru будет отключать защиту рекламных кампаний на сутки для оценки эффективности работы сервиса. Данная функция позволяет понять на сколько % увеличивается фродовый трафик при отключенной защите. 
+                                        </p>
+                                        <div class="additional__choise">
+                                            <div class="additional__choise-name">
+                                                Выберите сервисы:
+                                            </div>
+                                            <div class="additional__boxes">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div>
+                                                        <img src="img/yandex-icon.svg">
+                                                        Яндекс Директ
+                                                    </div>
+                                                </label>
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div>
+                                                        <img src="img/google-icon.svg">
+                                                        Google Ads
+                                                    </div>
+                                                </label>
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div>
+                                                        <img src="img/antibot-icon.svg">
+                                                        Антибот
+                                                    </div>
+                                                </label>
+                                                <a href="#" class="additional__example-btn">
+                                                    Пример отчета
+                                                    <img src="img/arrow-top.svg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="additional__save">
+                                            <div class="text-left additional__save-left">
+                                                <button class="btn-prof btn-green">Сохранить</button>
+                                            </div>
+                                            <div class="additional__label">
+                                                Сохранено!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- new block end -->
+
+
+
+
+                <!-- New block -->
+                <div class="col-12">
+                    <div class="blocs-direct-setting active additional-direct-setting">
+                        <div class="title row">
+                            <div class="col-10">
+                                <div class="ico">5</div>
+                                <span>Дополнительные настройки</span>
+                            </div>
+                            <div class="col-2">
+                                <div class="status green">Сохранено</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <!---->
+                                <div class="additional">
+                                    <div class="add-report-rca">
+                                        <div class="add-report-rca__row">
+                                            <div class="additional__how-title">
+                                                Отправка еженедельного отчета на почту
+                                            </div>
+                                            <div class="switch-act">
+                                                <span class="text-green">Вкл.</span>
+                                                <div class="switch">
+                                                    <input class="switch__input" type="checkbox"
+                                                        checked="" id="s30100">
+                                                    <label class="switch__label" for="s30100"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="add-report-rca__text">
+                                            Раз в месяц Botfaqotor.ru будет отключать защиту рекламных кампаний на сутки для оценки эффективности работы сервиса.
+                                        </p>
+                                        <div class="additional__choise">
+                                            <div class="additional__choise-name">
+                                                Выберите сервисы:
+                                            </div>
+                                            <div class="additional__boxes">
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div>
+                                                        <img src="img/yandex-icon.svg">
+                                                        Яндекс Директ
+                                                    </div>
+                                                </label>
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div>
+                                                        <img src="img/google-icon.svg">
+                                                        Google Ads
+                                                    </div>
+                                                </label>
+                                                <label class="checkbox" style="margin-bottom: 0px;">
+                                                    <input type="checkbox">
+                                                    <span class="custom-checkbox"></span>
+                                                    <div>
+                                                        <img src="img/antibot-icon.svg">
+                                                        Антибот
+                                                    </div>
+                                                </label>
+                                                <a href="#" class="additional__example-btn additional__example-btn--active">
+                                                    Пример отчета
+                                                    <img src="img/arrow-top.svg">
+                                                </a>
+                                            </div>
+                                            <div class="additional__rep">
+                                                <img src="img/report-example.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="additional__save">
+                                            <div class="text-left additional__save-left">
+                                                <button class="btn-prof btn-green">Сохранить</button>
+                                            </div>
+                                            <div class="additional__label">
+                                                Сохранено!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                            <div class="col-5 alert-posit">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- new block end -->
+
+
+
+                <div class="col-12">
+                    <div class="text-left">
+                        <button class="btn-prof btn-green">Перейти в статистику</button>
+                    </div>
+                </div>
+
+                <!--content end-->
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="main.js"></script>
+
+</html>

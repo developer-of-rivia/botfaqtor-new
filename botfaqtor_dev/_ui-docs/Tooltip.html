@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tooltip - BotFaqtor UI</title>
+    <!-- favicon -->
+    <link rel="icon" href="icons/brand_botfaqtor.svg" type="image/x-icon">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- preview page styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pp-tabs.css" />
+     <!-- pp-jquery -->
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <!-- pp-tabs -->
+     <script src="js/pp-tabs.js"></script>
+    <!-- Prism JS -->
+    <link rel="stylesheet" href="addons/prismjs-full/prism-theme7.css">
+    <script src="addons/prismjs-full/prism.min.js"></script>
+    <script src="addons/prismjs-full/prism-unescaped-markup.min.js"></script>
+    <script src="addons/prismjs-full/prism-toolbar.min.js" ></script>
+    <script src="addons/prismjs-full/prism-copy-to-clipboard.min.js"></script>
+    <script src="addons/prismjs-full/prism-normalize-whitespace.js"></script>
+    <!-- components -->
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- page -->
+    <section class="page">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="logo">
+                        <div class="logo__img">
+                            <img
+                                class="logo__img"
+                                src="icons/brand_botfaqtor.svg"
+                            />
+                        </div>
+                        <div class="logo__text">
+                            Botfaqtor
+                            <img src="icons/ui-icon.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <div class="page__wrapper">
+            <div class="container">
+                <div class="page__wrapper-inner">
+                    <!-- sidebar -->
+                    <aside class="sidebar">
+                        <ul class="sidebar__box">
+                            <a href="Tooltips.html" class="sidebar__link sidebar__link--active">
+                                <img src="icons/tooltip-icon.svg">
+                                Tooltip
+                            </a>
+                            <a href="Tooltip-icon.html" class="sidebar__link">
+                                <img src="icons/tooltip-icon-icon.svg">
+                                Tooltip icon
+                            </a>
+                            <a href="Button.html" class="sidebar__link">
+                                <img src="icons/tooltip-icon.svg">
+                                Button
+                            </a>
+                        </ul>
+                    </aside>
+                    <!-- sidebar end -->
+                    <!-- main -->
+                    <main class="main">
+                        <!-- main__title -->
+                        <div class="main__title">
+                            <h1>Tooltip (подсказка)</h1>
+                        </div>
+                        <p class="par_big">
+                            Чтобы вызвать подсказку при наведении на нужный элемент,
+                            необходимо добавить на этот элемент специальные data-атрибуты:
+                            <span class="highlight">`data-tippy`</span> и <span class="highlight">`data-tippy-content`</span> со значением, это значение
+                            отобразится в качестве контента тултипа.
+                        </p>
+                        <div class="spacer" style="height: 20px;"></div>
+                        <!-- main__body -->
+                        <div class="main__body">
+                            <!-- main__section -->
+                            <div class="main__section">
+                                <!-- табы -->
+                                <div class="pp_tabs-wrapper">
+                                    <div class="pp_tabs">
+                                        <span class="pp_tab">HTML</span>
+                                        <span class="pp_tab">Preview</span>
+                                    </div>
+                                    <div class="pp_tabs-content">
+                                        <div class="pp_tab-item">
+                                            <div class="code-demo">
+                                                <script type="text/plain" class="language-html">
+                                                    <div class="your-element"
+                                                            data-tippy
+                                                            data-tippy-content="
+                                                                    Далеко-далеко за словесными, горами в 
+                                                                    стране гласных и согласных живут рыбные тексты."
+                                                            >
+                                                        Ваш элемент
+                                                    </div>
+
+                                                    <style>
+                                                        .your-element{
+                                                            background: purple;
+                                                            color: #fff;
+                                                            text-align: center;
+                                                            padding: 10px;
+                                                            display: inline-block;
+                                                        }
+                                                    </style>
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <div class="pp_tab-item">
+                                            <div class="code-preview">
+                                                <div class="some-element"
+                                                    data-tippy-content=
+                                                    "
+                                                        Далеко-далеко за словесными, горами в 
+                                                        стране гласных и согласных живут рыбные тексты.
+                                                    "
+                                                    >
+                                                    Ваш элемент
+                                                </div>
+                                                <style>
+                                                    .some-element{
+                                                        background: purple;
+                                                        color: #fff;
+                                                        text-align: center;
+                                                        padding: 10px;
+                                                        display: inline-block;
+                                                    }
+                                                </style>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- табы конец -->
+                            </div>
+                            <div class="spacer" style="height: 80px;"></div>
+                            <!-- main__section -->
+                            <div class="main__section">
+                                <h2>Живой пример</h2>
+                                <div class="spacer" style="height: 20px;"></div>
+                                <div class="pp_tabs-wrapper">
+                                    <div class="pp_tabs">
+                                        <span class="pp_tab">HTML</span>
+                                        <span class="pp_tab">Preview</span>
+                                    </div>
+                                    <div class="pp_tabs-content">
+                                        <div class="pp_tab-item">
+                                            <div class="code-demo">
+                                                <script type="text/plain" class="language-html">
+                                                    <div class="card">
+                                                        <div class="card__title"
+                                                                        data-tippy
+                                                                        data-tippy-content=
+                                                                        "
+                                                                            Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.
+                                                                        "
+                                                                        >
+                                                            Заголовок карточки
+                                                        </div>
+                                                        <div class="card__text">
+                                                            Текст карточки
+                                                        </div>
+                                                    </div>
+
+                                                    <style>
+                                                        .card{
+                                                            background: #fff;
+                                                            padding: 20px;
+                                                            border-radius: 15px;
+                                                            text-align: center;
+                                                        }
+                                                        .card__title{
+                                                            font-weight: 700;
+                                                            font-size: 24px;
+                                                        }
+                                                        .card__text{
+                                                            font-size: 16px;
+                                                        }
+                                                    </style>
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <div class="pp_tab-item">
+                                            <div class="code-preview code-preview--liveexamplecard">
+                                                <div class="card">
+                                                <div class="card__title"
+                                                    data-tippy
+                                                    data-tippy-content="
+                                                            Далеко-далеко за словесными, горами в 
+                                                            стране гласных и согласных живут рыбные тексты."
+                                                    >
+                                                    Заголовок карточки
+                                                </div>
+                                                <div class="card__text">
+                                                    Текст карточки
+                                                </div>
+                                            </div>
+                                                <style>
+                                                    .code-preview--liveexamplecard .card{
+                                                        background: #fff;
+                                                        padding: 20px;
+                                                        border-radius: 15px;
+                                                        text-align: center;
+                                                    }
+                                                    .code-preview--liveexamplecard .card__title{
+                                                        font-weight: 700;
+                                                        font-size: 24px;
+                                                    }
+                                                    .code-preview--liveexamplecard .card__text{
+                                                        font-size: 16px;
+                                                    }
+                                                </style>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    В данном примере мы сделали так, чтобы при наведении на заголовок карточки у нас появлялся
+                                    тултип. Добавить тултип таким образом можно к большинству элементов.
+                                </p>
+                            </div>
+
+
+                            <!-- main__section -->
+                            <!-- <div class="main__section" style="margin-top: 80px;">
+                                <h2>
+                                    Работа компонента
+                                </h2>
+                                <p>
+                                    Тултип работает на основе библиотеки tippy.js,
+                                    которая также имеет связь с библиотекой popper.js.
+                                    Это значит, что обе эти библиотеки должны быть добавлены
+                                    на проект.
+                                </p>
+                            </div> -->
+
+
+                            <!-- main__section -->
+                            <div class="main__section" style="margin-top: 80px;">
+                                <h2>Управление компонентом</h2>
+                                <p>
+                                    Тултип может управляться из двух мест: <br><br>
+                                    1) из javascript
+                                </p>
+                                <div class="code-demo">
+                                    <script type="text/plain" class="language-js">
+                                        tippy('[data-tippy]', {
+                                            trigger: 'click'
+                                            interactive: true,
+                                            placement: 'bottom',
+                                        });
+                                    </script>
+                                </div>
+                                <div class="spacer" style="height: 30px;"></div>
+                                <p>
+                                    2) с помощью data-атрибутов
+                                </p>
+                                <div class="code-demo">
+                                    <script type="text/plain" class="language-html">
+                                        <div class="your-element"
+                                                data-tippy
+                                                data-tippy-trigger="click"
+                                                data-tippy-interactive="true"
+                                                data-tippy-placement="bottom"
+                                            >
+                                            Ваш элемент
+                                        </div>
+                                    </script>
+                                </div>
+                                <p>
+                                    При этом важно понимать, что настройки из js применяются для всех тултипов на проекте,
+                                    а data-атрибуты являются удобным способом настройки конкретного тултипа (а также перебивают настройки из js).
+                                </p>
+                                <div class="spacer" style="height: 20px;"></div>
+                                <p>
+                                    Настройка <span class="highlight">`trigger`</span> - является аналогом дата атрибутам <span class="highlight">`data-tippy-trigger`</span> <br>
+                                    Настройка <span class="highlight">`placement`</span> - является аналогом дата атрибутам <span class="highlight">data-tippy-placement</span> <br>
+                                    Соответственно <br>javascript: <span class="highlight">*</span> <br>
+                                    html: <span class="highlight">data-tippy-*</span>
+                                </p>
+                            </div>
+                            <!-- main__section -->
+                            <div class="main__section" style="margin-top: 80px;">
+                                <h2>Настройки</h2>
+                                <p>
+                                    Поскольку тултип использует библиотеку tippy.js, настройки используются
+                                    те же:
+                                    <a target="_blank" href="https://atomiks.github.io/tippyjs/v6/all-props/">здесь</a>
+                                </p>
+                                <div class="spacer" style="height: 15px;"></div>
+                            </div>
+                            <!-- main__section -->
+                            <div class="main__section" style="margin-top: 80px;">
+                                <h2>Стилизация</h2>
+                                <p>
+                                    Стилизация выполняется через свойство <span class="highlight">`theme`</span> или <span class="highlight">`data-theme`</span>
+                                </p>
+                                <div class="spacer" style="height: 15px;"></div>
+                            </div>
+
+                            <p>
+                                ...Не закончено...
+                            </p>
+                        </div>
+                    </main>
+                    <!-- main end -->
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="logo">
+                        <div class="logo__img">
+                            <img
+                                class="logo__img"
+                                src="icons/brand_botfaqtor.svg"
+                            />
+                        </div>
+                        <a href="https://botfaqtor.ru/" class="logo__text">
+                            Botfaqtor
+                            <img src="icons/ui-icon.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+    <!-- Подключения -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+    <script>
+        tippy('[data-tippy-content]', {
+            allowHTML: true,
+            interactive: true,
+            placement: 'bottom',
+        });
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Botdetector</title>
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!--header start-->
+    <header class="profile head-my-site">
+        <div class="logo-brand-profile">
+            <a href="index.html"><img src="img/brand_botfaqtor.svg" alt="" class="img-fluid"></a>
+        </div>
+        <div class="nav-proj">
+            <div class="mobi-nav-proj">
+                <i class="ico-list"></i>
+                <span>Проекты</span>
+            </div>
+            <ul class="items-proj">
+                <li class="active">
+                    <a href="">
+                        <img src="img/blocking_blue.svg">
+                        <span>Антибот для сайта</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/direct_blue.svg">
+                        <span>Защита Яндекс.Директ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/ads_blue.svg">
+                        <span>Защита Google Ads</span>
+                    </a>
+                </li>
+                <li class="mob-sub">
+                    <a href="">
+                        <img src="img/antibanner_blue.svg">
+                        <span>Защита баннера</span>
+                    </a>
+                </li>
+                <li class="mob-sub">
+                    <a href="">
+                        <img src="img/link_blue.svg">
+                        <span>Сокращение ссылок</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="items-proj">
+                <li>
+                    <a href="">
+                        <img src="img/antibanner_blue.svg">
+                        <span>Защита баннера</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/link_blue.svg">
+                        <span>Сокращение ссылок</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 
+    <div class="action">
+    <span class="btn btn-transparent" style="text-transform: capitalize;"><i class="ico-person"></i>Войти</span>
+    <span class="btn btn-primary" style="text-transform: capitalize;">Регистрация</span>
+    </div>
+-->
+        <div class="block-balance-col">
+            <div class="balance-content">
+                <div class="ico-wallet"></div>
+                <div class="sum-balance"><span>100 000, 66</span> ₽</div>
+                <span class="ico-down-arr"></span>
+            </div>
+            <ul class="dropdown-content">
+                <div class="popup_tail"></div>
+                <li class="item-list">Пополнить счет</li>
+                <li class="item-list">История операций</li>
+
+                <li class="auto-pay-block">
+                    <div class="row">
+                        <div class="col">Автоплатёж <span class="text-red">выключен</span></div>
+                        <div class="col"><button class="btn">Настроить</button></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="ml-auto login-container d-inline-flex">
+            <div class="login-container__info">
+                <div class="person-content">
+                    <span class="login">test@botfaqtor.ru</span>
+                    <span class="balance">Базовый тариф</span>
+                </div>
+                <span class="ico-down-arr"></span>
+            </div>
+            <ul class="dropdown-content">
+                <div class="popup_tail"></div>
+                <li class="item-list">Настройки</li>
+                <li class="item-list">Выйти</li>
+            </ul>
+        </div>
+        <div class="user-menu">
+            <div class="user-menu-content">
+                <div class="user-ico"></div>
+                <span class="ico-down-arr"></span>
+            </div>
+
+            <ul class="dropdown-content">
+                <div class="popup_tail"></div>
+                <div class="person-user-menu">
+                    <span class="person-login">test@botfaqtor.ru</span>
+                    <span class="person-balance">Базовый тариф</span>
+                </div>
+                <li class="item-list">Настройки</li>
+                <li class="item-list">Выйти</li>
+            </ul>
+        </div>
+
+    </header>
+    <!--header end-->
+
+    <!--sidebar start-->
+    <div class="sidebar">
+
+        <button class="btn-prof btn-green add-site">Добавить сайт</button>
+        <div class="sidebar-menu-accordion">
+            <ul>
+                <li>
+                    <a href="index.html"><i class="ico8pl"></i>Сводка</a>
+                </li>
+                <li>
+                    <a href="mysites.html"><i class="ico10pl"></i>Мои сайты</a>
+                </li>
+                <li>
+                    <a href="" onclick="return false;" class="disabled-anchor"><i class="ico15pl"></i>Блокировка IP
+                        <span class="hint-icon__quest"
+                            data-bem="Предоставьте доступ к Google Analitics и Google Adwords в <a href=''>настройках сайта</a>."></span></a>
+                </li>
+                <li>
+                    <a href="blocking.html"><i class="ico12pl"></i>Блокировки</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-menu-accordion pos-bottom">
+            <ul>
+                <li>
+                    <a href=""><i class="ico13pl"></i>Генератор UTM-меток</a>
+                </li>
+                <li>
+                    <a href="https://affiliate-program.botfaqtor.ru/">
+                        <i class="ico16pl"></i>Партнерская программа</a>
+                </li>
+                <li>
+                    <a href=""><i class="ico20pl"></i>Вопрос/Ответ</a>
+                </li>
+                <li>
+                    <a href="contacts.html"><i class="ico6pl"></i>О компании</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--sidebar end-->
+
+    <!--content start-->
+    <div class="content">
+        <div class="container-fluid blockscript metrika add-metrika">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <h2>Добавить сайт</h2>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="blocs-direct-setting">
+                            <div class="title  row">
+                                <div class="col-10">
+                                    <div class="ico">1</div>
+                                    <span>Введите название и адрес сайта</span>
+                                </div>
+                                <div class="col-2">
+                                    <div class="status green">Готово</div>
+                                </div>
+                            </div>
+                            <div class="content-blocks row">
+                                <div class="col-12">
+                                    <div class="row blocs-count-name">
+                                        <div class="col-md-4">
+                                            <div class="form-control">
+                                                <div class="cdInputFix">
+                                                    <input class="form-item" name="input-site" value="" type="text">
+                                                    <div class="placehold">Название сайта</div>
+                                                </div>
+                                            </div>
+                                            <div class="input-group">
+                                                <div class="input-group-btn">
+                                                    <button id="prefixURL" type="button"
+                                                        class="btn btn-adress dropdown-toggle">https://</button>
+                                                    <div class="dropdown-menu dropdown-menu-prefix">
+                                                        <a name="prefixURLDropDown"
+                                                            class="dropdown-item dropdown-item-prefix">http://</a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-control error">
+                                                    <div class="cdInputFix">
+                                                        <input class="form-item" name="DomainName" value="dfgdfg"
+                                                            type="text">
+                                                        <div class="placehold">Адрес URL сайта</div>
+                                                        <span class="form-notice text-error">Адрес сайта содержит
+                                                            недопустимые
+                                                            символы
+                                                            или
+                                                            отсутствует префикс http / https.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="lable agreem">
+                                                <label class="checkbox"><input type="checkbox" checked="">
+                                                    <span class="custom-checkbox"></span>
+                                                    Я принимаю условия <a href="">Пользовательского соглашения</a>
+                                                </label>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="text-left ">
+                                                <button class="btn-prof btn-green">Создать счетчик</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="alertbloks">
+
+                                                <div class="alert-blocks-warning">
+                                                    <span class="big">ВАЖНО!</span>
+
+                                                    <strong>Вы должны иметь доступ к коду сайта.</strong> Страницы
+                                                    социальных сетей и
+                                                    youtube каналы
+                                                    добавить нельзя.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blocs-direct-setting">
+                            <div class="title row">
+                                <div class="col-11">
+                                    <div class="ico">2</div>
+                                    <span>Для регистрации трафика, установите код на рекламируемый сайт</span>
+                                </div>
+                                <div class="col-1">
+                                </div>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="blocs-direct-setting">
+                            <div class="title row">
+                                <div class="col-11">
+                                    <div class="ico">3</div>
+                                    <span>Разрешить Botfaqtor API доступ к Яндекс.Метрика и загрузить список
+                                        счетчиков</span>
+                                </div>
+                                <div class="col-1">
+                                </div>
+                            </div>
+                        </div>
+                    -->
+                        <div class="blocs-direct-setting">
+                            <div class="title row">
+                                <div class="col-11">
+                                    <div class="ico">3</div>
+                                    <span>Разрешить Botfaqtor API доступ к Google Ads и загрузить список рекламных
+                                        компаний</span>
+                                </div>
+                                <div class="col-1">
+                                </div>
+                            </div>
+
+
+                            <!-- 
+                            <div class="clear"></div>
+                            <div class="text-left save-button">
+                                <button class="btn-prof btn-green" disabled>Сохранить</button>
+                                <div class="loading-spinner">
+                                    <div class="spinner-rectangle-bounce">
+                                        <div class="rect1" style="background-color: rgb(102, 149, 226);"></div>
+                                        <div class="rect2" style="background-color: rgb(102, 149, 226);"></div>
+                                        <div class="rect3" style="background-color: rgb(102, 149, 226);"></div>
+                                        <div class="rect4" style="background-color: rgb(102, 149, 226);"></div>
+                                        <div class="rect5" style="background-color: rgb(102, 149, 226);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--content end-->
+
+
+        <div class="popup__content__quest"><i class="popup__tail"></i>
+            <div class="popup__content"></div>
+        </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="../main.js"></script>
+
+</html>

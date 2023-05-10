@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>botfaqtor.ru</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="logo"><a href="/"></a></div>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#top">Главная</a></li>
+                        <li><a href="#id1">Как это работает?</a></li>
+                        <li><a href="#id2">Цены</a></li>
+                        <li><a href="#id3">О компании</a></li>
+                    </ul>
+                    <span class="nav-float"></span>
+                </nav>
+                <div class="menu_burger"></div>
+
+                <!-- не авторизован -->
+                <!--  
+                <div class="action">
+                    <span class="btn btn-transparent"><i>Войти</i></span>
+                    <span class="btn btn-primary">Регистрация</span>
+                </div>
+                -->
+
+                <!-- Авторизован -->
+
+                <div class="action login-container active-login">
+                    <div class="login-container__info">
+                        <i class="ico-person"></i><span><span class="ico-down-sd"></span></span>
+                    </div>
+
+                    <ul class="dropdown-content">
+                        <li>
+                            <div class="foto-ava"><img src="img/avatar.png" alt=""></div>
+                        </li>
+                        <li><a href="#"><strong>Перейти в личный кабинет</strong></a></li>
+                        <li class="item-list">test@botfaqtor.ru</li>
+                        <li class="item-list">Настройки</li>
+                        <li class="item-list">Выйти</li>
+                    </ul>
+                </div>
+
+                <div class="menu_mob">
+                    <div class="close_menu"></div>
+                    <ul>
+                        <li class="active"><a href="#top">Главная</a></li>
+                        <li><a href="#id1">Как это работает?</a></li>
+                        <li><a href="#id2">Цены</a></li>
+                        <li><a href="#id4">О компании</a></li>
+                    </ul>
+
+                    <!-- не авторизован -->
+                    <!-- 
+                    <div class="autho_mobi">
+                        <span class="btn btn-transparent"><i>Войти</i></span>
+                        <span class="btn btn-primary">Регистрация</span>
+                    </div>
+
+                    -->
+
+                    <!-- Авторизован -->
+                    <div class="autho_mobi">
+                        <span class="btn btn-transparent"><i>work.victor.kolkovski@gmail.com</i></span>
+                        <span class="btn btn-primary">Выйти</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Первый экран -->
+    <section class="top" id="top">
+        <div class="container bg-slid-banner">
+            <h1>Защита баннера от скликивания</h1>
+            <div class="promo">
+                <img src="img/promo_img_banner.svg" alt="">
+            </div>
+            <a href="#" class="btn btn-default btn-special">защитить баннер</a>
+        </div>
+    </section>
+
+    <!-- Второй экран -->
+    <section class="it-works-sect-intibann" id="id1">
+        <div class="container">
+            <h2>Как это работает?</h2>
+            <div class="row">
+                <div class="col-md-3 item">
+                    <img src="img/it-works-aco-01v2.svg" alt="">
+                    <span>Загрузите ваш баннер в систему Botfaqtor</span>
+                </div>
+                <div class="col-md-3 item">
+                    <img src="img/it-works-aco-02v2.svg" alt="">
+                    <span>Сервис сгенерирует специальный код для вставки на партнерские ресурсы</span>
+                </div>
+                <div class="col-md-3 item">
+                    <img src="img/it-works-aco-03.svg" alt="">
+                    <span>Теперь ваш продукт надежно защищен от кликов и показов ботам</span>
+                </div>
+                <div class="col-md-3 item">
+                    <img src="img/it-works-aco-04.svg" alt="">
+                    <span>Вы экономите бюджет и оптимизируете расходы на рекламу</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Третий экран -->
+    <section class="calc-sect">
+        <div class="container">
+            <h2>Экономия бюджета</h2>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="calc">
+                        <div class="inner">
+                            <div class="form-group">
+                                <label for="calc_input_1">Сколько вы тратите на баннеры в месяц</label>
+                                <input id="calc_input_1" name="cost" min="0" value="0" max="10000000" step="1"
+                                    type="range">
+                                <div class="output_block"><input type="text" class="output" id="output_1" value="0">РУБ
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="calc_input_2">Сколько вы тратите на рекламу в месяц</label>
+                                <input id="calc_input_2" name="cost" min="0" value="0" max="10000000" step="1"
+                                    type="range">
+                                <div class="output_block"><input type="text" class="output" id="output_2" value="0">РУБ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="total">Экономия бюджета: <span>110 РУБ</span></div>
+                                </div>
+                                <div class="col-4">
+                                    <span class="btn btn-red">Работать с нами</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="graph-banner">
+                        <div class="item">
+                            <div class="ico" style="background-image:url(img/econ-ico1-banner.svg)"></div>
+                            <div class="description">
+                                <h3>Надежность</h3>
+                                Защищайте ваши баннеры от скликивания и показав ботам
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ico" style="background-image:url(img/econ-ico2-banner.svg)"></div>
+                            <div class="description">
+                                <h3>Оперативность</h3>
+                                Получайте онлайн информацию о показах и кликах ваших ссылок
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="ico" style="background-image:url(img/econ-ico3-banner.svg)"></div>
+                            <div class="description">
+                                <h3>Эффективность</h3>
+                                Повышайте эффективность рекламных кампаний, благодаря умным технологиям
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Четвертый экран -->
+    <section class="blue-two projects">
+        <div class="container">
+            <h2>Проекты</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <a href="#" class="projects-item">
+                        <img src="img/antibanner_blue.svg" alt="Защита баннера">
+                        <span class="title">Защита баннера</span>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <a href="#" class="projects-item">
+                        <img src="img/blocking_blue.svg" alt="Антибот для сайта">
+                        <span class="title">Антибот для сайта</span>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <a href="#" class="projects-item">
+                        <img src="img/istoch_blue.svg" alt="Проверка источников трафика">
+                        <span class="title">Проверка источников трафика</span>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <a href="#" class="projects-item noactive">
+                        <img src="img/ads_blue.svg" alt="Анализ бот-трафика">
+                        <span class="title">Защита от скликивания рекламных объявлений в GoogleADS</span>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <a href="#" class="projects-item noactive">
+                        <img src="img/direct_blue.svg" alt="Защита от скликивания рекламных объявлений в Яндекс.Директ">
+                        <span class="title">Защита от скликивания рекламных объявлений в Яндекс.Директ</span>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <a href="#" class="projects-item noactive">
+                        <img src="img/video_blue.svg" alt="Защита видео">
+                        <span class="title">Защита видео</span>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <a href="#" class="projects-item noactive">
+                        <img src="img/parser_blue.svg" alt="Защита от парсинга">
+                        <span class="title">Защита от парсинга</span>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <a href="#" class="projects-item noactive">
+                        <img src="img/celev_toc_blue.svg" alt="Защита целевых точек на сайте">
+                        <span class="title">Защита целевых точек на сайте</span>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <a href="#" class="projects-item noactive">
+                        <img src="img/reiting_blue.svg" alt="Рейтинг источников трафика">
+                        <span class="title">Рейтинг источников трафика</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Пятый экран -->
+    <section class="dots" id="id2">
+        <div class="container">
+            <h2>Цена</h2>
+            <div class="tabs disabled">
+                <div class="tabs-content">
+                    <div class="tabs-item active">
+                        <div class="tabs-flex">
+
+                            <div class="tabs-plan free">
+                                <div class="plan-title">Базовый тариф</div>
+                                <div class="plan-price">0<span>₽</span></div>
+                                <div class="plan-p">
+                                    <p>
+                                        <span>10 000</span>Бесплатных проверок для нового пользователя
+                                    </p>
+                                    <p>
+                                        <span>1,5 коп.</span>Стоимость каждой проверки
+                                    </p>
+                                </div>
+                                <div class="plan-action">
+                                    <a class="btn btn-stroked" href="javascript: void(0);">Попробуйте бесплатно</a>
+                                </div>
+                            </div>
+
+                            <div class="tabs-plan free">
+                                <div class="plan-title">VIP тариф</div>
+                                <div class="plan-price">7 500<span>₽</span></div>
+                                <div class="plan-p">
+                                    <p>
+                                        <span>10 000</span>Бесплатных проверок для нового пользователя
+                                    </p>
+                                    <p>
+                                        <span>1 коп.</span>Стоимость каждой проверки
+                                    </p>
+                                    <p><span>1 000 000</span>Проверок (включено)</p>
+                                </div>
+                                <div class="plan-action">
+                                    <a class="btn btn-stroked" href="#">Купить</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Пятый экран -->
+    <section>
+        <div class="container">
+            <h2>Почему выбирают Botfaqtor?</h2>
+            <div class="reasons">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="reason">
+                            <div class="reason-icon">
+                                <img src="img/reason-1.svg" alt="">
+                            </div>
+                            <div class="reason-title">Удобство подключения и управления</div>
+                            <div class="reason-intro">С нами не нужно изучать сложные инструкции или
+                                программировать самостоятельно. Установка кода на сайте – максимально упрощенный
+                                процесс. В этом смысле, «Botfaqtor» не имеет аналогов в России</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="reason">
+                            <div class="reason-icon">
+                                <img src="img/reason-2.svg" alt="">
+                            </div>
+                            <div class="reason-title">Анализ трафика со всего интернет-пространства</div>
+                            <div class="reason-intro">Автоматическая проверка качества посещений на вашем ресурсе с
+                                ведущих поисковых систем (Google, Яндекс), рекламных, партнерских и тизерных сетей.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="reason">
+                            <div class="reason-icon">
+                                <img src="img/reason-3.svg" alt="">
+                            </div>
+                            <div class="reason-title">Подробные результаты мониторинга</div>
+                            <div class="reason-intro">У нас нет сложных графиков, лишней информации и навязчивых
+                                рекомендаций. Анализируйте посещения, управляя данными по источнику, типу,
+                                географии посещений и посадочным страницам</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="reason">
+                            <div class="reason-icon">
+                                <img src="img/reason-4.svg" alt="">
+                            </div>
+                            <div class="reason-title">Автоматическое обнаружение некачественного трафика</div>
+                            <div class="reason-intro">Уникальная методика распознавания посетителей на основе
+                                более 50 технических и поведенческих параметров. Точность определения
+                                составляет 98% - это максимальный показатель в сфере web-безопасности</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="reason">
+                            <div class="reason-icon">
+                                <img src="img/reason-5.svg" alt="">
+                            </div>
+                            <div class="reason-title">Широкий анализ поведенческих факторов</div>
+                            <div class="reason-intro">В нашей базе собраны и настроены все возможные вариации
+                                поведения пользователей, мы ежедневно совершенствуем нашу технологию</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="reason">
+                            <div class="reason-icon">
+                                <img src="img/reason-6.svg" alt="">
+                            </div>
+                            <div class="reason-title">Бесплатная версия продукта</div>
+                            <div class="reason-intro">Сервис является незаменимым инструментом при работе с
+                                трафиком, поэтому вам всегда будет доступна бесплатная версия услуги. До 1
+                                января 2019 года, большинство функций платных подписок предоставляются
+                                бесплатно.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-default btn-special">Попробуйте прямо сейчас</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Шестой экран -->
+    <section id="id3">
+        <div class="container">
+            <h2>О компании</h2>
+            <div class="row">
+                <div class="col-md-5 col-sm-12"><img src="img/screenshot2.png" alt="" class="img-about"></div>
+                <div class="col-md-7 col-sm-12">
+                    <p class="about">Компания «Ботфактор» является сертифицированным партнером голландской фирмы
+                        Witstroom в России.</p>
+                    <p class="about"><b>BotFAQtor - это сервис комплексной проверки трафика.</b></p>
+                    <p class="about">Сервис позволяет анализировать посещения на сайте и блокировать
+                        некачественный трафик по различным критериям, источникам и типам визитов, благодаря
+                        универсальному конструктору отчетности. Блокировка ботов или нецелевых посетителей
+                        помогает экономить рекламный бюджет и повышать эффективность бизнеса. Сервис является
+                        незаменимым помощником web-мастера, и прикладным инструментом по работе с трафиком для
+                        рекламных и digital-агентств, малых и крупных e-commerce. Над сервисом непрерывно
+                        трудятся наши лучшие разработчики с многолетним опытом работы в области сетевой
+                        безопасности и онлайн-маркетинга. </p>
+
+                    <div class="row about">
+                        <div class="col-6">
+                            <b>Служба поддержки:</b>
+                            <a href="mailto:info@botfaqtor.ru">info@botfaqtor.ru</a>
+                        </div>
+                        <div class="col-6">
+                            <b>Контакты для СМИ и медиа:</b>
+                            <a href="mailto:pr@botfaqtor.ru">pr@botfaqtor.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="copy">© botfaqtor 2018.</div>
+                </div>
+                <div class="col-6">
+                    <div class="confidential">
+                        <a href="#">Конфиденциальность</a>
+                        <a href="#">Пользовательское соглашение</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Botdetector</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--header start-->
+    <header class="profile head-my-site">
+        <div class="logo-brand-profile">
+            <a href="index.html"><img src="img/brand_botfaqtor.svg" alt="" class="img-fluid"></a>
+        </div>
+        <div class="nav-proj">
+            <div class="mobi-nav-proj">
+                <i class="ico-list"></i>
+                <span>Проекты</span>
+            </div>
+            <ul class="items-proj">
+                <li class="active">
+                    <a href="">
+                        <img src="img/blocking_blue.svg">
+                        <span>Антибот для сайта</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/direct_blue.svg">
+                        <span>Защита Яндекс.Директ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/ads_blue.svg">
+                        <span>Защита Google Ads</span>
+                    </a>
+                </li>
+                <li class="mob-sub">
+                    <a href="">
+                        <img src="img/antibanner_blue.svg">
+                        <span>Защита баннера</span>
+                    </a>
+                </li>
+                <li class="mob-sub">
+                    <a href="">
+                        <img src="img/link_blue.svg">
+                        <span>Сокращение ссылок</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="items-proj">
+                <li>
+                    <a href="">
+                        <img src="img/antibanner_blue.svg">
+                        <span>Защита баннера</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/link_blue.svg">
+                        <span>Сокращение ссылок</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 
+    <div class="action">
+    <span class="btn btn-transparent" style="text-transform: capitalize;"><i class="ico-person"></i>Войти</span>
+    <span class="btn btn-primary" style="text-transform: capitalize;">Регистрация</span>
+    </div>
+-->
+        <div class="block-balance-col">
+            <div class="balance-content">
+                <div class="ico-wallet"></div>
+                <div class="sum-balance"><span>100 000, 66</span> ₽</div>
+                <span class="ico-down-arr"></span>
+            </div>
+            <ul class="dropdown-content">
+                <div class="popup_tail"></div>
+                <li class="item-list">Пополнить счет</li>
+                <li class="item-list">История операций</li>
+
+                <li class="auto-pay-block">
+                    <div class="row">
+                        <div class="col">Автоплатёж <span class="text-red">выключен</span></div>
+                        <div class="col"><button class="btn">Настроить</button></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="ml-auto login-container d-inline-flex">
+            <div class="login-container__info">
+                <div class="person-content">
+                    <span class="login">test@botfaqtor.ru</span>
+                    <span class="balance">Бесплатный период до 15.04.2021</span>
+                </div>
+                <span class="ico-down-arr"></span>
+            </div>
+            <ul class="dropdown-content">
+                <div class="popup_tail"></div>
+                <li class="item-list">Настройки</li>
+                <li class="item-list">Выйти</li>
+            </ul>
+        </div>
+        <div class="user-menu">
+            <div class="user-menu-content">
+                <div class="user-ico"></div>
+                <span class="ico-down-arr"></span>
+            </div>
+
+            <ul class="dropdown-content">
+                <div class="popup_tail"></div>
+                <div class="person-user-menu">
+                    <span class="person-login">test@botfaqtor.ru</span>
+                    <span class="person-balance">Бесплатный период до 15.04.21</span>
+                </div>
+                <li class="item-list">Настройки</li>
+                <li class="item-list">Выйти</li>
+            </ul>
+        </div>
+
+    </header>
+    <!--header end-->
+
+
+    <!--content start-->
+    <div class="content-mysite">
+
+        <div class="container-fluid my-site">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row headmysit">
+                        <div class="col-12 col-sm-5">
+                            <h2>Мои сайты</h2>
+                            <button class="btn-prof btn-green">Добавить сайт</button>
+                        </div>
+                        <div class="col-auto mb-2 bg-s-sort">
+                            <div class="sort-service">
+                                <span>Фильтр:</span>
+                                <div class="lable">
+                                    <label class="checkbox ">
+                                        <input type="checkbox" checked="">
+                                        <span class="custom-checkbox"></span>
+                                    </label>
+                                    <label class="text-labl"><img src="img/blocking_blue.svg">
+                                        <span>Антибот</span></label>
+                                </div>
+                                <div class="lable">
+                                    <label class="checkbox ">
+                                        <input type="checkbox" checked="">
+                                        <span class="custom-checkbox"></span>
+                                    </label>
+                                    <label class="text-labl"><img src="img/direct_blue.svg"> <span>Защита
+                                            Я.Директ</span></label>
+                                </div>
+                                <div class="lable">
+                                    <label class="checkbox ">
+                                        <input type="checkbox" checked="">
+                                        <span class="custom-checkbox"></span>
+                                    </label>
+                                    <label class="text-labl"><img src="img/ads_blue.svg"> <span>Защита Google
+                                            Ads</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-2"> 
+                            <div class="form-control search-table">
+                                <input class="form-item" name="input-site" value="" type="text" placeholder="Поиск">
+                                <span class="icon-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rotate-block"><img src="img/rotate.svg" alt=""><span>Для просмотра таблицы поверните
+                            горизонтально ваше устройства</span></div>
+                    <div class="tablemys rotate-phone">
+                        <!-- ТУТ БУДЕТ СПИННЕР -->
+
+
+                        <div class="container-mysites__item head__items headTableFix ">
+                            <div class="sync"></div>
+                            <div class="site-name-info"><span>Мои сайты </span><span><i class="ico-down"></i></span>
+                            </div>
+                            <div class="traffic"><strong class="ico-stat-09"></strong><span>Трафик</span></div>
+                            <div class="my-services">Статистика</div>
+                            <div class="actions-btn"></div>
+                        </div>
+
+                        <div class="container-mysites__item head__items">
+                            <div class="sync"></div>
+                            <div class="site-name-info"><span>Мои сайты </span><span><i class="ico-down"></i></span>
+                            </div>
+                            <div class="traffic"><strong class="ico-stat-09"></strong><span>Трафик</span></div>
+                            <div class="my-services">Статистика</div>
+                            <div class="actions-btn"></div>
+                        </div>
+
+                        <table class="mt-2 rotate-phone lg-table headTableFix">
+                            <thead>
+                                <tr>
+                                    <th class="sync"></th>
+                                    <th class="auto-clipping"></th>
+                                    <th>
+                                        <strong class="ico-stat-09"></strong>
+                                        <span>Трафик</span>
+                                    </th>
+                                    <th>Доступные сервисы</th>
+                                    <th class="text-right"></th>
+                                </tr>
+
+                            </thead>
+                        </table>
+
+                        <div class="mysites__items ">
+                            <div class="container-mysites__item">
+                                <div class="sync"><span class="ico-sync-green"
+                                        title="Ботфактору не удалось проверить наличие счетчика"></span></div>
+                                <div class="site-name-info">
+                                    <div class="name-site">prazdnik24.online</div>
+                                    <span class="truncate link-site">
+                                        <img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://prazdnik24.online">https://prazdnik24.online
+                                        <span class="hidden-link"><a target="_blank" href="https://prazdnik24.online"><i
+                                                    class="icon-link"></i></a></span>
+                                    </span>
+
+                                    <ul class="dropdown-content">
+                                        <div class="popup_tail"></div>
+                                        <li>
+                                            <div class="my-services">
+                                                <span>Перейти к статистике:</span>
+                                                <div class="list-services">
+                                                    <a class="service connect" formtarget="_blank" data-balloon-length="large" data-balloon="Сервис подключен" data-balloon-pos="up">
+                                                        <div>
+                                                            <img src="img/blocking_blue.svg">
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+            
+                                                    <a class="service not-connect" data-balloon-length="large" data-balloon="Ошибка подключения" data-balloon-pos="up">
+                                                        <div>
+                                                            <img src="img/direct_blue.svg">
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+            
+                                                    <a class="service add-connect" formtarget="_blank" data-balloon-length="large" data-balloon="Сервис подключен" data-balloon-pos="up">
+                                                        <div>
+                                                            <img src="img/ads_blue.svg">
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="traffic">
+                                    <span class="total-traff" data-balloon-length="large" data-balloon="Итого"
+                                        data-balloon-pos="up">
+                                        <strong>510</strong>
+                                    </span>
+                                    <span class="text-green" data-balloon-length="large" data-balloon="Целевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-01"></strong>
+                                        <span>266</span>
+                                    </span>
+                                    <span class="text-blue" data-balloon-length="large" data-balloon="Нецелевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-02"></strong>
+                                        <span>192</span>
+                                    </span>
+                                    <span class="text-red" data-balloon-length="large" data-balloon="Заблокировано"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-03"></strong>
+                                        <span>52</span>
+                                    </span>
+                                    <span class="tex-dark-gray" data-balloon-length="large"
+                                        data-balloon="Подозрительный трафик" data-balloon-pos="up">
+                                        <strong class="ico-stat-spy"></strong>
+                                        <span>20</span>
+                                    </span>
+                                </div>
+                                <div class="my-services">
+                                    <span>Перейти к статистике:</span>
+                                    <div class="list-services">
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/blocking_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service not-connect" data-balloon-length="large"
+                                            data-balloon="Ошибка подключения" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/direct_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service add-connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/ads_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions-btn">
+                                    <button class="btn-prof setting-btn control">
+                                        <span>Настроить</span>
+                                        <span class="btn-gray"><i class="icon-edit"></i></span>
+                                    </button>
+                                    <button class="accard-item active">
+                                        <span class="ico-down-arr"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="container-mysites__item hidden-block open">
+                                <div class="sync"></div>
+                                <div class="site-name-info">
+                                    <div class="t">
+                                        <div>Добавлено в сегмент Я.Директ за неделю</div>
+                                        <div>
+                                            <!-- Прелоудер -->
+                                            <div class="box preloader-elem">
+                                                <div class="preloader-css">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <!-- / Прелоудер -->
+                                        </div>
+                                    </div>
+                                    <div class="t">
+                                        <strong>Добавлено в аудиторию AdWords:</strong>
+                                    </div>
+                                    <div class="t">
+                                        <div>• Поиск</div>
+                                        <div>
+                                            <!-- Прелоудер -->
+                                            <div class="box preloader-elem">
+                                                <div class="preloader-css">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                            <!-- / Прелоудер -->
+                                        </div>
+
+                                    </div>
+                                    <div class="t">
+                                        <div>• YouTube</div>
+                                        <div>9543</div>
+                                    </div>
+                                    <div class="t">
+                                        <div>• KMC</div>
+                                        <div>9543</div>
+                                    </div>
+                                    <div class="t">
+                                        <div>• кампания для Gmail</div>
+                                        <div>9543</div>
+                                    </div>
+                                </div>
+                                <div class="traffic">
+                                    <div class="count-diagram"></div>
+                                    <div class="count-diagram">
+                                        <div class="days-container">
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 40.6074%;"></div>
+                                            <div class="one-day" style="height: 100%;"></div>
+                                        </div>
+                                        <div class="count-procent text-green">
+                                            <div class="count-procent text-green">+2116.67%</div>
+                                        </div>
+                                    </div>
+                                    <div class="count-diagram">
+                                        <div class="days-container">
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 40.6074%;"></div>
+                                            <div class="one-day" style="height: 100%;"></div>
+                                        </div>
+                                        <div class="count-procent text-green">
+                                            <div class="count-procent text-green">+2116.67%</div>
+                                        </div>
+                                    </div>
+                                    <div class="count-diagram">
+                                        <div class="days-container">
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 40.6074%;"></div>
+                                            <div class="one-day" style="height: 100%;"></div>
+                                        </div>
+                                        <div class="count-procent text-green">
+                                            <div class="count-procent text-green">+2116.67%</div>
+                                        </div>
+                                    </div>
+                                    <div class="count-diagram">
+                                        <div class="days-container">
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 0%;"></div>
+                                            <div class="one-day" style="height: 40.6074%;"></div>
+                                            <div class="one-day" style="height: 100%;"></div>
+                                        </div>
+                                        <div class="count-procent text-green">
+                                            <div class="count-procent text-green">+2116.67%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-services">
+                                    <div class="adsg">
+                                        <div class="item-yandex-b" title="n.etalon-web@yandex.ru • UA-179950232-1">
+                                            <img alt="" src="img/google-analytics-ico.png">
+                                            <div class="tex-ya">
+                                                <div class="prof-ya"><span
+                                                        _ngcontent-c6="">n.etalon-web@yandex.ru</span> •
+                                                    UA-179950232-1</div>
+                                            </div>
+                                        </div>
+                                        <div class="item-yandex-b" title="535-473-4541">
+                                            <img alt="" src="img/googleads-ico.png">
+                                            <div class="tex-ya">
+                                                <div class="prof-ya"><span _ngcontent-c6="">535-473-4541</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ydir">
+                                        <div class="item-yandex-b" title="JohnMir • 49731991">
+                                            <img alt="" src="img/metrika-ico.png">
+                                            <div class="tex-ya">
+                                                <div class="prof-ya">
+                                                    <span>JohnMir</span>
+                                                    •
+                                                    49731991
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-yandex-b" title="JohnMir, avvoz2018, alexauva">
+                                            <img alt="" src="img/direct-ico.png">
+                                            <div class="tex-ya">
+                                                <div class="prof-ya">
+                                                    <span>JohnMir, avvoz2018, alexauva</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="actions-btn">
+                                    <button class="del">
+                                        <i class="icon-del-red"></i>
+                                        <span>Удалить сайт</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mysites__items">
+                            
+                            <div class="container-mysites__item">
+                                <div class="sync"><span class="ico-sync-yellow"
+                                        title="Ботфактору не удалось проверить наличие счетчика"></span></div>
+                                <div class="site-name-info">
+                                    <div class="name-site">
+                                        быстро-капитал.рф</div>
+                                    <span class="truncate link-site">
+                                        <img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://быстро-капитал.рф">https://быстро-капитал.рф
+                                        <span class="hidden-link"><a target="_blank" href="https://быстро-капитал.рф"><i
+                                                    class="icon-link"></i></a></span>
+                                    </span>
+                                    <ul class="dropdown-content">
+                                        <div class="popup_tail"></div>
+                                        <li>
+                                            <div class="my-services">
+                                                <span>Перейти к статистике:</span>
+                                                <div class="list-services">
+                                                    <a class="service connect" formtarget="_blank" data-balloon-length="large" data-balloon="Сервис подключен" data-balloon-pos="up">
+                                                        <div>
+                                                            <img src="img/blocking_blue.svg">
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+            
+                                                    <a class="service not-connect" data-balloon-length="large" data-balloon="Ошибка подключения" data-balloon-pos="up">
+                                                        <div>
+                                                            <img src="img/direct_blue.svg">
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+            
+                                                    <a class="service add-connect" formtarget="_blank" data-balloon-length="large" data-balloon="Сервис подключен" data-balloon-pos="up">
+                                                        <div>
+                                                            <img src="img/ads_blue.svg">
+                                                            <span></span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="traffic">
+                                    <span class="total-traff">
+                                        <strong>1 321 333</strong>
+                                    </span>
+                                    <span class="text-green" data-balloon-length="large" data-balloon="Целевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-01"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-blue" data-balloon-length="large" data-balloon="Нецелевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-02"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-red" data-balloon-length="large" data-balloon="Заблокировано"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-03"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="tex-dark-gray" data-balloon-length="large"
+                                        data-balloon="Подозрительный трафик" data-balloon-pos="up">
+                                        <strong class="ico-stat-spy"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                </div>
+                                <div class="my-services">
+                                    <span>Перейти к статистике:</span>
+                                    <div class="list-services">
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/blocking_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service not-connect" data-balloon-length="large"
+                                            data-balloon="Ошибка подключения" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/direct_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/ads_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions-btn">
+                                    <button class="btn-prof setting-btn control">
+                                        <span>Настроить</span>
+                                        <span class="btn-gray"><i class="icon-edit"></i></span>
+                                    </button>
+                                    <button class="accard-item">
+                                        <span class="ico-down-arr"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mysites__items">
+                            <div class="container-mysites__item">
+                                <div class="sync"><span class="ico-sync-yellow"
+                                        title="Ботфактору не удалось проверить наличие счетчика"></span></div>
+                                <div class="site-name-info">
+                                    <div class="name-site">быстро-капитал.рф</div>
+                                    <span class="truncate link-site">
+                                        <img alt="" src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://быстро-капитал.рф">https://быстро-капитал.рф
+                                        <span class="hidden-link"><a target="_blank" href="https://быстро-капитал.рф"><i
+                                                    class="icon-link"></i></a></span>
+                                    </span>
+                                    
+                                </div>
+                                <div class="traffic">
+                                    <span class="total-traff">
+                                        <strong>1 321 333</strong>
+                                    </span>
+                                    <span class="text-green" data-balloon-length="large" data-balloon="Целевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-01"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-blue" data-balloon-length="large" data-balloon="Нецелевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-02"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-red" data-balloon-length="large" data-balloon="Заблокировано"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-03"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="tex-dark-gray" data-balloon-length="large"
+                                        data-balloon="Подозрительный трафик" data-balloon-pos="up">
+                                        <strong class="ico-stat-spy"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                </div>
+                                <div class="my-services">
+                                    <span>Перейти к статистике:</span>
+                                    <div class="list-services">
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/blocking_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service not-connect" data-balloon-length="large"
+                                            data-balloon="Ошибка подключения" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/direct_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/ads_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions-btn">
+                                    <button class="btn-prof setting-btn control">
+                                        <span>Настроить</span>
+                                        <span class="btn-gray"><i class="icon-edit"></i></span>
+                                    </button>
+                                    <button class="accard-item">
+                                        <span class="ico-down-arr"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mysites__items">
+                            <div class="container-mysites__item">
+                                <div class="sync"><span class="ico-sync-yellow"
+                                        title="Ботфактору не удалось проверить наличие счетчика"></span></div>
+                                <div class="site-name-info">
+                                    <div class="name-site">
+                                        быстро-капитал.рф</div>
+                                    <span class="truncate link-site">
+                                        <img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://быстро-капитал.рф">https://быстро-капитал.рф
+                                        <span class="hidden-link"><a target="_blank" href="https://быстро-капитал.рф"><i
+                                                    class="icon-link"></i></a></span>
+                                    </span>
+                                </div>
+                                <div class="traffic">
+                                    <span class="total-traff">
+                                        <strong>1 321 333</strong>
+                                    </span>
+                                    <span class="text-green" data-balloon-length="large" data-balloon="Целевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-01"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-blue" data-balloon-length="large" data-balloon="Нецелевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-02"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-red" data-balloon-length="large" data-balloon="Заблокировано"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-03"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="tex-dark-gray" data-balloon-length="large"
+                                        data-balloon="Подозрительный трафик" data-balloon-pos="up">
+                                        <strong class="ico-stat-spy"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                </div>
+                                <div class="my-services">
+                                    <span>Перейти к статистике:</span>
+                                    <div class="list-services">
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/blocking_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service not-connect" data-balloon-length="large"
+                                            data-balloon="Ошибка подключения" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/direct_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/ads_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions-btn">
+                                    <button class="btn-prof setting-btn control">
+                                        <span>Настроить</span>
+                                        <span class="btn-gray"><i class="icon-edit"></i></span>
+                                    </button>
+                                    <button class="accard-item">
+                                        <span class="ico-down-arr"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mysites__items">
+                            <div class="container-mysites__item">
+                                <div class="sync"><span class="ico-sync-yellow"
+                                        title="Ботфактору не удалось проверить наличие счетчика"></span></div>
+                                <div class="site-name-info">
+                                    <div class="name-site">
+                                        быстро-капитал.рф</div>
+                                    <span class="truncate link-site">
+                                        <img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://быстро-капитал.рф">https://быстро-капитал.рф
+                                        <span class="hidden-link"><a target="_blank" href="https://быстро-капитал.рф"><i
+                                                    class="icon-link"></i></a></span>
+                                    </span>
+                                </div>
+                                <div class="traffic">
+                                    <span class="total-traff">
+                                        <strong>1 321 333</strong>
+                                    </span>
+                                    <span class="text-green" data-balloon-length="large" data-balloon="Целевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-01"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-blue" data-balloon-length="large" data-balloon="Нецелевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-02"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-red" data-balloon-length="large" data-balloon="Заблокировано"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-03"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="tex-dark-gray" data-balloon-length="large"
+                                        data-balloon="Подозрительный трафик" data-balloon-pos="up">
+                                        <strong class="ico-stat-spy"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                </div>
+                                <div class="my-services">
+                                    <span>Перейти к статистике:</span>
+                                    <div class="list-services">
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/blocking_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service not-connect" data-balloon-length="large"
+                                            data-balloon="Ошибка подключения" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/direct_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/ads_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions-btn">
+                                    <button class="btn-prof setting-btn control">
+                                        <span>Настроить</span>
+                                        <span class="btn-gray"><i class="icon-edit"></i></span>
+                                    </button>
+                                    <button class="accard-item">
+                                        <span class="ico-down-arr"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mysites__items">
+                            <div class="container-mysites__item">
+                                <div class="sync"><span class="ico-sync-yellow"
+                                        title="Ботфактору не удалось проверить наличие счетчика"></span></div>
+                                <div class="site-name-info">
+                                    <div class="name-site">
+                                        быстро-капитал.рф</div>
+                                    <span class="truncate link-site">
+                                        <img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://быстро-капитал.рф">https://быстро-капитал.рф
+                                        <span class="hidden-link"><a target="_blank" href="https://быстро-капитал.рф"><i
+                                                    class="icon-link"></i></a></span>
+                                    </span>
+                                </div>
+                                <div class="traffic">
+                                    <span class="total-traff">
+                                        <strong>1 321 333</strong>
+                                    </span>
+                                    <span class="text-green" data-balloon-length="large" data-balloon="Целевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-01"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-blue" data-balloon-length="large" data-balloon="Нецелевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-02"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-red" data-balloon-length="large" data-balloon="Заблокировано"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-03"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="tex-dark-gray" data-balloon-length="large"
+                                        data-balloon="Подозрительный трафик" data-balloon-pos="up">
+                                        <strong class="ico-stat-spy"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                </div>
+                                <div class="my-services">
+                                    <span>Перейти к статистике:</span>
+                                    <div class="list-services">
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/blocking_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service not-connect" data-balloon-length="large"
+                                            data-balloon="Ошибка подключения" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/direct_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/ads_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions-btn">
+                                    <button class="btn-prof setting-btn control">
+                                        <span>Настроить</span>
+                                        <span class="btn-gray"><i class="icon-edit"></i></span>
+                                    </button>
+                                    <button class="accard-item">
+                                        <span class="ico-down-arr"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mysites__items">
+                            <div class="container-mysites__item">
+                                <div class="sync"><span class="ico-sync-yellow"
+                                        title="Ботфактору не удалось проверить наличие счетчика"></span></div>
+                                <div class="site-name-info">
+                                    <div class="name-site">
+                                        быстро-капитал.рф</div>
+                                    <span class="truncate link-site">
+                                        <img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://быстро-капитал.рф">https://быстро-капитал.рф
+                                        <span class="hidden-link"><a target="_blank" href="https://быстро-капитал.рф"><i
+                                                    class="icon-link"></i></a></span>
+                                    </span>
+                                </div>
+                                <div class="traffic">
+                                    <span class="total-traff">
+                                        <strong>1 321 333</strong>
+                                    </span>
+                                    <span class="text-green" data-balloon-length="large" data-balloon="Целевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-01"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-blue" data-balloon-length="large" data-balloon="Нецелевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-02"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-red" data-balloon-length="large" data-balloon="Заблокировано"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-03"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="tex-dark-gray" data-balloon-length="large"
+                                        data-balloon="Подозрительный трафик" data-balloon-pos="up">
+                                        <strong class="ico-stat-spy"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                </div>
+                                <div class="my-services">
+                                    <span>Перейти к статистике:</span>
+                                    <div class="list-services">
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/blocking_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service not-connect" data-balloon-length="large"
+                                            data-balloon="Ошибка подключения" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/direct_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/ads_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions-btn">
+                                    <button class="btn-prof setting-btn control">
+                                        <span>Настроить</span>
+                                        <span class="btn-gray"><i class="icon-edit"></i></span>
+                                    </button>
+                                    <button class="accard-item">
+                                        <span class="ico-down-arr"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mysites__items">
+                            <div class="container-mysites__item">
+                                <div class="sync"><span class="ico-sync-yellow"
+                                        title="Ботфактору не удалось проверить наличие счетчика"></span></div>
+                                <div class="site-name-info">
+                                    <div class="name-site">
+                                        быстро-капитал.рф</div>
+                                    <span class="truncate link-site">
+                                        <img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://быстро-капитал.рф">https://быстро-капитал.рф
+                                        <span class="hidden-link"><a target="_blank" href="https://быстро-капитал.рф"><i
+                                                    class="icon-link"></i></a></span>
+                                    </span>
+                                </div>
+                                <div class="traffic">
+                                    <span class="total-traff">
+                                        <strong>1 321 333</strong>
+                                    </span>
+                                    <span class="text-green" data-balloon-length="large" data-balloon="Целевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-01"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-blue" data-balloon-length="large" data-balloon="Нецелевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-02"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-red" data-balloon-length="large" data-balloon="Заблокировано"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-03"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="tex-dark-gray" data-balloon-length="large"
+                                        data-balloon="Подозрительный трафик" data-balloon-pos="up">
+                                        <strong class="ico-stat-spy"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                </div>
+                                <div class="my-services">
+                                    <span>Перейти к статистике:</span>
+                                    <div class="list-services">
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/blocking_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service not-connect" data-balloon-length="large"
+                                            data-balloon="Ошибка подключения" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/direct_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/ads_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions-btn">
+                                    <button class="btn-prof setting-btn control">
+                                        <span>Настроить</span>
+                                        <span class="btn-gray"><i class="icon-edit"></i></span>
+                                    </button>
+                                    <button class="accard-item">
+                                        <span class="ico-down-arr"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mysites__items">
+                            <div class="container-mysites__item">
+                                <div class="sync"><span class="ico-sync-yellow"
+                                        title="Ботфактору не удалось проверить наличие счетчика"></span></div>
+                                <div class="site-name-info">
+                                    <div class="name-site">
+                                        быстро-капитал.рф</div>
+                                    <span class="truncate link-site">
+                                        <img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://быстро-капитал.рф">https://быстро-капитал.рф
+                                        <span class="hidden-link"><a target="_blank" href="https://быстро-капитал.рф"><i
+                                                    class="icon-link"></i></a></span>
+                                    </span>
+                                </div>
+                                <div class="traffic">
+                                    <span class="total-traff">
+                                        <strong>1 321 333</strong>
+                                    </span>
+                                    <span class="text-green" data-balloon-length="large" data-balloon="Целевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-01"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-blue" data-balloon-length="large" data-balloon="Нецелевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-02"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-red" data-balloon-length="large" data-balloon="Заблокировано"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-03"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="tex-dark-gray" data-balloon-length="large"
+                                        data-balloon="Подозрительный трафик" data-balloon-pos="up">
+                                        <strong class="ico-stat-spy"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                </div>
+                                <div class="my-services">
+                                    <span>Перейти к статистике:</span>
+                                    <div class="list-services">
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/blocking_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service not-connect" data-balloon-length="large"
+                                            data-balloon="Ошибка подключения" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/direct_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/ads_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions-btn">
+                                    <button class="btn-prof setting-btn control">
+                                        <span>Настроить</span>
+                                        <span class="btn-gray"><i class="icon-edit"></i></span>
+                                    </button>
+                                    <button class="accard-item">
+                                        <span class="ico-down-arr"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mysites__items">
+                            <div class="container-mysites__item">
+                                <div class="sync"><span class="ico-sync-yellow"
+                                        title="Ботфактору не удалось проверить наличие счетчика"></span></div>
+                                <div class="site-name-info">
+                                    <div class="name-site">
+                                        быстро-капитал.рф</div>
+                                    <span class="truncate link-site">
+                                        <img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=https://быстро-капитал.рф">https://быстро-капитал.рф
+                                        <span class="hidden-link"><a target="_blank" href="https://быстро-капитал.рф"><i
+                                                    class="icon-link"></i></a></span>
+                                    </span>
+                                </div>
+                                <div class="traffic">
+                                    <span class="total-traff">
+                                        <strong>1 321 333</strong>
+                                    </span>
+                                    <span class="text-green" data-balloon-length="large" data-balloon="Целевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-01"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-blue" data-balloon-length="large" data-balloon="Нецелевой трафик"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-02"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="text-red" data-balloon-length="large" data-balloon="Заблокировано"
+                                        data-balloon-pos="up">
+                                        <strong class="ico-stat-03"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                    <span class="tex-dark-gray" data-balloon-length="large"
+                                        data-balloon="Подозрительный трафик" data-balloon-pos="up">
+                                        <strong class="ico-stat-spy"></strong>
+                                        <span>3 434</span>
+                                    </span>
+                                </div>
+                                <div class="my-services">
+                                    <span>Перейти к статистике:</span>
+                                    <div class="list-services">
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/blocking_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service not-connect" data-balloon-length="large"
+                                            data-balloon="Ошибка подключения" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/direct_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+
+                                        <a class="service connect" formtarget="_blank" data-balloon-length="large"
+                                            data-balloon="Сервис подключен" data-balloon-pos="up">
+                                            <div>
+                                                <img src="img/ads_blue.svg">
+                                                <span></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="actions-btn">
+                                    <button class="btn-prof setting-btn control">
+                                        <span>Настроить</span>
+                                        <span class="btn-gray"><i class="icon-edit"></i></span>
+                                    </button>
+                                    <button class="accard-item">
+                                        <span class="ico-down-arr"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="pagination justify-content-start align-items-center">
+                        <button class="btn-prof btn-sm btn-gray">Показать больше</button>
+                        <div class="load-result">10 из 382</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--content end-->
+
+        <div class="awesome-modal" id="del">
+            <a class="close-icon" href="#close"></a>
+            <div class="modal_content">
+                <h3 class="modal-title">Подтвердите удаление сайта</h3>
+                <p>Вы уверены, что хотите удалить сайт <strong>123.ru</strong> из сервиса Botfaqtor.ru?
+                    <br>
+                    Будут автоматически отменены все доступы и удалены все собранные данные по нему.</p>
+                <button class="btn-prof btn-red">Удалить сайт</button>
+                <button class="btn-prof btn-blue">Нет</button>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="main.js"></script>
+</body>
+
+
+</html>

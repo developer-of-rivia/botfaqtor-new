@@ -1,0 +1,186 @@
+@media (max-width: 1800px) {
+
+    .btf__saas tr td.btf__foot-td,
+    .btf__table-tariff.btf__col-table-3 tr td.btf__foot-td {
+        height: 250px !important;
+    }
+
+    .btf__pay-tar .btf__col-2{
+        -ms-flex: 0 0 150px;
+        -webkit-box-flex: 0;
+        flex: 0 0 150px;
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .btf__form-p .btf__col,
+    .btf__form-p .btf__col-auto {
+        -ms-flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .btf__form-p .btf__lable-autopay {
+        margin-top: 15px !important;
+    }
+
+    .btf__pay-bill .btf__pay-method .btf__pay-content.btf__open-content {
+        max-height: 715px !important;
+    }
+}
+
+@media (max-width: 1480px) {
+    .btf__table-tariff thead tr:nth-child(2) th {
+        height: 85px;
+    }
+
+    .btf__saas tr td {
+        height: 274px !important;
+    }
+
+    .btf__table-tariff .btf__title,
+    .btf__table1p tr:first-child th:first-child {
+        font-size: 24px;
+    }
+
+    .btf__autopay .btf__content-p .btf__col-auto {
+        -ms-flex: 0 0 70%;
+        -webkit-box-flex: 0;
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 1360px) {
+    .btf__table-tariffs-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .btf__nav-proj .btf__items-proj {
+        display: none;
+    }
+
+    .btf__table-tariff.btf__col-table-3 {
+        width: 24.9%;
+    }
+
+    .btf__table-tariff.btf__col-table-3.btf__saas {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .btf__foo-rt {
+        font-size: 11px;
+        line-height: 110%;
+    }
+
+    .btf__container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .btf__pay-method:nth-child(2) .btf__autopay .btf__form-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .btf__table-tariff.btf__col-table-3:nth-child(1),
+    .btf__proj-name span {
+        display: none;
+    }
+
+    .btf__table-tariffs-flex {
+        display: block;
+    }
+
+    .btf__table-tariff.btf__col-table-3 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .btf__table-tariff thead tr:nth-child(2) th,
+    .btf__saas tr td,
+    .btf__table-tariff.btf__col-table-3 tr:nth-child(2) td,
+    .btf__table-tariff.btf__col-table-3 tr:first-child th,
+    .btf__saas tr td.btf__foot-td,
+    .btf__table-tariff.btf__col-table-3 tr td.btf__foot-td {
+        height: auto !important;
+    }
+
+    .btf__autopay .btf__content-p .btf__col-auto {
+        -ms-flex: 0 0 40%;
+        -webkit-box-flex: 0;
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .btf__table-tariff.btf__col-table-3 tr:nth-child(1) td:nth-child(1)::before {
+        content: "";
+        display: block;
+        width: 27px;
+        height: 30px;
+        background-size: contain;
+        background-image: url(/img/blocking_pr.svg);
+        margin: 0 auto 15px auto;
+    }
+
+    .btf__table-tariff.btf__col-table-3 tr:nth-child(2) td:nth-child(1)::before {
+        content: "";
+        display: block;
+        width: 72px;
+        height: 30px;
+        background-size: contain;
+        background-image: url(/img/dir-ads.svg);
+        margin: 0 auto 15px auto;
+    }
+
+    .btf__foot-td::before,
+    .btf__saas tr:nth-child(1) td:nth-child(1)::before {
+        display: none !important;
+    }
+
+    .btf__pay-tar .btf__col-2{
+        -ms-flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 630px) {
+    .btf__pay-bill .btf__pay-method .btf__pay-content .btf__content-p h3 {
+        width: 80%;
+    }
+
+    .btf__autopay .btf__form-item,
+    .btf__form-item.btf__inn {
+        width: 100%;
+    }
+
+    .btf__pay-bill .btf__pay-method .btf__pay-content .btf__calc-pr {
+        margin-top: 15px;
+    }
+
+    .btf__col-auto,
+    .btf__pay-method:nth-child(2) .btf__autopay .btf__col-7,
+    .btf__pay-method:nth-child(2) .btf__edoblock .btf__col-4,
+    .btf__pay-method:nth-child(2) .btf__autopay .btf__col-5 {
+        -ms-flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .btf__pay-bill .btf__pay-method .btf__pay-content.btf__open-content {
+        max-height: 1100px !important;
+    }
+}

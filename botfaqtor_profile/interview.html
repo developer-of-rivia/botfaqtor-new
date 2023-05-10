@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>botfaqtor.ru profile</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <section class="interview">
+       <div class="header login-page">
+            <div class="table">
+                <div class="tableCell">
+                    <div class="logo-login">
+                        <a href="/"><img src="img/logo-login.svg" alt=""></a>
+                    </div>
+                    <h2>Опрос клиентов сервиса Botfaqtor.ru</h2>
+                    <p>Пожалуйста, ответьте на несколько вопросов по сервису Botfaqtor. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="inter-item">
+                <h2>
+                    <span><sup>1</sup></span>
+                    <div>Какими сервисами вы пользуетесь?</div>
+                </h2>
+                <div class="row">
+                    <div class="col-6">
+                        <label class="checkbox seckond-chek">
+                            <input [checked]="isSelectAllItems" (change)="onSelectAllItems()" type="checkbox">
+                            <span class="custom-checkbox"></span>Защита от скликивания Я.Директ
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <label class="checkbox seckond-chek">
+                            <input [checked]="isSelectAllItems" (change)="onSelectAllItems()" type="checkbox">
+                            <span class="custom-checkbox"></span>Защита от скликивания Goggle ADS
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <label class="checkbox seckond-chek">
+                            <input [checked]="isSelectAllItems" (change)="onSelectAllItems()" type="checkbox">
+                            <span class="custom-checkbox"></span>Антибот для сайта
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <label class="checkbox seckond-chek">
+                            <input [checked]="isSelectAllItems" (change)="onSelectAllItems()" type="checkbox">
+                            <span class="custom-checkbox"></span>Защита баннера
+                        </label>
+                    </div>
+                    <div class="col-6">
+                        <label class="checkbox seckond-chek">
+                            <input [checked]="isSelectAllItems" (change)="onSelectAllItems()" type="checkbox">
+                            <span class="custom-checkbox"></span>Сокращение ссылок
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="inter-item">
+                <h2>
+                    <span><sup>2</sup></span>
+                    <div>На какой процент увеличилась конверсия при использовании нашего сервиса?</div>
+                </h2>
+                <div class="row">
+                    <div class="col-3">
+                        <label class="checkbox seckond-chek">
+                            <input type="radio">
+                            <span class="custom-checkbox"></span>~5%
+                        </label>
+                    </div>
+                    <div class="col-3">
+                        <label class="checkbox seckond-chek">
+                            <input  type="radio">
+                            <span class="custom-checkbox"></span>~20%
+                        </label>
+                    </div>
+                    <div class="col-3">
+                        <label class="checkbox seckond-chek">
+                            <input type="radio">
+                            <span class="custom-checkbox"></span>>30%
+                        </label>
+                    </div>
+                    <div class="col-3">
+                        <label class="checkbox seckond-chek">
+                            <input [checked]="isSelectAllItems" (change)="onSelectAllItems()" type="radio">
+                            <span class="custom-checkbox"></span>не увеличилась
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inter-item">
+                <h2>
+                    <span><sup>3</sup></span>
+                    <div>Какие у вас будут пожелания по улучшению сервиса?</div>
+                </h2>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cdInputFix">
+                            <textarea class="form-item" name=""></textarea>
+                            <div class="placehold">Напишите свои предложения по улучшению</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="inter-item">
+            
+                <div class="row">
+                    <div class="col-6">
+                        <div class="cdInputFix">
+                            <input class="form-item" name="" value="" type="text">
+                            <div class="placehold">Ваше имя</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="cdInputFix">
+                            <input class="form-item" name="" value="" type="text">
+                            <div class="placehold">Адрес электронной почты</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 modal-footer text-center">
+                    <button class="btn-prof btn-green">Отправить</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+   </section>
+
+   <footer class="interview">
+    <div class="bg-foot-first">
+        <div class="wrapper">
+            <div class="col-row">
+                <div class="col-12  text-center">
+                    <!--<a href="">О нас</a>-->
+                    <!--<a href="">Цены</a>-->
+                    <!--<a href="">Вопросы и ответы</a>-->
+                    <a href="https://botfaqtor.ru/utm" target="blink">Генератор utm-меток</a>
+                    <a href="https://botfaqtor.ru/sources-check" target="blink">Анализ источников трафика</a>
+                    <a href="https://botfaqtor.ru/blog" target="blink">Блог</a>
+                    <!--<a href="">Контакты</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-foot-last">
+        <div class="wrapper">
+            <div class="col-row">
+                <div class="col-12 text-center">
+                    <div class="copy">© BotFAQtor 2017 - 2020.</div>
+                    <div class="nw"><a href="https://vk.com/botfaqtor" rel="noopener noreferrer" target="_blank"><span class="vk"></span></a></div>
+                    <div class="nw"><a href="https://www.facebook.com/botfaqtor/" rel="noopener noreferrer" target="_blank"><span class="fb"></span></a></div>
+                </div>
+                <div class="col-12  text-center">
+                    <div class="confidential">
+                        <a href="https://botfaqtor.ru/docs/confidential" target="_blank">Политика
+                            конфиденциальности</a>
+                        <a href="https://botfaqtor.ru/docs/agreement" target="_blank">Пользовательское
+                            соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="main.js"></script>
+
+</html>

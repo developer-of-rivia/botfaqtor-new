@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Botdetector</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--header start-->
+    <header class="profile">
+        <div class="logo-brand-profile">
+            <a href="index.html"><img src="img/brand_botfaqtor.svg" alt="" class="img-fluid"></a>
+        </div>
+        <div class="nav-proj">
+            <div class="mobi-nav-proj">
+                <i class="ico-list"></i>
+                <span>Проекты</span>
+            </div>
+            <ul class="items-proj">
+                <li>
+                    <a href="">
+                        <img src="img/blocking_blue.svg">
+                        <span>Антибот для сайта</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="">
+                        <img src="img/direct_blue.svg">
+                        <span>Защита Яндекс.Директ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/ads_blue.svg">
+                        <span>Защита Google Ads</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/link_blue.svg">
+                        <span>Сокращение ссылок</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/antibanner_blue.svg">
+                        <span>Защита баннера</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+        <!-- 
+    <div class="action">
+    <span class="btn btn-transparent" style="text-transform: capitalize;"><i class="ico-person"></i>Войти</span>
+    <span class="btn btn-primary" style="text-transform: capitalize;">Регистрация</span>
+    </div>
+-->
+        <div class="block-balance-col">
+            <div class="balance-content">
+                <div class="ico-wallet"></div>
+                <div class="sum-balance"><span>100 000, 66</span> ₽</div>
+                <span class="ico-down-arr"></span>
+            </div>
+            <ul class="dropdown-content">
+                <div class="popup_tail"></div>
+                <li class="item-list">Пополнить счет</li>
+                <li class="item-list">История операций</li>
+
+                <li class="auto-pay-block">
+                    <div class="row">
+                        <div class="col">Автоплатёж <span class="text-red">выключен</span></div>
+                        <div class="col"><button class="btn">Настроить</button></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="login-container d-inline-flex">
+            <div class="login-container__info">
+                <div class="person-content">
+                    <span class="login">test@botfaqtor.ru</span>
+                    <span class="balance">Базовый тариф
+                    </span>
+                </div>
+                <span class="ico-down-arr"></span>
+            </div>
+            <ul class="dropdown-content">
+                <div class="popup_tail"></div>
+                <li class="item-list">Настройки</li>
+                <li class="item-list">Выйти</li>
+            </ul>
+        </div>
+        <div class="burg-menu">
+            <span class="icon-hidden-menu"></span>
+        </div>
+
+    </header>
+    <!--header end-->
+
+    <div class="sidebar">
+        <button class="btn-prof btn-green add-site">Добавить сайт</button>
+        <div class="sidebar-menu-accordion">
+            <ul>
+                <li>
+                    <a href="index.html"><i class="ico8pl"></i>Дашборд</a>
+                </li>
+                <li>
+                    <a href="mysites.html"><i class="ico10pl"></i>Мои сайты</a>
+                </li>
+                <li>
+                    <a href="sources.html"><i class="ico11pl"></i>Отчеты </a>
+                    <ul class="sub-menu">
+                        <li><a href="sources.html"><i class="ico0pl"></i>Источники</a></li>
+                        <li><a href="type-bots.html"><i class="ico1pl"></i>Типы ботов</a></li>
+                        <li><a href="inappropriate-traffic.html"><i class="inappr"></i>Нецелевой трафик</a></li>
+                        <li><a href="entry-points.html"><i class="ico2pl"></i>Посадочные страницы</a></li>
+                        <li><a href="geo.html"><i class="ico3pl"></i>География</a></li>
+                        <li><a href="utm.html"><i class="ico13pl"></i>Метки UTM</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="inappr"></i>Блокировка нецелевых</a>
+                </li>
+                <li class="active">
+                    <a href="#"><i class="tablets"></i>Отключение планшетов</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-menu-accordion pos-bottom">
+            <ul>
+                <li>
+                    <a href=""><i class="ico20pl"></i>Вопрос/Ответ</a>
+                </li>
+                <li>
+                    <a href="contacts.html"><i class="ico6pl"></i>О компании</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--sidebar end-->
+
+    <!--content start-->
+    <div class="content">
+        <div class="b-page__counter">
+            <div class="container-filter">
+                <div class="filter-toolbar">
+                    <div class="site-web">
+                        <div class="dropdown sitename">
+                            <button class="dropbtn">
+                                <span class="hidden-inp">Мой суперсайт</span>
+                                <span class="ico-down-arr"></span>
+                                <span class="tooltip tooltip-filter-right" data-balloon-length="medium"
+                                    data-balloon-pos="down" data-balloon="Выберите страницу"><i
+                                        class="ico-tips"></i></span>
+                            </button>
+                            <div class="popup_tail"></div>
+                            <ul class="dropdown-content">
+                                <li class="dropdown-search">
+                                    <div class="form-control search-table">
+                                        <input class="form-item" name="input-site" value="" type="text"
+                                            placeholder="Поиск">
+                                        <span class="icon-search"></span>
+                                    </div>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="preloader-container">
+                                    <div class="preloader-css"> <span></span> <span></span> <span></span>
+                                        <span></span>
+                                        <span></span></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="url-site">www.analyticsarts.su</div>
+
+                    </div>
+                    
+                </div>
+            </div>
+            <span class="filter-menu"><i class="ico-filter"></i></span>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="widget-container blocs-direct-setting disconn-tablets">
+                        <div class="title-widget">
+                            <h2>Отключение планшетов</h2>
+                          
+                            <!--<div class="widg-text-1">
+                                Мы анализируем поведенческие и технические параметры визита. Некоторые пользователи во время
+                                разработки сайта сталкиваются с блокировкой, в связи с этим мы предлагаем получить токен
+                                исключения. Пользователь будет исключен из блокировок. Достаточно нажать кнопку получить.
+                            </div>-->
+                        </div>
+                        <div class="row direct-ya">
+                            <div class="col-auto">
+                                <div class="item-yandex-b active">
+                                    <img alt="" src="img/direct-ico.png">
+                                    <div class="tex-ya">
+                                        <div>Доступ к
+                                            <a target="blink" href="https://direct.yandex.ru/dna/grid/campaigns?ulogin=Service-center5">Яндекс.Директ
+                                            </a>
+                                            <span>разрешен</span></div>
+                                        <a class="cancel" href="javascript: void(0);">отменить</a>
+                                        <div class="prof-ya">Service-center5 <span class="acc-group">ServiceService-dfr</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="direct-ya-cont">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="direct-alert yelbg">Для получения списка ваших активных рекламных
+                                        кампаний, пожалуйста, нажмите на кнопку
+                                        <strong>“Обновить”</strong>
+                                        и выберите кампании, которые хотите отключить от планшетов.</span>
+                                </div>
+                            </div>
+
+                            <div class="row direct-company">
+                                <div class="col-11">
+                                    <button>Обновить</button>
+
+
+                                    <span class="info-direct-comp">Последняя загрузка
+                                        17.05.2021 14:06</span>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>Какую кампанию хотите отключить?</h3>
+                                </div>
+                            </div>
+                            <div class="row direct-item-company">
+                                <div class="col-12 all-comp">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div>Выбрать все</div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="Жилищные споры—СПб—Поиск"> Жилищные споры—СПб—Поиск</span>
+                                                <div class="ico-comp-id">№ 23635322</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="Жилищные споры—ретаргетинг"> Жилищные
+                                                    споры—ретаргетинг</span>
+                                                <div class="ico-comp-id">№ 23642628</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="Жилищные споры—СПб—РСЯ"> Жилищные споры—СПб—РСЯ</span>
+                                                <div class="ico-comp-id">№ 23879940</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="Наследственные дела—СПб—Поиск"> Наследственные
+                                                    дела—СПб—Поиск</span>
+                                                <div class="ico-comp-id">№ 26188040</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="Наследственные дела-СПб-РСЯ"> Наследственные
+                                                    дела-СПб-РСЯ</span>
+                                                <div class="ico-comp-id">№ 26246995</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="Наследственные дела—ретаргетинг"> Наследственные
+                                                    дела—ретаргетинг</span>
+                                                <div class="ico-comp-id">№ 26247605</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="Семейные споры-Поиск-СПб"> Семейные споры-Поиск-СПб</span>
+                                                <div class="ico-comp-id">№ 27338711</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="Семейные споры-РСЯ-СПб"> Семейные споры-РСЯ-СПб</span>
+                                                <div class="ico-comp-id">№ 27342777</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="Регистрация 000—СПб—Поиск"> Регистрация
+                                                    000—СПб—Поиск</span>
+                                                <div class="ico-comp-id">№ 33382810</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="Развод||РСЯ||СПБ"> Развод||РСЯ||СПБ</span>
+                                                <div class="ico-comp-id">№ 33737740</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="Регистрация 000—СПб—РСЯ"> Регистрация 000—СПб—РСЯ</span>
+                                                <div class="ico-comp-id">№ 33794691</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - поиск - |Юридические услуги|"> 2020 - поиск -
+                                                    |Юридические услуги|</span>
+                                                <div class="ico-comp-id">№ 55457534</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - поиск - ретаргетинг |Юридические услуги|"> 2020 -
+                                                    поиск - ретаргетинг |Юридические услуги|</span>
+                                                <div class="ico-comp-id">№ 55458008</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - РСЯ - |Юридические услуги|"> 2020 - РСЯ -
+                                                    |Юридические услуги|</span>
+                                                <div class="ico-comp-id">№ 55458355</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - ретаргетинг |семейное право|"> 2020 - ретаргетинг
+                                                    |семейное право|</span>
+                                                <div class="ico-comp-id">№ 55531918</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - РСЯ - |12 27 2|"> 2020 - РСЯ - |12 27 2|</span>
+                                                <div class="ico-comp-id">№ 55739661</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - Поиск - |12 27 2|"> 2020 - Поиск - |12 27 2|</span>
+                                                <div class="ico-comp-id">№ 55739718</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - Ретаргетинг - |12 27 2|"> 2020 - Ретаргетинг - |12
+                                                    27 2|</span>
+                                                <div class="ico-comp-id">№ 55739727</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - Поиск+ретарг - По районам"> 2020 - Поиск+ретарг - По
+                                                    районам</span>
+                                                <div class="ico-comp-id">№ 56270138</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - Рся+ретарг - По районам"> 2020 - Рся+ретарг - По
+                                                    районам</span>
+                                                <div class="ico-comp-id">№ 56274487</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - поиск+ретарг - развод"> 2020 - поиск+ретарг -
+                                                    развод</span>
+                                                <div class="ico-comp-id">№ 56274744</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - Рся+ретарг - развод"> 2020 - Рся+ретарг -
+                                                    развод</span>
+                                                <div class="ico-comp-id">№ 56277384</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - Поиск - сделки недвижимость"> 2020 - Поиск - сделки
+                                                    недвижимость</span>
+                                                <div class="ico-comp-id">№ 57018106</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2020 - РСЯ - сделки недвижимость"> 2020 - РСЯ - сделки
+                                                    недвижимость</span>
+                                                <div class="ico-comp-id">№ 57018312</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2021-LM- Развод Общий|Поиск|"> 2021-LM- Развод
+                                                    Общий|Поиск|</span>
+                                                <div class="ico-comp-id">№ 59037020</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2021-LM-квиз Разводы - РСЯ"> 2021-LM-квиз Разводы -
+                                                    РСЯ</span>
+                                                <div class="ico-comp-id">№ 59068919</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2021-LM-кировский+красносельский район |поиск|">
+                                                    2021-LM-кировский+красносельский район |поиск|</span>
+                                                <div class="ico-comp-id">№ 59313609</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2021-LM-РК ПравоГрупп-|Поиск|"> 2021-LM-РК
+                                                    ПравоГрупп-|Поиск|</span>
+                                                <div class="ico-comp-id">№ 60218030</div>
+                                                <div class="ico-comp-status on"> Активна</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div data-balloon-length="large" data-balloon-pos="up"
+                                                class="ico-comp-direct textcampaign"
+                                                data-balloon="Текстово-графические объявления"><i></i></div>
+                                            <div class="comp-diret-title">
+                                                <span title="2021-LM-РК ПравоГрупп-|РСЯ|"> 2021-LM-РК
+                                                    ПравоГрупп-|РСЯ|</span>
+                                                <div class="ico-comp-id">№ 60218046</div>
+                                                <div class="ico-comp-status off"> Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="clear"></div>
+                            <div class="text-left box">
+                                <button class="btn-prof btn-green">Отключить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--content end-->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="main.js"></script>
+
+</html>

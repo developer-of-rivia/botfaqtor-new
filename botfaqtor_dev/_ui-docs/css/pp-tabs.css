@@ -1,0 +1,28 @@
+.pp_tabs-wrapper{
+    position: relative;
+}
+.pp_tabs{
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.pp_tab{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #9389b3;
+    cursor: pointer;
+}
+.pp_tabs .pp_tab:first-child{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 5px;
+}
+.pp_tab.active {
+    background: transparent;
+    color: #fff;
+}
+.pp_tab-item{
+    
+}

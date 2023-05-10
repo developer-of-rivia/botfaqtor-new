@@ -1,0 +1,100 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+    outline: none;
+
+}
+
+.loading {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    z-index: 100;
+    transform: scale(0.8);
+}
+
+.loading::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    background: #f5f5f5;
+    display: block;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.loading-img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-image: url(brand-load.svg);
+    animation: 1.5s infinite scale;
+}
+
+svg {
+    position: absolute;
+    bottom: -5px;
+    right: 21px;
+    width: 45.123px;
+    height: 45.123px;
+    opacity: 0.8;
+}
+
+path {
+    stroke-dasharray: 135;
+    stroke-dashoffset: -135;
+    fill: transparent;
+}
+
+svg.animate path {
+    animation: 1.5s infinite draw;
+    opacity: 1;
+}
+
+@keyframes draw {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: -135;
+        fill: transparent;
+    }
+
+    35% {
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+
+    60% {
+        fill: #029E81;
+        opacity: 1;
+    }
+
+    100% {
+        fill: #029E81;
+        stroke-dashoffset: 135;
+        opacity: 0;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

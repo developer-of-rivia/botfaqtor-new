@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Botdetector</title>
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!--header start-->
+    <header class="profile">
+        <div class="logo-brand-profile">
+            <a href="index.html"><img src="../img/brand_botfaqtor.svg" alt="" class="img-fluid"></a>
+        </div>
+        <div class="nav-proj">
+            <div class="mobi-nav-proj">
+                <i class="ico-list"></i>
+                <span>Проекты</span>
+            </div>
+            <ul class="items-proj">
+                <li class="mysite">
+                    <a href="">
+                        <span>Мои сайты</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/blocking_blue.svg">
+                        <span>Антибот для сайта</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/direct_blue.svg">
+                        <span>Защита Яндекс.Директ</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="">
+                        <img src="../img/ads_blue.svg">
+                        <span>Защита Google Ads</span>
+                    </a>
+                </li>
+                <li class="mob-sub">
+                    <a href="">
+                        <img src="../img/antibanner_blue.svg">
+                        <span>Защита баннера</span>
+                    </a>
+                </li>
+                <li class="mob-sub">
+                    <a href="">
+                        <img src="../img/link_blue.svg">
+                        <span>Сокращение ссылок <del>beta</del> </span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="items-proj">
+                <li>
+                    <a href="">
+                        <img src="../img/antibanner_blue.svg">
+                        <span>Защита баннера</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../img/link_blue.svg">
+                        <span>Сокращение ссылок <del>beta</del> </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 
+        <div class="action">
+        <span class="btn btn-transparent" style="text-transform: capitalize;"><i class="ico-person"></i>Войти</span>
+        <span class="btn btn-primary" style="text-transform: capitalize;">Регистрация</span>
+        </div>
+    -->
+        <div class="ml-auto login-container d-inline-flex">
+            <div class="login-container__info">
+                <div class="person-content">
+                    <span class="foto-person"><img src="img/avatar.png" alt=""></span>
+                    <span class="login">test@botfaqtor.ru</span>
+                    <span class="balance">10 000 000 проверок</span>
+                </div>
+                <span class="ico-down-arr"></span>
+            </div>
+            <ul class="dropdown-content">
+                <div class="popup_tail"></div>
+                <li>
+                    <span class="login mob">test@botfaqtor.ru</span>
+                    <span class="balance mob">10 000 000 проверок</span>
+                    <strong>Базовый тариф</strong>
+                </li>
+                <li class="item-list">Пополнить счет</li>
+                <li class="item-list">История операций</li>
+                <li class="item-list">Настройки</li>
+                <li class="item-list">Выйти</li>
+            </ul>
+        </div>
+        <div class="burg-menu">
+            <span class="icon-hidden-menu"></span>
+        </div>
+    </header>
+    <!--header end-->
+    <div class="m-dropdown-proj">
+        <div class="row">
+            <div class="col-md-2 ">
+                <a href="">
+                    <img src="../img/antibanner_blue.svg" alt="">
+                    <span>Защита баннера</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="">
+                    <img src="../img/blocking_blue.svg" alt="">
+                    <span>Антибот для сайта</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="">
+                    <img src="../img/istoch_blue.svg" alt="">
+                    <span>Проверка источников трафика</span>
+                </a>
+            </div>
+            <div class="col-md-2 ">
+                <a href="">
+                    <img src="../img//direct_blue.svg" alt="">
+                    <span>Защита от скликивания рекламных объявлений в Яндекс.Директ <del>beta</del></span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="disabled lock">
+                    <img src="../img/ads_blue.svg" alt="">
+                    <span>Защита от скликивания рекламных объявлений в GoogleADS</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="disabled lock">
+                    <img src="../img/video_blue.svg" alt="">
+                    <span>Защита видео</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="disabled lock">
+                    <img src="../img/celev_toc_blue.svg" alt="">
+                    <span>Защита целевых точек на сайте</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="disabled">
+                    <img src="../img/parser_blue.svg" alt="">
+                    <span>Защита от парсинга</span>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="disabled">
+                    <img src="../img/reiting_blue.svg" alt="">
+                    <span>Рейтинг источников трафика</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--sidebar start-->
+    <div class="sidebar">
+        <button class="btn-prof btn-green add-site">Добавить сайт</button>
+        <div class="sidebar-menu-accordion">
+            <ul>
+                <li>
+                    <a href="index.html"><i class="ico8pl"></i>Сводка</a>
+                </li>
+                <li>
+                    <a href="mysites.html"><i class="ico10pl"></i>Мои сайты</a>
+                </li>
+                <li>
+                    <a href="ip_block.html"><i class="ico15pl"></i>Блокировка IP</a>
+                </li>
+                <li>
+                    <a href="blocking.html"><i class="ico12pl"></i>Блокировки</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-menu-accordion pos-bottom">
+            <ul>
+                <li>
+                    <a href=""><i class="ico13pl"></i>Генератор UTM-меток</a>
+                </li>
+                <li>
+                    <a href="https://affiliate-program.botfaqtor.ru/">
+                        <i class="ico16pl"></i>Партнерская программа</a>
+                </li>
+                <li>
+                    <a href=""><i class="ico20pl"></i>Вопрос/Ответ</a>
+                </li>
+                <li>
+                    <a href="contacts.html"><i class="ico6pl"></i>О компании</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--sidebar end-->
+
+    <!--content start-->
+    <div class="content">
+
+        <div class="b-page__counter">
+            <div class="container-filter">
+                <div class="filter-toolbar">
+                    <div class="site-web">
+                        <div class="dropdown sitename">
+                            <button class="dropbtn">
+                                <span class="hidden-inp">
+                                    mandarin-browser.com
+                                </span>
+                                <span class="ico-down-arr"></span>
+                                <span class="tooltip tooltip-filter-right" data-balloon-length="medium"
+                                    data-balloon-pos="down" data-balloon="Выберите страницу"><i
+                                        class="ico-tips"></i></span>
+                            </button>
+                            <div class="popup_tail"></div>
+                            <ul class="dropdown-content">
+                                <li class="dropdown-search">
+                                    <div class="form-control search-table">
+                                        <input class="form-item" name="input-site" value="" type="text"
+                                            placeholder="Поиск">
+                                        <span class="icon-search"></span>
+                                    </div>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="preloader-container">
+                                    <div class="preloader-css"> <span></span> <span></span> <span></span>
+                                        <span></span>
+                                        <span></span></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="url-site">mandarin-browser.com</div>
+
+                    </div>
+
+                </div>
+            </div>
+            <span class="filter-menu"><i class="ico-filter"></i></span>
+        </div>
+
+        <div class="container-fluid blockscript metrika add-metrika">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12">
+                            <h2>Настройка</h2>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="blocs-direct-setting active">
+                            <div class="title  row">
+                                <div class="col-10">
+                                    <div class="ico">1</div>
+                                    <span>Введите название и адрес сайта</span>
+                                </div>
+                                <div class="col-2">
+                                    <div class="status green">Готово</div>
+                                </div>
+                            </div>
+                            <div class="content-blocks row">
+                                <div class="col-12">
+                                    <div class="row blocs-count-name">
+                                        <div class="col-md-4">
+                                            <div class="form-control">
+                                                <div class="cdInputFix">
+                                                    <input class="form-item" name="input-site" value="" type="text">
+                                                    <div class="placehold">Название сайта</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-group">
+                                                <div class="input-group-btn">
+                                                    <button id="prefixURL" type="button"
+                                                        class="btn btn-adress dropdown-toggle">https://</button>
+                                                    <div class="dropdown-menu dropdown-menu-prefix">
+                                                        <a name="prefixURLDropDown"
+                                                            class="dropdown-item dropdown-item-prefix">http://</a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-control ">
+                                                    <div class="cdInputFix">
+                                                        <input class="form-item" name="DomainName" value="" type="text">
+                                                        <div class="placehold">Адрес URL сайта</div>
+                                                        <span class="form-notice text-error"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="lable agreem">
+                                                <label class="checkbox"><input type="checkbox" checked="">
+                                                    <span class="custom-checkbox"></span>
+                                                    Я принимаю условия <a href="">Пользовательского соглашения</a>
+                                                </label>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div class="text-left ">
+                                                <button class="btn-prof btn-green">Создать счетчик</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="alertbloks">
+
+                                                <div class="alert-blocks-warning">
+                                                    <span class="big">ВАЖНО!</span>
+
+                                                    <strong>Вы должны иметь доступ к коду сайта.</strong> Страницы
+                                                    социальных сетей и
+                                                    youtube каналы
+                                                    добавить нельзя.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blocs-direct-setting active">
+                            <div class="title row">
+                                <div class="col-10">
+                                    <div class="ico">2</div>
+                                    <span>Для регистрации трафика, установите код на рекламируемый сайт</span>
+                                </div>
+                                <div class="col-2">
+                                    <div class="status green">Готово</div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-6">
+                                    <div class="row bg-script">
+                                        <div class="col-12">
+                                            <div class="code">
+                                                <h2 class="setting-h2" style="margin: 15px 0 0 0;">Обязательный код
+                                                    счетчика
+                                                </h2>
+                                                <div class="code-inner">
+                                                    <textarea
+                                                        disabled>&lt;script type="text/javascript" async src="https://scripts.witstroom.com/watch/227"&gt;&lt;/script&gt; &lt;script id="witstroom_informer" type="text/javascript" async src="https://scripts.witstroom.com/informer/227"&gt;&lt;/script&gt;</textarea>
+                                                    <button class="code-copy">Скопировать код</button>
+                                                </div>
+                                                <h4>Чтобы начать анализ трафика с Google Ads, разместите этот скрипт
+                                                    перед тегом
+                                                    <strong>&lt;/body&gt;</strong></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <button>Проверить код</button>
+                                    <div _ngcontent-c39="" class="to-blog">
+                                        <a _ngcontent-c39="" href="https://botfaqtor.ru/blog/faq-add-counter/"
+                                            rel="noopener noreferrer" target="_blank">Как
+                                            установить
+                                            код счетчика botfaqtor на сайт с CMS?</a>
+                                    </div>
+                                </div>
+                                <div class="col-6 alert-posit">
+                                    <div class="alertbloks">
+                                        <div class="alert-blocks-info">
+                                            <span class="big">Внимание!</span>
+                                            Для правильной работы системы Botfaqtor установите на <a
+                                                href="">https://mandarin-browser.com</a>следующие скрипты.
+                                        </div>
+                                        <div class="alert-blocks-warning">
+                                            <span class="big">ВАЖНО!</span>
+                                            <strong>Вы должны иметь доступ к коду сайта.</strong>
+                                            Страницы социальных сетей и youtube каналы добавить нельзя.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--
+
+                        <div class="blocs-direct-setting">
+                            <div class="title row">
+                                <div class="col-11">
+                                    <div class="ico">3</div>
+                                    <span>Разрешить Botfaqtor API доступ к Яндекс.Метрика и загрузить список
+                                        счетчиков</span>
+                                </div>
+                                <div class="col-1">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-7">
+                                    <span class="direct-alert">Для подключения сервиса “защиты объявлений от
+                                        скликивания” нам необходимо получить доступ к API вашей Я.Метрики.</span>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button>Разрешить доступ к Яндекс.Метрика</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5 alert-posit">
+                                    <div class="alertbloks">
+                                        <div class="alert-blocks-warning">
+                                            <span class="big">ВАЖНО!</span>
+                                            <strong>У вас должны быть права на редактирование счетчика.</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blocs-direct-setting active">
+                            <div class="title row  active">
+                                <div class="col-10">
+                                    <div class="ico">3</div>
+                                    <span>Разрешить Botfaqtor API доступ к Яндекс.Метрика и загрузить список
+                                        счетчиков</span>
+                                </div>
+                                <div class="col-2">
+                                    <div class="status green">Готово</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="direct-alert">
+                                        Для подключения сервиса “защиты объявлений от скликивания” нам необходимо
+                                        получить доступ к API вашей Я.Метрики. <strong>ВАЖНО: У вас должны быть права на
+                                            редактирование счетчика.</strong>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="item-yandex-b">
+                                        <img src="../img/metrika-ico.png" alt="">
+                                        <div class="tex-ya">
+                                            <div><a href="" target="blink">Доступ к Яндекс.Метрика
+                                                    <span>разрешен</span></a></div>
+                                            <a href="#" class="cancel">отменить</a>
+                                            <div class="prof-ya">volodyakolesnickoff@yandex.ru • 32827054</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-12">
+                                    <h3>Найдено несколько похожих счетчиков, выберите необходимый:</h3>
+                                </div>
+                            </div>
+
+                            <div class="row direct-item-company">
+
+                                <div class="item-company">
+                                    <label class="radio-btn" style="margin-bottom: 0px;">
+                                        <span class="tooltip" data-balloon-pos="up-left"
+                                            data-balloon="Включить блокировку/выключить блокировку">
+                                            <i class="icon-materialicons-regular-31"></i></span>
+                                        <input type="radio" name="site" value="1" checked>
+                                        <span class="custom-radio"></span>
+                                        <span class="icon_type_favicon counters-list-table-item"
+                                            style="background-image: url('//favicon.yandex.net/favicon/botfaqtor.ru/')"></span>
+                                        botfaqtor.ru <i>• 34567054</i>
+                                    </label>
+                                </div>
+                                <div class="item-company">
+                                    <label class="radio-btn" style="margin-bottom: 0px;">
+                                        <span class="tooltip" data-balloon-pos="up-left"
+                                            data-balloon="Включить блокировку/выключить блокировку">
+                                            <i class="icon-materialicons-regular-31"></i></span>
+                                        <input type="radio" name="site" value="2">
+                                        <span class="custom-radio"></span>
+                                        <span class="icon_type_favicon counters-list-table-item"
+                                            style="background-image: url('//favicon.yandex.net/favicon/mandarin-browser.com/')"></span>
+                                        mandarin-browser.com <i>• 32827054</i>
+                                    </label>
+                                </div>
+                                <div class="item-company">
+                                    <label class="radio-btn" style="margin-bottom: 0px;">
+                                        <span class="tooltip" data-balloon-pos="up-left"
+                                            data-balloon="Включить блокировку/выключить блокировку">
+                                            <i class="icon-materialicons-regular-31"></i></span>
+                                        <input type="radio" name="site" value="3">
+                                        <span class="custom-radio"></span>
+                                        <span class="icon_type_favicon counters-list-table-item"
+                                            style="background-image: url('//favicon.yandex.net/favicon/mandarinads.com/')"></span>
+                                        mandarinads.com <i>• 52827354</i>
+                                    </label>
+                                </div>
+                                <div class="item-company">
+                                    <label class="radio-btn" style="margin-bottom: 0px;">
+                                        <span class="tooltip" data-balloon-pos="up-left"
+                                            data-balloon="Включить блокировку/выключить блокировку">
+                                            <i class="icon-materialicons-regular-31"></i></span>
+                                        <input type="radio" name="site" value="4">
+                                        <span class="custom-radio"></span>
+                                        <span class="icon_type_favicon counters-list-table-item"
+                                            style="background-image: url('//favicon.yandex.net/favicon/charity.mandarin-browser.com/')"></span>
+                                        charity.mandarin-browser.com <i>• 52237654</i>
+                                    </label>
+                                </div>
+                                <div class="item-company">
+                                    <label class="radio-btn" style="margin-bottom: 0px;">
+                                        <span class="tooltip" data-balloon-pos="up-left"
+                                            data-balloon="Включить блокировку/выключить блокировку">
+                                            <i class="icon-materialicons-regular-31"></i></span>
+                                        <input type="radio" name="site" value="5">
+                                        <span class="custom-radio"></span>
+                                        <span class="icon_type_favicon counters-list-table-item"
+                                            style="background-image: url('//favicon.yandex.net/favicon/mandarinads.com/')"></span>
+                                        mandarinads.com <i>• 52237354</i>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="radio-btn" style="margin-bottom: 0px;">
+                                        <span class="tooltip" data-balloon-pos="up-left"
+                                            data-balloon="Включить блокировку/выключить блокировку">
+                                            <i class="icon-materialicons-regular-31"></i></span>
+                                        <input type="radio" name="site" value="6">
+                                        <span class="custom-radio"></span>
+                                        <span class="icon_type_favicon counters-list-table-item"
+                                            style="background-image: url('//favicon.yandex.net/favicon/botfaqtor.ru/')"></span>
+                                        botfaqtor.ru <i>• 34567054</i>
+                                    </label>
+                                </div>
+                                <div class="item-company">
+                                    <label class="radio-btn" style="margin-bottom: 0px;">
+                                        <span class="tooltip" data-balloon-pos="up-left"
+                                            data-balloon="Включить блокировку/выключить блокировку">
+                                            <i class="icon-materialicons-regular-31"></i></span>
+                                        <input type="radio" name="site" value="7">
+                                        <span class="custom-radio"></span>
+                                        <span class="icon_type_favicon counters-list-table-item"
+                                            style="background-image: url('//favicon.yandex.net/favicon/mandarin-browser.com/')"></span>
+                                        mandarin-browser.com <i>• 32827054</i>
+                                    </label>
+                                </div>
+                                <div class="item-company">
+                                    <label class="radio-btn" style="margin-bottom: 0px;">
+                                        <span class="tooltip" data-balloon-pos="up-left"
+                                            data-balloon="Включить блокировку/выключить блокировку">
+                                            <i class="icon-materialicons-regular-31"></i></span>
+                                        <input type="radio" name="site" value="8">
+                                        <span class="custom-radio"></span>
+                                        <span class="icon_type_favicon counters-list-table-item"
+                                            style="background-image: url('//favicon.yandex.net/favicon/mandarinads.com/')"></span>
+                                        mandarinads.com <i>• 52827354</i>
+                                    </label>
+                                </div>
+                                <div class="item-company">
+                                    <label class="radio-btn" style="margin-bottom: 0px;">
+                                        <span class="tooltip" data-balloon-pos="up-left"
+                                            data-balloon="Включить блокировку/выключить блокировку">
+                                            <i class="icon-materialicons-regular-31"></i></span>
+                                        <input type="radio" name="site" value="9">
+                                        <span class="custom-radio"></span>
+                                        <span class="icon_type_favicon counters-list-table-item"
+                                            style="background-image: url('//favicon.yandex.net/favicon/charity.mandarin-browser.com/')"></span>
+                                        charity.mandarin-browser.com <i>• 52237654</i>
+                                    </label>
+                                </div>
+                                <div class="item-company">
+                                    <label class="radio-btn" style="margin-bottom: 0px;">
+                                        <span class="tooltip" data-balloon-pos="up-left"
+                                            data-balloon="Включить блокировку/выключить блокировку">
+                                            <i class="icon-materialicons-regular-31"></i></span>
+                                        <input type="radio" name="site" value="10">
+                                        <span class="custom-radio"></span>
+                                        <span class="icon_type_favicon counters-list-table-item"
+                                            style="background-image: url('//favicon.yandex.net/favicon/mandarinads.com/')"></span>
+                                        mandarinads.com <i>• 52237354</i>
+                                    </label>
+                                </div>
+
+
+                            </div>
+
+                            <div class="clear"></div>
+                            <div class="text-left ">
+                                <button class="btn-prof btn-green">Подтвердить</button>
+                            </div>
+
+                        </div>
+
+                    -->
+
+                        <div class="blocs-direct-setting">
+
+                            <div class="title row  active">
+                                <div class="col-11">
+                                    <div class="ico">3</div>
+                                    <span>Разрешить Botfaqtor API доступ к Google Ads и загрузить список рекламных
+                                        компаний</span>
+                                </div>
+                                <div class="col-1">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="direct-alert">Для защиты рекламных кампаний надо предоставить доступ к
+                                        API вашего Google Ads.</span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <button>Разрешить доступ к Google Ads</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="blocs-direct-setting active">
+                            <div class="title row">
+                                <div class="col-10">
+                                    <div class="ico">3</div>
+                                    <span>Разрешить Botfaqtor API доступ к Google Ads и загрузить список рекламных
+                                        компаний</span>
+                                </div>
+                                <div class="col-2">
+                                    <div class="status green">Готово</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="direct-alert">Для защиты рекламных кампаний надо предоставить доступ к
+                                        API вашего Google Ads.</span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="item-yandex-b">
+                                        <img src="../img/googleads-ico.png" alt="">
+                                        <div class="tex-ya">
+                                            <div><a href="" target="blink">Доступ к Google Ads
+                                                    <span>разрешен</span></a></div>
+                                            <a href="#" class="cancel">отменить</a>
+                                            <div class="prof-ya">vkolesnik41@gmail.com (701-300-1861)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row top20">
+                                <div class="col-12">
+                                    <span class="direct-alert yelbg">Для получения списка ваших
+                                        <strong>активных</strong> рекламных кампаний, пожалуйста, нажмите на кнопку
+                                        <strong>“Загрузить”</strong> и выберите кампании, которые хотите защитить от
+                                        скликивания.</span>
+                                </div>
+                            </div>
+
+                            <div class="row direct-company">
+                                <div class="col-11">
+                                    <button>Загрузить</button>
+                                    <span class="info-direct-comp">Последняя загрузка 24.01.2020 10:23</span>
+                                </div>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-12">
+                                    <h3>Какую кампанию хотите защитить?</h3>
+                                </div>
+                            </div>
+
+                            <div class="row direct-item-company">
+                                <div class="col-12 all-comp">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div>Выбрать все</div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div class="comp-diret-title">
+                                                <span>Тестовая компания директ 1</span>
+                                                <div class="ico-comp-id">№ 456398345</div>
+                                                <div class="ico-comp-status off">Черновик</div>
+                                            </div>
+                                        </div>
+
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div class="comp-diret-title">
+                                                <span>Тестовая компания директ 2</span>
+                                                <div class="ico-comp-id">№ 456398345</div>
+                                                <div class="ico-comp-status off">Черновик</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div class="comp-diret-title">
+                                                <span>Тестовая компания директ 3</span>
+                                                <div class="ico-comp-id">№ 456398345</div>
+                                                <div class="ico-comp-status off">Черновик</div>
+                                            </div>
+
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div class="comp-diret-title">
+                                                <span>Тестовая компания директ 4</span>
+                                                <div class="ico-comp-id">№ 456398345</div>
+                                                <div class="ico-comp-status off">Черновик</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div class="comp-diret-title">
+                                                <span>Тестовая компания директ 5</span>
+                                                <div class="ico-comp-id">№ 456398345</div>
+                                                <div class="ico-comp-status off">Черновик</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div class="comp-diret-title">
+                                                <span>Тестовая компания директ 6</span>
+                                                <div class="ico-comp-id">№ 456398345</div>
+                                                <div class="ico-comp-status on">Запущена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div class="comp-diret-title">
+                                                <span>Тестовая компания директ 7</span>
+                                                <div class="ico-comp-id">№ 456398345</div>
+                                                <div class="ico-comp-status off">Остановлена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div class="comp-diret-title">
+                                                <span>Тестовая компания директ 8</span>
+                                                <div class="ico-comp-id">№ 456398345</div>
+                                                <div class="ico-comp-status on">Запущена</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div class="comp-diret-title">
+                                                <span>Тестовая компания директ 9</span>
+                                                <div class="ico-comp-id">№ 456398345</div>
+                                                <div class="ico-comp-status off">Черновик</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="item-company">
+                                    <label class="checkbox" style="margin-bottom: 0px;">
+                                        <input type="checkbox">
+                                        <span class="custom-checkbox"></span>
+                                        <div class="comp-direct-info">
+                                            <div class="comp-diret-title">
+                                                <span>Тестовая компания директ 10</span>
+                                                <div class="ico-comp-id">№ 456398345</div>
+                                                <div class="ico-comp-status off">Черновик</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="text-left box">
+                                <button class="btn-prof btn-green" disabled>Сохранить</button>
+                                <div class="box">
+                                    <div class="preloader-css">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--content end-->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="../main.js"></script>
+
+</html>

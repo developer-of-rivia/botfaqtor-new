@@ -1,0 +1,107 @@
+@import '../../variables.scss';
+/* btn */
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    gap: 5px;
+
+    padding: 7px 30px;
+    font-size: 14px;
+}
+/* btn_sizes */
+.btn_size-lg{
+    font-size: 16px;
+    padding: 10px 30px;
+}
+.btn_size-xl{
+    font-size: 18px;
+    padding: 15px 40px;
+}
+/* btn solid */
+.btn_primary{
+    background: $brand-primary;
+    color: #fff;
+}
+.btn_primary:hover{
+    background: #3567b9;
+}
+.btn_secondary{
+    background: $brand-secondary;
+    color: #fff;
+}
+.btn_secondary:hover{
+    background: #199f6e;
+}
+.btn_danger{
+    background: #E26565;
+    color: #fff;
+}
+.btn_danger:hover{
+    background: #ce4242;
+}
+/* btn outline */
+.btn_outline_primary{
+    border: 1px solid $brand-primary;
+    color: $brand-primary;
+}
+.btn_outline_primary:hover{
+    background: $brand-primary;
+    color: #fff;
+}
+.btn_outline_secondary{
+    border: 1px solid $brand-secondary;
+    color: $brand-secondary;
+}
+.btn_outline_secondary:hover{
+    background: $brand-secondary;
+    color: #fff;
+}
+.btn_outline_danger{
+    border: 1px solid #E26565;
+    color: #E26565;
+}
+.btn_outline_danger:hover{
+    background: #E26565;
+    color: #fff;
+}
+/* btn nake */
+.btn.btn_nake{
+    padding: 0;
+}
+.btn_nake_primary{
+    color: $brand-primary;
+}
+.btn_nake_primary:hover{
+    color: #3567b9;
+}
+.btn_nake_secondary{
+    color: $brand-secondary;
+}
+.btn_nake_secondary:hover{
+    color: #199f6e;
+}
+.btn_nake_danger{
+    color: #E26565;
+}
+.btn_nake_danger:hover{
+    color: #ce4242;
+}
+/* btn shapes */
+.btn_square{
+    border-radius: 0;
+}
+.btn_rounded-pill{
+    border-radius: 50px;
+}
+/* btn full width */
+.btn_full-width{
+    width: 100%;
+}
+/* btn_shadowed */
+.btn_shadowed{
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 12%), 0 2px 2px 0 rgb(0 0 0 / 24%);
+}

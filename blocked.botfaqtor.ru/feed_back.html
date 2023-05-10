@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Визит заблокирован - BotFAQtor.ru</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- Технические работы-->
+    <section class="err_tech">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text404">
+                    <div class="big-feedback">Зафиксирован подозрительный трафик из вашей сети!</div>
+                    <div class="big2-feedback">С помощью этой страницы мы можем определить, что запрос отправляете
+                        именно вы, а не робот.</strong></div>
+                    <p style="padding: 30px 0;margin: 0;">Напишите нам и мы улучшим качество оценки!</p>
+                    <div class="modal_content">
+                        <div class="cont-pop-up">
+                            <div class="title">Форма связи</div>
+                            <form id="mailer">
+                                <div class="form-control col-12">
+                                    <div class="cdInputFix">
+                                        <input type="text" name="Name">
+                                        <div class="placehold">Имя</div>
+                                    </div>
+                                </div>
+                                <div class="form-control col-12">
+                                    <div class="cdInputFix">
+                                        <input type="text" name="Email" required="required">
+                                        <div class="placehold">E-mail *</div>
+                                    </div>
+                                </div>
+                                <div class="form-control col-12">
+                                    <div class="cdInputFix">
+                                        <textarea type="text" name="Message"></textarea>
+                                        <div class="placehold">Текст обращения</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <button type="button" onclick="send_form('mailer')"
+                                        class="btn btn-primary">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 bg-ico">
+                    <a href="/" class="logo_tech"><img src="img/brand_botfaqtor.svg" alt=""></a>
+                    <img src="img/404-error.png" alt="" class="techbot">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="copy">© BotFAQtor 2017 - 2020</div>
+                    <div class="nw">
+                        <a href="https://vk.com/botfaqtor/" target="blink">
+                            <span class="vk"></span>
+                        </a>
+                    </div>
+                    <div class="nw">
+                        <a href="https://www.facebook.com/botfaqtor/" target="blink">
+                            <span class="fb"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="confidential">
+                        <a href="https://botfaqtor.ru/docs/confidential">Политика конфиденциальности</a>
+                        <a href="https://botfaqtor.ru/docs/agreement">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
+                .insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(57157849, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/57157849" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Botfaqtor counter -->
+    <script type="text/javascript">
+        (function () {
+            var randomh = Math.random();
+            var e = document.getElementsByTagName("script")[0];
+            var d = document.createElement("script");
+            d.src = "https://scripts.witstroom.com/static/directsave.v2.min.js" + "?" + randomh + "";
+            d.type = "text/javascript";
+            d.async = true;
+            d.defer = true;
+            e.parentNode.insertBefore(d, e);
+        })();
+    </script>
+    <!-- /Botfaqtor counter -->
+</body>
+
+</html>

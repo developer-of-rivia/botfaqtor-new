@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Визит заблокирован - BotFAQtor.ru</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+	<script>	
+	var getUrlParameter = function getUrlParameter(sParam) {
+		var sPageURL = window.location.search.substring(1),
+			sURLVariables = sPageURL.split('&'),
+			sParameterName,
+			i;
+
+		for (i = 0; i < sURLVariables.length; i++) {
+			sParameterName = sURLVariables[i].split('=');
+
+			if (sParameterName[0] === sParam) {
+				return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+			}
+		}
+	};
+
+	function getFormData($form){
+    var config = {};
+		$form.serializeArray().map(function(item) {
+			if ( config[item.name] ) {
+				if ( typeof(config[item.name]) === "string" ) {
+					config[item.name] = [config[item.name]];
+				}
+				config[item.name].push(item.value);
+			} else {
+				config[item.name] = item.value;
+			}
+		});		
+		
+		var Id = getUrlParameter("id");
+		config["Id"] = Id;
+		
+		var Id = getUrlParameter("h");
+		config["Href"] = Id;
+		
+		var Id = getUrlParameter("r");
+		config["Ref"] = Id;
+		
+		return config;
+	}
+
+	function send_form(form_id) {					
+
+		$form = $('#'+form_id);
+		var formData = JSON.stringify(getFormData($form));
+		
+		$(".btn-primary").attr("disabled","true");
+		
+		console.log(formData);				
+		
+		$.ajax({
+			type: 'POST',
+			url: 'http://api.selfdiag.ru/debugmail',		
+			contentType: 'application/json; charset=utf-8',						
+			cache: false,	
+			data: formData,
+			success: function(data) {
+				// запустится при успешном выполнении запроса и в data будет ответ скрипта
+				$(".cont-pop-up .title").css("margin-bottom","0");
+				$(".cont-pop-up .title").html("<span class='good-mess'>Данные отправлены, спасибо!</span>");
+				$form.html(" ");
+				$(".btn-primary").attr("disabled","false");
+			},
+			error:  function(){
+				$(".cont-pop-up .title").css("margin-bottom","0");
+				$(".cont-pop-up .title").html("<span class='err-mess'>И тут ошибка! О_о</span>");
+				$form.html(" ");	
+				$(".btn-primary").attr("disabled","false");				
+			}
+		});
+
+	}
+	</script>
+    <!-- Технические работы-->
+    <section class="err_tech">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text404">
+					<div class="big-feedback">Зафиксирован подозрительный трафик из вашей сети!</div>
+					<div class="big2-feedback">С помощью этой страницы мы можем определить, что запрос отправляете именно вы, а не робот.</strong></div>
+                    <p style="padding: 30px 0;margin: 0;">Напишите нам и мы улучшим качество оценки!</p>
+                    <div class="modal_content">
+                        <div class="cont-pop-up">
+                                <div class="title">Форма связи</div>
+                            <form id="mailer">
+                                <div class="form-control col-12">
+                                    <div class="cdInputFix">
+                                        <input type="text" name="Name">
+                                        <div class="placehold">Имя</div>
+                                    </div>
+                                </div>
+                                <div class="form-control col-12">
+                                    <div class="cdInputFix">
+                                        <input type="text" name="Email" required="required">
+                                        <div class="placehold">E-mail *</div>
+                                    </div>
+                                </div>
+                                <div class="form-control col-12">
+                                    <div class="cdInputFix">
+                                        <textarea type="text" name="Message"></textarea>
+                                        <div class="placehold">Текст обращения</div>
+                                    </div>
+                                </div>								
+                                <div class="row">
+                                    <button type="button" onclick="send_form('mailer')" class="btn btn-primary">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 bg-ico">
+                    <a href="/" class="logo_tech"><img src="img/brand_botfaqtor.svg" alt=""></a>
+                    <img src="img/404-error.png" alt="" class="techbot">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="copy">© BotFAQtor 2017 - 2019.</div>
+                    <div class="nw"><a href="https://vk.com/botfaqtor/" target="blink"><span class="vk"></span></a></div>
+                    <div class="nw"><a href="https://www.facebook.com/botfaqtor/" target="blink"><span class="fb"></span></a></div>
+                </div>
+                <div class="col-6">
+                    <div class="confidential">
+                        <a href="https://botfaqtor.ru/docs/confidential">Политика конфиденциальности</a>
+                        <a href="https://botfaqtor.ru/docs/agreement">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<mjml background="#fff">
+  <mj-body background-color="#fff">
+  <!-- header -->
+  <!-- header -->
+  <!-- header -->
+  <mj-section padding-top="8px" padding-bottom="10px" border-bottom="1px solid #EDEDED">
+   	<mj-column width="25%">
+      	 <mj-image align="left" padding-bottom="0" padding-left="10px" src="https://git.anti.center/design/botfaqtor-design/-/raw/master/mail-report/img/botfaqtor-logo.png" alt="Botfaqtor LOGO" align="center" border="none" width="113px" height="40px" padding-right="0px" padding-bottom="10px" padding-top="10px"></mj-image>
+     </mj-column>
+     <mj-column width="45%">
+         <mj-text padding-top="14px" align="left" font-family="Arial" padding-left="10px" padding-bottom="0" text-decoration="underline" color="#848484" font-size="12px">
+            <a href="#" style="color: #848484">
+              https://botfaqtor.ru
+            </a>	
+         </mj-text>
+       <mj-text font-family="Arial" color="#848484" padding-left="10px" font-size="12px" padding-right="0">
+      	Сервис комплексной защиты от ботов
+      </mj-text>
+     </mj-column>
+     <mj-column width="30%">
+     	 <mj-text padding-top="14px" font-family="Arial" align="right" padding-bottom="0" font-size="12px" padding-right="10px">
+        <a href="mailto:info@botfaqtor.ru" style="color: #848484">
+          info@botfaqtor.ru
+        </a>
+       </mj-text>
+       <mj-text align="right" font-size="12px" padding-right="10px">
+        <a href="tel:79459466031" style="color: #848484; text-decoration: none">
+          + 7 (945) 946-6031
+        </a>
+      </mj-text>
+     </mj-column>
+    </mj-section>
+    <!-- spacer --> 
+    <!-- spacer --> 
+    <!-- spacer --> 
+    <mj-section padding-bottom="0" padding-top="20px">
+    </mj-section>
+    <!-- header2 -->
+    <!-- header2 -->
+    <!-- header2 -->
+    <mj-wrapper padding="0 0px" border-radius="10px">
+      <mj-section>
+        <mj-column width="7%">
+          <mj-image padding-bottom="0" padding-top="0" src="https://git.anti.center/design/botfaqtor-design/-/raw/master/mail-report/img/doc-icon.png" width="24px" padding-right="0" padding-left="0">
+        </mj-column>
+        <mj-column width="84%">
+          <mj-text line-height="130%" font-family="Arial" padding-left="10px" padding-right="10px" align="center" font-size="16px" font-weight="700" color="#333" padding-top="8px" padding-bottom="0">
+            Еженедельная сводка по защите от ботов и скликивания
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <!-- face -->
+    <!-- face -->
+    <!-- face -->
+    <mj-section padding-top="40px" padding-bottom="0">
+    	<mj-column>
+      	<mj-text font-family="Arial" align="center" font-size="25px" padding-bottom="0">
+        	Отчет по сайту 
+        </mj-text>
+        <mj-text padding-top="5px" font-family="Arial" align="center" font-size="25px" padding-bottom="0"  color="#2D8EE7">
+        	favorit-ulitsa-geroja-filchenkova.clients.site 
+        </mj-text>
+        <mj-text font-family="Arial" align="center" font-size="18px">
+        	09.02.23 - 15.02.23
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- -->
+    <mj-wrapper>
+      <mj-section padding-bottom="0" padding-top="15px">
+        <mj-column width="30px">
+          <mj-image src="https://git.anti.center/design/botfaqtor-design/-/raw/master/report-mail/img/pdf-icon.png" padding-right="0" padding-left="0">
+          </mj-image>
+        </mj-column>
+        <mj-column width="210px" padding-top="6px">
+          <mj-text font-family="Arial" text-decoration="underline" height="40px" padding-top="2px" align="center" padding-left="10px" padding-right="10px" padding-top="0px" font-size="14px" color="#333" line-height="16px" font-weight="500" padding-bottom="15px">
+            <a style="color: #333333; font-weight:700; font-size:14px" href=""cid:report.pdf"" download=""my-suggested-file-name""><span style="display:block">Смотреть подробный</span> <span style="padding-left:6px">отчет по вашему сайту</span></a>
+          </mj-text>
+        </mj-column>
+        <mj-column width="370px" padding-bottom="30px">
+          <mj-text font-family="Arial" padding-top="0" padding-bottom="25px" align="center" font-size="14px" color="rgba(51, 51, 51, 0.5);" line-height="18px">
+            Содержит подробную информацию с таблицами и графиками по метрикам всех площадок
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-section>
+
+
+
+
+    <!-- main -->
+    <!-- main -->
+    <!-- main -->
+    <mj-section background-color="#F5F5F5" border-radius="10px">
+      <mj-column width="100%" padding-top="0px">
+      	<mj-text font-family="Arial" line-height="22px" font-size="17px" padding-bottom="18px" padding-top="0px" color="#333">
+          	Сервисом Botfaqtor.ru было проанализированно <span style="color:#2D8EE7; font-weight:500">117 796</span><br> визитов на сайте <span style="color:#2D8EE7; font-weight:500">favorit-ulitsa-geroja-filchenkova.clients.site</span> из них обнаружено: 
+        </mj-text>
+      </mj-column>
+    	<mj-column width="100%">
+      	<mj-text font-size="16px" padding-top="0" padding-bottom="0" color="#000">
+        	<p style="font-family:'Arial'; margin:0; margin-bottom: 11px;">
+            <span style="width: 30px; height: 14px; background: #E46667; display: inline-block; vertical-align: middle; margin-right: 10px; border-radius: 10px"></span>
+          	ботов - <span style="font-family:'Arial';font-weight:700;">9 269</span> (7,86%)
+          </p>
+        </mj-text>
+      </mj-column>
+      <mj-column width="100%" padding-bottom="0" padding-top="0">
+        <mj-text font-size="16px" padding-top="0" padding-bottom="0" color="#000">
+          <p style="font-family:'Arial'; margin: 0; margin-bottom: 11px">
+            <span style="width: 30px; height: 14px; background: #515C7A; display: inline-block; vertical-align: middle; margin-right: 10px; border-radius: 10px"></span>
+          	подозрительных - <span style="font-family:'Arial';font-weight:700;">5 588</span> (4,74%)
+          </p>
+         </mj-text>
+       </mj-column>
+       <mj-column width="100%" padding-top="0" padding-bottom="0">
+         <mj-text font-size="16px" padding-top="0" padding-bottom="0" color="#000">
+          <p style="font-family:'Arial'; padding: 0; margin: 0; margin-bottom: 11px;">
+            <span style="width: 30px; height: 14px; background: #6795E3; display: inline-block; vertical-align: middle; margin-right: 10px; border-radius: 10px;"></span>
+          	нецелевых - <span style="font-family:'Arial';font-weight:700;">52 716</span> (44,75%)
+          </p>
+         </mj-text>
+       </mj-column>
+        <mj-column width="80%" padding-top="0" padding-bottom="0">
+          <mj-text font-size="16px" padding-top="0" padding-bottom="0" color="#000">
+          <p style="font-family:'Arial'; margin:0; margin-bottom:11px">
+            <span style="width: 30px; height: 14px; background: #27C58B; display: inline-block; vertical-align: middle; margin-right: 10px; border-radius: 10px"></span>
+          	целевых - <span style="font-family:'Arial';font-weight:700;">50 232</span> (42,65%)
+          </p>
+        </mj-text>
+      </mj-column>
+      <mj-column width="20%" padding-top="0" padding-bottom="0">
+        <mj-image padding-top="0px" padding-bottom="0" align="right" width="40px" src="https://git.anti.center/design/botfaqtor-design/-/raw/master/mail-report/img/botfaqtor-logo-mini.png">
+        </mj-image>
+      </mj-column>
+    </mj-section>
+    
+
+
+    <!-- -->
+    <mj-section padding-top="0" padding-bottom="20px">
+    </mj-section>
+
+
+
+
+    <!-- Рекомендация -->
+    <!-- Рекомендация -->
+    <!-- Рекомендация -->
+    <mj-section padding-left="0" padding-bottom="5px" padding-top="0px" padding-right="10px" background-color="#fff" border-radius="10px">
+    	<mj-column width="8%">
+      	<mj-image align="left" padding-right="0" padding-top="25px" padding-bottom="0" padding-left="25px" width="21px" src="https://git.anti.center/design/botfaqtor-design/-/raw/master/mail-report/img/warning-logo-yellow.png">
+        </mj-image>
+      </mj-column>
+      <mj-column width="92%">
+      	<mj-text align="left" font-family="Arial" font-size="14px" line-height="18px" color="rgba(51, 51, 51, 0.5);">
+        	Рекомендуем обратить внимание на источники из которых идет большое количество ботов и подозрительных визитов. Возможно вам стоит пересмотреть структуру рекламных бюджетов. 
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Текст -->
+    <!-- Текст -->
+    <!-- Текст -->
+    <mj-section padding-top="10px">
+    	<mj-column>
+        <mj-text color="#333" font-family="Arial" line-height="18px" font-size="16px">
+          Анализируем весь трафик вашего сайта по более 100 техническим и поведенческим параметрам - блокируем ботов, экономя рекламный бюджет, а также помогаем с выбором источников трафика.
+        </mj-text>
+    	</mj-column>
+    </mj-section>
+    <!-- Экономия -->
+    <!-- Экономия -->
+    <!-- Экономия -->
+    <mj-section padding-top="10px">
+    	<mj-column>
+      	<mj-text font-family="Arial" font-weight="700" padding-bottom="8px" align="center" color="#333" font-weight="500" font-size="30px">
+        	Ваша экономия составила:
+        </mj-text>
+        <mj-text font-family="Arial" padding-bottom="8px" align="center" color="#27C58B" font-weight="700" font-size="30px">
+        	+ 1 150 000 руб.
+        </mj-text>
+        <mj-text align="center" color="#333" font-family="Arial" font-size="16px" line-height="20px">
+        	Раз в месяц Botfaqotor отключает защиту рекламных кампаний <br>на сутки для оценки эффективности работы сервиса.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- bottom -->
+    <!-- bottom -->
+    <!-- bottom -->
+    <mj-section padding="10px 0 0 0">
+      <mj-column width="100%" padding-bottom="0">
+        <mj-button font-family="Arial" padding="20px" href="https://botfaqtor.ru" border-radius="3px" height="25px" background-color="#F5F5F5" color="#333" font-size="16px">
+          Настройки рассылки
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    <!-- -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-divider padding-top="5px" width="118px" border-width="1px" border-style="solid" border-color="lightgrey"></mj-divider>
+      </mj-column>
+    </mj-section>
+    <!-- -->
+    <mj-section padding="0">
+      <mj-column width="45px">
+        <mj-image padding-bottom="0" src="https://git.anti.center/design/botfaqtor-design/-/raw/master/mail-report/img/botfaqtor-logo-extramini.png" width="24px" padding-left="0" padding-right="0">
+      </mj-column>
+      <mj-column width="190px">
+        <mj-text font-family="Arial" padding-top="14px" font-size="14px" font-weight="500" color="#000" padding-left="0" padding-right="0" align="center">
+          Служба заботы Botfaqtor.ru
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- last-line -->
+    <!-- last-line -->
+    <!-- last-line -->
+    <mj-section padding-top="40px">
+      <mj-column width="100%" padding-bottom="0">
+        <mj-text align="center" font-family="Arial" padding-bottom="0">
+          <a style="color: #848484; font-size: 12px" href="mailto:info@botfaqtor.ru">info@botfaqtor.ru</a>
+        </mj-text>
+      </mj-column>
+      <mj-column width="100%" padding-top="0">
+        <mj-text color="#848484" align="center" font-family="Arial">
+          <span style="width:100%; text-align: center">© 2017-2023 <a href="Botfaqtor.ru" style="color: #848484">Botfaqtor.ru</a></span>
+          |   г.Москва, ул. Щепкина, д.28, офис 413  |
+          <a href="tel:+74959466031" style="color: #848484; text-decoration: none">+7(495)946-6031</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

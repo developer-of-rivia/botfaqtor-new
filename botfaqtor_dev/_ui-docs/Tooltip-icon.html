@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tooltip-icon - BotFaqtor UI</title>
+    <!-- favicon -->
+    <link rel="icon" href="icons/brand_botfaqtor.svg" type="image/x-icon">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- preview page styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pp-tabs.css" />
+     <!-- pp-jquery -->
+     <script src="js/jquery-3.3.1.min.js"></script>
+     <!-- pp-tabs -->
+     <script src="js/pp-tabs.js"></script>
+    <!-- Prism JS -->
+    <link rel="stylesheet" href="addons/prismjs-full/prism-theme7.css">
+    <script src="addons/prismjs-full/prism.min.js"></script>
+    <script src="addons/prismjs-full/prism-unescaped-markup.min.js"></script>
+    <script src="addons/prismjs-full/prism-toolbar.min.js" ></script>
+    <script src="addons/prismjs-full/prism-copy-to-clipboard.min.js"></script>
+    <script src="addons/prismjs-full/prism-normalize-whitespace.js"></script>
+    <!-- components -->
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- page -->
+    <section class="page">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="logo">
+                        <div class="logo__img">
+                            <img
+                                class="logo__img"
+                                src="icons/brand_botfaqtor.svg"
+                            />
+                        </div>
+                        <div class="logo__text">
+                            Botfaqtor
+                            <img src="icons/ui-icon.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <div class="page__wrapper">
+            <div class="container">
+                <div class="page__wrapper-inner">
+                    <!-- sidebar -->
+                    <aside class="sidebar">
+                        <ul class="sidebar__box">
+                            <a href="Tooltips.html" class="sidebar__link">
+                                <img src="icons/tooltip-icon.svg">
+                                Tooltip
+                            </a>
+                            <a href="Tooltip-icon.html" class="sidebar__link sidebar__link--active">
+                                <img src="icons/tooltip-icon-icon.svg">
+                                Tooltip icon
+                            </a>
+                            <a href="Button.html" class="sidebar__link">
+                                <img src="icons/tooltip-icon.svg">
+                                Button
+                            </a>
+                        </ul>
+                    </aside>
+                    <!-- sidebar end -->
+                    <!-- main -->
+                    <main class="main">
+                        <!-- main__title -->
+                        <div class="main__title">
+                            <h1>Tooltip icon (иконка для тултипа)</h1>
+                        </div>
+                        <p class="par_big">
+                            Компонент, который используется в связке с компонентом tooltip.
+                            Без него не имеет смысла.
+                        </p>
+                        <div class="spacer" style="height: 20px;"></div>
+                        <!-- main__body -->
+                        <div class="main__body">
+                            <!-- main__section -->
+                            <div class="main__section">
+                                <h2>Обычный</h2>
+                                <div class="spacer" style="height: 10px;"></div>
+                                <!-- табы -->
+                                <div class="pp_tabs-wrapper">
+                                    <div class="pp_tabs">
+                                        <span class="pp_tab">Preview</span>
+                                        <span class="pp_tab">HTML</span>
+                                    </div>
+                                    <div class="pp_tabs-content">
+                                        <div class="pp_tab-item">
+                                            <div class="code-preview" style="background: linear-gradient(to right, #fcd34d, #f97316)">
+                                                <div class="tooltip-icon">
+                                                    ?
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pp_tab-item">
+                                            <div class="code-demo">
+                                                <script type="text/plain" class="language-html">
+                                                    <div class="tooltip-icon">
+                                                        ?
+                                                    </div>
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- табы конец -->
+                            </div>
+
+                            <div class="spacer" style="height: 80px;"></div>
+
+                            <!-- main__section -->
+                            <div class="main__section">
+                                <h2>Настройки</h2>
+                                <p>Вертикальное выравнивание: по центру (по умолчанию)</p>
+                                <!-- табы -->
+                                <div class="pp_tabs-wrapper">
+                                    <div class="pp_tabs">
+                                        <span class="pp_tab">Preview</span>
+                                        <span class="pp_tab">HTML</span>
+                                    </div>
+                                    <div class="pp_tabs-content">
+                                        <div class="pp_tab-item">
+                                            <div class="code-preview" style="background: linear-gradient(to right, #fcd34d, #f97316)">
+                                                
+                                                <div class="some-text-block">
+                                                    Далеко-далеко за словесными горами в
+                                                    <span class="tooltip-icon">
+                                                        ?
+                                                    </span>
+                                                    стране гласных и согласных живут рыбные
+                                                    тексты. Ipsum ведущими, родного дороге жаренные, моей строчка меня приставка
+                                                    большой щеке вскоре lorem снова встретил сбить путь о вдали толку.
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="pp_tab-item">
+                                            <div class="code-demo">
+                                                <script type="text/plain" class="language-html">
+                                                    
+                                                    <div class="some-text-block">
+                                                        Далеко-далеко за словесными горами в
+                                                        <span class="tooltip-icon">
+                                                            ?
+                                                        </span>
+                                                        стране гласных и согласных живут рыбные
+                                                        тексты. Ipsum ведущими, родного дороге жаренные, моей строчка меня приставка
+                                                        большой щеке вскоре lorem снова встретил сбить путь о вдали толку.
+                                                    </div>
+
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- табы конец -->
+
+
+                                <div class="spacer" style="height: 30px;"></div>
+                                <p>Вертикальное выравнивание: по верху</p>
+                                <!-- табы -->
+                                <div class="pp_tabs-wrapper">
+                                    <div class="pp_tabs">
+                                        <span class="pp_tab">Preview</span>
+                                        <span class="pp_tab">HTML</span>
+                                    </div>
+                                    <div class="pp_tabs-content">
+                                        <div class="pp_tab-item">
+                                            <div class="code-preview" style="background: linear-gradient(to right, #fcd34d, #f97316)">
+                                                
+                                                <div class="some-text-block">
+                                                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                                                    тексты. Ipsum ведущими, родного дороге
+                                                    <span class="tooltip-icon tooltip-icon_vertical_super">
+                                                        ?
+                                                    </span>
+                                                    жаренные, моей строчка меня приставка
+                                                    большой щеке вскоре lorem снова встретил сбить путь о вдали толку.
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="pp_tab-item">
+                                            <div class="code-demo">
+                                                <script type="text/plain" class="language-html">
+                                                    
+                                                    <div class="some-text-block">
+                                                        Далеко-далеко за словесными горами в
+                                                        <span class="tooltip-icon">
+                                                            ?
+                                                        </span>
+                                                        стране гласных и согласных живут рыбные
+                                                        тексты. Ipsum ведущими, родного дороге жаренные, моей строчка меня приставка
+                                                        большой щеке вскоре lorem снова встретил сбить путь о вдали толку.
+                                                    </div>
+
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- табы конец -->
+
+
+
+                                <div class="spacer" style="height: 30px;"></div>
+                                <p>Вертикальное выравнивание: по низу</p>
+                                <!-- табы -->
+                                <div class="pp_tabs-wrapper">
+                                    <div class="pp_tabs">
+                                        <span class="pp_tab">Preview</span>
+                                        <span class="pp_tab">HTML</span>
+                                    </div>
+                                    <div class="pp_tabs-content">
+                                        <div class="pp_tab-item">
+                                            <div class="code-preview" style="background: linear-gradient(to right, #fcd34d, #f97316)">
+                                                
+                                                <div class="some-text-block">
+                                                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                                                    тексты. Ipsum ведущими, родного дороге
+                                                    <span class="tooltip-icon tooltip-icon_vertical_bottom">
+                                                        ?
+                                                    </span>
+                                                    жаренные, моей строчка меня приставка
+                                                    большой щеке вскоре lorem снова встретил сбить путь о вдали толку.
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="pp_tab-item">
+                                            <div class="code-demo">
+                                                <script type="text/plain" class="language-html">
+                                                    
+                                                    <div class="some-text-block">
+                                                        Далеко-далеко за словесными горами в
+                                                        <span class="tooltip-icon">
+                                                            ?
+                                                        </span>
+                                                        стране гласных и согласных живут рыбные
+                                                        тексты. Ipsum ведущими, родного дороге жаренные, моей строчка меня приставка
+                                                        большой щеке вскоре lorem снова встретил сбить путь о вдали толку.
+                                                    </div>
+
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- табы конец -->
+                            </div>
+
+
+                            <div class="spacer" style="height: 80px;"></div>
+
+
+
+                            <!-- main__section -->
+                            <div class="main__section">
+                                <h2>Использование с тултипом</h2>
+                            </div>
+                            <!-- табы -->
+                            <div class="pp_tabs-wrapper">
+                                <div class="pp_tabs">
+                                    <span class="pp_tab">Preview</span>
+                                    <span class="pp_tab">HTML</span>
+                                </div>
+                                <div class="pp_tabs-content">
+                                    <div class="pp_tab-item">
+                                        <div class="code-preview" style="background: linear-gradient(to right, #fcd34d, #f97316)">
+                                            
+                                            <div class="some-text-block">
+                                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                                                тексты. Ipsum ведущими, родного дороге
+                                                <span class="tooltip-icon tooltip-icon_vertical_bottom">
+                                                    ?
+                                                </span>
+                                                жаренные, моей строчка меня приставка
+                                                большой щеке вскоре lorem снова встретил сбить путь о вдали толку.
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="pp_tab-item">
+                                        <div class="code-demo">
+                                            <script type="text/plain" class="language-html">
+                                                
+                                                <div class="some-text-block">
+                                                    Далеко-далеко за словесными горами в
+                                                    <span class="tooltip-icon">
+                                                        ?
+                                                    </span>
+                                                    стране гласных и согласных живут рыбные
+                                                    тексты. Ipsum ведущими, родного дороге жаренные, моей строчка меня приставка
+                                                    большой щеке вскоре lorem снова встретил сбить путь о вдали толку.
+                                                </div>
+
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- табы конец -->
+                        </div>
+                    </main>
+                    <!-- main end -->
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="logo">
+                        <div class="logo__img">
+                            <img
+                                class="logo__img"
+                                src="icons/brand_botfaqtor.svg"
+                            />
+                        </div>
+                        <a href="https://botfaqtor.ru/" class="logo__text">
+                            Botfaqtor
+                            <img src="icons/ui-icon.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+
+    <!-- Подключения -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+    <script>
+        tippy('[data-tippy-content]', {
+            allowHTML: true,
+            interactive: true,
+            placement: 'bottom',
+        });
+    </script>
+
+
+
+</body>
+</html>

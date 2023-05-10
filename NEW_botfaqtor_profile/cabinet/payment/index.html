@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пополнить баланс - BotFAQtor.ru</title>
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+
+    <link rel="stylesheet" href="/css/cabinet/payment/style.css">
+    <link rel="stylesheet" href="/css/cabinet/payment/mobile.css">
+    <script src="/js/jquery.min.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+    <header class="btf__profile">
+        <div class="btf__logo-brand-profile">
+            <a href="/"><img src="/img/brand_botfaqtor.svg" alt="" class="btf__img-fluid"></a>
+        </div>
+        <a href="" class="btf__mysite-button">
+            <i></i>
+            <span>Мои сайты</span>
+        </a>
+        <div class="btf__nav-proj">
+            <div class="btf__mobi-nav-proj">
+                <i class="btf__ico-list"></i>
+                <span>Проекты</span>
+            </div>
+            <ul class="btf__items-proj">
+                <li>
+                    <a href=""
+                        data-tooltip="Анализирует весь трафик на сайте и блокирует ботов. Возможно гибко настроить блокировку ботов по: посадочным страницам, гео, источникам (не защищает от скликивания Я.Директ и Google ADS).">
+                        <img src="/img/blocking_pr.svg">
+                        <span>Антибот для сайта</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=""
+                        data-tooltip="Экономит до 30% вашего бюджета на рекламу. Получаете отчеты по utm-меткам, ключевым словам, добавлению ботов в сегмент Яндекс и т.д.">
+                        <img src="/img/direct_pr.svg">
+                        <span>Защита Яндекс.Директ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href=""
+                        data-tooltip="Экономит до 30% вашего бюджета на рекламу. Получаете отчеты по utm-меткам, ключевым словам, добавлению ботов в сегмент Google ADS и т.д.">
+                        <img src="/img/ads_pr.svg">
+                        <span>Защита Google Ads</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="btf__block-balance-col">
+            <div class="btf__balance-content">
+                <div class="btf__ico-wallet"></div>
+                <div class="btf__sum-balance"><span>1 000 000, 66</span> ₽</div>
+                <span class="btf__ico-down-arr"></span>
+            </div>
+            <ul class="btf__dropdown-content">
+                <div class="btf__popup_tail"></div>
+                <li class="btf__item-list">Пополнить счет</li>
+                <li class="btf__item-list">История операций</li>
+                <li class="btf__auto-pay-block">
+                    <div class="btf__row btf__items-center">
+                        <div class="btf__col-auto">Автоплатёж <span class="btf__text-red">выключен</span></div>
+                        <div class="btf__col"><button class="btf__button-line btf__line-blue">Настроить</button></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="btf__login-container btf__d-inline-flex">
+            <div class="btf__login-container__info">
+                <div class="btf__person-content">
+                    <span class="btf__btf__login">test@botfaqtor.ru</span>
+                    <span class="btf__balance">Базовый тариф</span>
+                </div>
+                <span class="btf__ico-down-arr"></span>
+            </div>
+            <ul class="btf__dropdown-content">
+                <div class="btf__popup_tail"></div>
+                <li class="btf__item-list">Настройки</li>
+                <li class="btf__item-list">Выйти</li>
+            </ul>
+        </div>
+        <div class="btf__burg-menu">
+            <span class="btf__icon-hidden-menu"></span>
+        </div>
+    </header>
+
+    <div class="btf__sidebar">
+        <div class="btf__block-mobile-person">
+            <div class="btf__person-content">
+                <div class="btf__per">
+                    <div class="btf__l">
+                        <span class="btf__person-login">test@botfaqtor.ru</span>
+                        <span class="btf__person-balance">Базовый тариф
+                        </span>
+                    </div>
+                    <div class="btf__r">
+                        <a href="" class="btf__logout"></a>
+                    </div>
+                </div>
+
+                <a href="#">Настройки профиля</a>
+            </div>
+        </div>
+
+        <div class="btf__pos-top">
+            <div class="btf__pay-scoreboard btf__bg-green">
+                <i class="btf__ico-wallet"></i>
+                <span>1 000 000, 66</span>
+                <span>₽</span>
+            </div>
+            <div class="btf__sidebar-menu-accordion">
+                <ul>
+                    <li class="btf__active">
+                        <a href="/">
+                            <i class="btf__ico btf__paybill-i"></i>
+                            <span>Пополнить счет</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mysites.html">
+                            <i class="btf__ico btf__tariff-i"></i>
+                            <span>Тарифы</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sources.html">
+                            <i class="btf__ico btf__historypay-i"></i>
+                            <span>История операций</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blocking.html">
+                            <i class="btf__ico btf__settings-i"></i>
+                            <span>Настройки</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="btf__pos-bottom">
+            <div class="btf__sidebar-menu-accordion">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="btf__ico btf__utm-i"></i>
+                            <span>Генератор UTM-меток</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://affiliate-program.botfaqtor.ru/">
+                            <i class="btf__ico btf__partner-i"></i>
+                            <span>Партнерская программа</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="btf__ico btf__faq-i"></i>
+                            <span>Вопрос/Ответ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">
+                            <i class="btf__ico btf__contact-i"></i>
+                            <span>Контакты</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="btf__content">
+        <div class="btf__alert btf__yellow-alert">
+            <div class="btf__ico btf__alert-ico-info-d"></div>
+            <div class="btf__text">
+                <p><strong>Подключите автоплатеж от 2000 рублей и получите 1 месяц работы ботфактор в подарок! Акция
+                        продлится до 31.12.</strong></p>
+                <p>После подключения автоплатежа, пожалуйста, <a href="">напишите в чат</a> для получения подарка</p>
+            </div>
+            <div class="btf__close">
+                <div class="btf__close-alert"></div>
+            </div>
+        </div>
+        <div class="btf__container-fluid btf__pay-bill">
+            <div class="btf__title-page">
+                <h2>Пополнить баланс</h2>
+            </div>
+
+            <div class="btf__row">
+                <div class="btf__col-6">
+
+                    <div class="btf__pay-method btf__active-header">
+                        <div class="btf__pay-title">
+                            <div class="btf__img"><img src="/img/card-pay.png" alt=""></div>
+                            <span>Оплата онлайн (Visa, Mastercard, QIWI, ЮMoney, Webmoney и прочие)</span>
+                            <span class="btf__ico-pay-arr"></span>
+                        </div>
+
+                        <div class="btf__pay-content btf__open-content">
+                            <div class="btf__content-p">
+                                <div class="btf__row">
+                                    <div class="btf__col-auto">
+                                        <div class="btf__form-control">
+                                            <div class="btf__cdInputFix">
+                                                <input class="btf__form-item btf__field-white" name="input-site" value="" type="text" disabled>
+                                                <span class="btf__form-notice btf__text-error">Пожалуйста, введите сумму</span>
+                                                <div class="btf__placehold">Введите сумму</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btf__col">
+                                        <span class="btf__calc-pr">
+                                            <span data-balloon="Антибот для сайта" data-balloon-length="medium"
+                                                data-balloon-pos="up">
+                                                <img src="/img/blocking_pr.svg"> <span>0</span> проверок
+                                            </span>
+                                            <span data-balloon="Защита от скликивания Яндекс.Директ"
+                                                data-balloon-length="medium" data-balloon-pos="up">
+                                                <img src="/img/direct_pr.svg"> <span>0</span> проверок
+                                            </span>
+                                            <span data-balloon="Защита от скликивания Google ADS"
+                                                data-balloon-length="medium" data-balloon-pos="up">
+                                                <img src="/img/ads_pr.svg"> <span>0</span> проверок
+                                            </span>
+                                        </span>
+
+                                    </div>
+                                </div>
+
+                                <div class="btf__lable btf__agreem btf__autopay-op">
+                                    <label class="btf__checkbox"><input type="checkbox" checked="">
+                                        <span class="btf__custom-checkbox"></span>
+                                        <span>Подключить автоплатеж</span>
+                                    </label>
+                                    <span class="btf__hint-icon__quest" data-bem="Подключите автоплатеж и средства с вашей карты будет автоматически списываться при достижение манинимального остатка на балансе."></span>
+                                </div>
+                            </div>
+
+                            <div class="btf__autopay btf__open">
+                                <div class="btf__content-p">
+                                    <div class="btf__row">
+                                        <div class="btf__col-auto">
+                                            <h3>При каком минимальном остатке пополнять баланс?</h3>
+                                        </div>
+                                        <div class="btf__col btf__right">
+                                            <span class="btf__status"><strong class="btf__text-red"><span
+                                                        class="btf__flickers-red"></span>Выключен</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="btf__row">
+                                        <div class="btf__col-auto">
+                                            <div class="btf__form-control">
+                                                <div class="btf__cdInputFix">
+                                                    <input class="btf__form-item btf__field-white" name="input-site" value="" type="text">
+                                                    <span class="btf__form-notice btf__text-error">Пожалуйста, введите
+                                                        сумму</span>
+                                                    <div class="btf__placehold">Кол-во рублей</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btf__col">
+                                            <button class="btf__button-line btf__line-red">Отключить</button>
+                                        </div>
+                                    </div>
+                                    <p>С вашей карты будет автоматически списываться <strong>0 ₽</strong> при остатке на
+                                        балансе <strong>0 ₽</strong>.</p>
+                                </div>
+                            </div>
+                            <div class="btf__form-p">
+                                <button class="btf__btn-prof btf__btn-green">Оплатить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btf__pay-method">
+                        <div class="btf__pay-title">
+                            <div class="btf__img"><img src="/img/bank-pay.png" alt=""></div>
+                            <span>Банковский перевод</span>
+                            <span class="btf__ico-pay-arr"></span>
+                        </div>
+                        <div class="btf__pay-content">
+                            <div class="btf__content-p">
+                                <div class="btf__row">
+                                    <div class="btf__col-12">
+                                        <div class="btf__form-control">
+                                            <div class="btf__cdInputFix">
+                                                <input class="btf__form-item btf__field-white" name="input-site" value="" type="text">
+                                                <div class="btf__placehold">Название организации или ФИО</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btf__col-12">
+                                        <div class="btf__form-control">
+                                            <div class="btf__cdInputFix">
+                                                <input class="btf__form-item btf__inn btf__field-white" name="input-site" value="" type="text">
+                                                <div class="btf__placehold">ИНН</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btf__col-auto">
+                                        <div class="btf__form-control">
+                                            <div class="btf__cdInputFix">
+                                                <input class="btf__form-item btf__field-white" name="input-site" value="" type="text">
+                                                <span class="btf__form-notice btf__text-error">Пожалуйста, введите сумму</span>
+                                                <div class="btf__placehold">Введите сумму</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btf__col">
+                                        <span class="btf__calc-pr">
+                                            <span data-balloon="Антибот для сайта" data-balloon-length="medium"
+                                                data-balloon-pos="up">
+                                                <img src="/img/blocking_pr.svg"> <span>0</span> проверок
+                                            </span>
+                                            <span data-balloon="Защита от скликивания Яндекс.Директ"
+                                                data-balloon-length="medium" data-balloon-pos="up">
+                                                <img src="/img/direct_pr.svg"> <span>0</span> проверок
+                                            </span>
+                                            <span data-balloon="Защита от скликивания Google ADS"
+                                                data-balloon-length="medium" data-balloon-pos="up">
+                                                <img src="/img/ads_pr.svg"> <span>0</span> проверок
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="btf__lable btf__agreem btf__autopay-edo">
+                                    <label class="btf__checkbox"><input type="checkbox">
+                                        <span class="btf__custom-checkbox"></span>
+                                        <span>Мы используем ЭДО</span>
+                                    </label>
+                                    <span class="btf__hint-icon__quest" data-bem="Электронный документооборот с контрагентами"></span>
+                                </div>
+                            </div>
+                            <div class="btf__autopay btf__open">
+                                <div class="btf__content-p">
+                                    <div class="btf__row">
+                                        <div class="btf__col-auto">
+                                            <h3>Кому и куда отправить закрывающие документы?</h3>
+                                        </div>
+                                    </div>
+                                    <div class="btf__row">
+                                        <div class="btf__col-12">
+                                            <div class="btf__form-control">
+                                                <div class="btf__cdInputFix">
+                                                    <input class="btf__form-item btf__field-white" name="input-site" value="" type="text">
+                                                    <div class="btf__placehold">Адрес доставки оригиналов</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btf__col-7">
+                                            <div class="btf__form-control">
+                                                <div class="btf__cdInputFix">
+                                                    <input class="btf__form-item btf__field-white" name="input-site" value="" type="text">
+                                                    <div class="btf__placehold">Контактное лицо</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btf__col-5">
+                                            <div class="btf__form-control">
+                                                <div class="btf__cdInputFix">
+                                                    <input class="btf__form-item btf__field-white" name="input-site" value="" type="text">
+                                                    <div class="btf__placehold">Телефон для связи</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btf__col-12">
+                                            <div class="btf__form-control">
+                                                <div class="btf__cdInputFix">
+                                                    <textarea class="btf__form-item btf__field-white" name="input-site"></textarea>
+                                                    <div class="btf__placehold">Комментарий</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>Информация будет преедана в бухгалетрию для отправки закрывающих доментов в конце
+                                        месяца.</p>
+                                </div>
+                            </div>
+
+                            <div class="btf__edoblock">
+                                <div class="btf__content-p">
+                                    <div class="btf__row">
+                                        <div class="btf__col-auto">
+                                            <h3>Электронный документооборот с контрагентами</h3>
+                                        </div>
+                                    </div>
+                                    <div class="btf__row">
+                                        <div class="btf__col-4">
+                                            <div class="btf__form-control">
+                                                <div class="btf__cdInputFix">
+                                                    <input class="btf__form-item btf__field-white" name="input-site" value="" type="text">
+                                                    <div class="btf__placehold">Оператор ЭДО</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btf__form-p">
+                                <div class="btf__row btf__items-center">
+                                    <div class="btf__col-auto">
+                                        <button class="btf__btn-prof btf__btn-green">Сформировать счёт</button>
+                                    </div>
+                                    <div class="btf__col">
+                                        <div class="btf__lable btf__lable-autopay">
+                                            <label class="btf__checkbox"><input type="checkbox">
+                                                <span class="btf__custom-checkbox"></span>
+                                                <span>Автоматически выставлять счет при нулевом балансе</span>
+                                            </label>
+                                            <span class="btf__hint-icon__quest"
+                                                    data-bem="Подключите автоплатеж и средства с вашей карты будет автоматически списываться при достижение манинимального остатка на балансе."></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="btf__col-6">
+                    <div class="btf__text-bloc">
+                        <p>Стоимость защиты зависит от подключенного сервиса и посещаемости вашего сайта.</p>
+                        <h4>Сколько стоит защита?</h4>
+                        <ul>
+                            <li>Если подключен сервис <img src="/img/blocking_pr.svg" class="btf__img-text-prj"
+                                    alt=""><strong>Антибот для сайта</strong>, то оплачивается проверка каждого визита
+                                на
+                                сайт.</li>
+                            <li>Если подключен сервис <img src="/img/direct_pr.svg" class="btf__img-text-prj"
+                                    alt=""><strong>Защита Яндекс Директ</strong> или <img src="/img/ads_pr.svg"
+                                    class="btf__img-text-prj" alt=""><strong>Защита Google Ads</strong>, то оплачивается
+                                только проверка переходов из рекламной сети, переходы из других источников (прямые
+                                переходы, поиск, соц.сети, рассылки и прочее) анализируются бесплатно!</li>
+                        </ul>
+                        <div class="btf__text-blockgrey">
+                            <h4>Как рассчитать примерную оплату за месяц?</h4>
+                            <p>Сумма пополнения = <i>[кол-во переходов в месяц] * [стоимость 1 проверки]</i></p>
+                        </div>
+                        <p><strong>Полезное: </strong><a href="">Калькулятор потерь от ботов.</a> <a href="">Как узнать
+                                кол-во
+                                переходов из Директ и Google Ads?</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btf__row">
+                <div class="btf__col-12">
+
+                    <div class="btf__table-tariffs-flex">
+                        <table class="btf__table-tariff btf__col-table-3 btf__table1p btf__rotate-phone">
+                            <thead>
+                                <tr>
+                                    <th>Доступные<br> тарифы</th>
+                                </tr>
+                                <tr>
+                                    <th>В зависимости от сервиса<br> разная стоимость</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="btf__proj-name">
+                                            <img src="/img/blocking_pr.svg">
+                                            <span>Антибот<br> для сайта *</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="btf__proj-name">
+                                            <img src="/img/direct_pr.svg">
+                                            <span>Защита Яндекс.Директ **</span>
+                                        </div>
+                                        <div class="btf__proj-name">
+                                            <img src="/img/ads_pr.svg">
+                                            <span>Защита Google ADS</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="btf__foot-td">
+                                        <p class="btf__foo-rt">* - Проверка в сервисах “Антибот для сайта” - это проверка
+                                            любого посетителя нашим сервисом</p>
+                                        <p class="btf__foo-rt">** - Проверка в сервисах “Защита от скликивания Я.Директ и
+                                            Google Adwords” - это проверка трафика только из рекламных сетей Я.Директ и
+                                            Google Adwords</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="btf__table-tariff btf__col-table-3 btf__table2p btf__rotate-phone">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="btf__title">Базовый</div>
+                                        <div class="btf__units">
+                                            <span class="btf__line"></span>
+                                        </div>
+                                        <div class="btf__price">
+                                            <span class="btf__line"></span>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Стоимость<br> проверки</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>1,5 коп.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>1 ₽</span>
+                                    </td>
+                                </tr>
+
+                                <tr class="btf__button-tr">
+                                    <td class="btf__foot-td">
+                                        <button class="btf__btn-prof btf__btn-green">Перейти</button>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="btf__table-tariff btf__col-table-3 btf__rotate-phone btf__active">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="btf__title">Стандарт</div>
+                                        <div class="btf__units">
+                                            Зачислим на баланс <strong> 10 000 рублей</strong>
+                                        </div>
+                                        <div class="btf__price">7 500 <sup>₽/год</sup></div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Стоимость<br> проверки</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>1 коп.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>0.70 коп.</span>
+                                    </td>
+                                </tr>
+                                <tr class="btf__button-tr">
+                                    <td class="btf__foot-td">
+                                        <div class="btf__foo-green">
+                                            Экономия 30%
+                                            <span class="btf__hint-icon__quest"
+                                                data-bem="Экономия составляет 30% от тарифа <strong>«Базовый»</strong>"></span>
+                                            <br>
+                                            + бонус 2 500 руб.
+                                        </div>
+                                        <button class="btf__btn-prof btf__line-green" disabled>ВАШ ТАРИФ</button>
+                                        <div class="btf__foo">Покупайте дополнительные проверки выгоднее в течение года</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="btf__table-tariff btf__col-table-3 btf__rotate-phone">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="btf__title">VIP</div>
+                                        <div class="btf__units">
+                                            Зачислим на баланс <strong>100 000 рублей</strong>
+                                        </div>
+                                        <div class="btf__price">40 000 <sup>₽/год</sup></div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Стоимость<br> проверки</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>0.5 коп.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>25 коп.</span>
+                                    </td>
+                                </tr>
+                                <tr class="btf__button-tr">
+                                    <td class="btf__foot-td">
+                                        <div class="btf__foo-green">
+                                            Экономия 75%
+                                            <span class="btf__hint-icon__quest"
+                                                data-bem="Экономия составляет 75% от тарифа <strong>«Базовый»</strong>"></span>
+                                            <br>
+                                            + бонус 60 000 руб.
+                                        </div>
+                                        <button class="btf__btn-prof btf__btn-green">Перейти</button>
+                                        <div class="btf__foo">Покупайте дополнительные проверки выгоднее в течение года</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="btf__table-tariff btf__col-table-3 btf__rotate-phone btf__saas">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="btf__sale">
+                                            <span>экономия</span>
+                                            <div>66%</div>
+                                        </div>
+                                        <div class="btf__title">Подписка</div>
+                                        <div class="btf__units">
+                                            Малый бизнес
+                                        </div>
+                                        <div class="btf__price">999 <sup>₽/год</sup></div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="btf__saas-line">Подходит для сайтов с кол-вом переходов из <strong>Яндекс
+                                                Директ</strong> и/или <strong>Google Ads</strong> не более <strong>3 000
+                                                в месяц.</strong></div>
+                                        <div class="btf__saas-line"><strong>Дополнительные переходы по 1 руб.</strong><span
+                                                class="btf__hint-icon__quest"
+                                                data-bem="Если месяц еще не закончился и вам не хватило включенных в тариф анализ <strong>3000 переходов</strong>, то можете докупить дополнительные проверки по 1 руб."></span>
+                                        </div>
+                                        <div class="btf__saas-line"><strong>Тариф работает только с подключенным
+                                                автоплатежем.</strong></div>
+                                    </td>
+                                </tr>
+                                <tr class="btf__button-tr">
+                                    <td class="btf__foot-td">
+                                        <div class="btf__foo-dark"><strong>Экономия составляет 66%</strong> от тарифа
+                                            "Базовый".</div>
+                                        <button class="btf__btn-prof btf__btn-green">Купить подписку</button>
+                                        <div class="btf__foo">Отменить подписку можно в любой момент</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- eLama тариф (start) -->
+                        <table class="btf__table-tariff btf__col-table-3 btf__rotate-phone btf__saas">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="btf__title">eLama</div>
+                                        <div class="btf__units">
+                                            Только для клиентов eLama
+                                        </div>
+                                        <div class="btf__price btf__price--big">БЕСПЛАТНО</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="btf__saas-line">
+                                            Вы должны быть <a href="https://account.elama.global/signup?formId=homepage&_ga=2.127504013.1061271763.1679123854-981308396.1678806421&X-Alt-Auth-Refresh=1&sourceUrl=https%3A%2F%2Felama.ru%2F%3FformId%3Dhomepage%26_ga%3D2.127504013.1061271763.1679123854-981308396.1678806421%26X-Alt-Auth-Refresh%3D1&country=rus&lang=ru"><strong>зарегистрированы в eLama</strong></a> и иметь <strong>рекламный бюджет от 20 000 ₽/мес.</strong> 
+                                        </div>
+                                        <div class="btf__saas-line">
+                                            В личном кабинете eLama зайдите в <a href="https://new.elama.ru/tools-external"><strong>Маркетплейс инструментов</strong></a> 
+                                        </div>
+                                        <div class="btf__saas-line">
+                                            <strong>Подключите BotFAQtor - защита от ботов</strong> 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="btf__button-tr">
+                                    <td class="btf__foot-td">
+                                        <div class="btf__foo-dark">
+                                            Пользуйтесь всеми функциями сервиса бесплатно.
+                                        </div>
+                                        <button class="btf__btn-prof btf__btn-green">Подключить</button>
+                                        <div class="btf__foo">
+                                            <a href="#">Подробнее про партнерство с eLama</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- eLama тариф (end) -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="btf__popup__content__quest"><i class="btf__popup__tail"></i>
+        <div class="btf__popup__content"></div>
+    </div>
+    <script src="/js/mine.js"></script>
+</body>
+
+</html>

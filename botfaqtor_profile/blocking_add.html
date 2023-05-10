@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Botdetector</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--header start-->
+    <header class="profile">
+        <div class="logo-brand-profile">
+            <a href="index.html"><img src="img/brand_botfaqtor.svg" alt="" class="img-fluid"></a>
+        </div>
+        <div class="nav-proj">
+            <div class="mobi-nav-proj">
+                <i class="ico-list"></i>
+                <span>Проекты</span>
+            </div>
+            <ul class="items-proj">
+                <li class="active">
+                    <a href="">
+                        <img src="img/blocking_blue.svg">
+                        <span>Антибот для сайта</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/direct_blue.svg">
+                        <span>Защита Яндекс.Директ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/ads_blue.svg">
+                        <span>Защита Google Ads</span>
+                    </a>
+                </li>
+                <li class="mob-sub">
+                    <a href="">
+                        <img src="img/antibanner_blue.svg">
+                        <span>Защита баннера</span>
+                    </a>
+                </li>
+                <li class="mob-sub">
+                    <a href="">
+                        <img src="img/link_blue.svg">
+                        <span>Сокращение ссылок <del>beta</del> </span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="items-proj">
+                <li>
+                    <a href="">
+                        <img src="img/antibanner_blue.svg">
+                        <span>Защита баннера</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/link_blue.svg">
+                        <span>Сокращение ссылок <del>beta</del> </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 
+    <div class="action">
+    <span class="btn btn-transparent" style="text-transform: capitalize;"><i class="ico-person"></i>Войти</span>
+    <span class="btn btn-primary" style="text-transform: capitalize;">Регистрация</span>
+    </div>
+-->
+        <div class="ml-auto login-container d-inline-flex">
+            <div class="login-container__info">
+                <div class="person-content">
+                    <span class="foto-person"><img src="img/avatar.png" alt=""></span>
+                    <span class="login">test@botfaqtor.ru</span>
+                    <span class="balance">10 000 000 проверок</span>
+                </div>
+                <span class="ico-down-arr"></span>
+            </div>
+            <ul class="dropdown-content">
+                <div class="popup_tail"></div>
+                <li>
+                    <span class="login mob">test@botfaqtor.ru</span>
+                    <span class="balance mob">10 000 000 проверок</span>
+                    <strong>Базовый тариф</strong>
+                </li>
+                <li class="item-list">Пополнить счет</li>
+                <li class="item-list">История операций</li>
+                <li class="item-list">Настройки</li>
+                <li class="item-list">Выйти</li>
+            </ul>
+        </div>
+        <div class="burg-menu">
+            <span class="icon-hidden-menu"></span>
+        </div>
+    </header>
+    <!--header end-->
+
+    <!--sidebar start-->
+    <div class="sidebar">
+        <div class="sidebar-menu-accordion menu-project">
+            <ul>
+                <li>
+                    <a href="#"><img src="img/blocking_blue.svg" alt="">Антибот для сайта</a>
+                    <span class="ico-down-arr-white"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-menu-accordion">
+            <ul>
+                <li>
+                    <a href="index.html"><i class="ico8pl"></i>Дашборд</a>
+                </li>
+                <li>
+                    <a href="install_script.html"><i class="ico9pl"></i>Установить скрипт <span class="menu-alert">
+                            <i class="warn"></i>
+                        </span></a>
+                </li>
+                <li>
+                    <a href="mysites.html"><i class="ico10pl"></i>Мои сайты</a>
+                </li>
+                <li>
+                    <a href="sources.html"><i class="ico11pl"></i>Отчеты </a>
+                    <ul class="sub-menu">
+                        <li><a href="sources.html"><i class="ico0pl"></i>Источники</a></li>
+                        <li><a href="type-bots.html"><i class="ico1pl"></i>Типы ботов</a></li>
+                        <li><a href="inappropriate-traffic.html"><i class="inappr"></i>Нецелевой трафик</a></li>
+                        <li><a href="entry-points.html"><i class="ico2pl"></i>Посадочные страницы</a></li>
+                        <li><a href="geo.html"><i class="ico3pl"></i>География</a></li>
+                        <li><a href="utm.html"><i class="ico13pl"></i>Метки UTM</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="blocking.html"><i class="ico12pl"></i>Блокировки</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-menu-accordion pos-bottom">
+            <ul>
+                <li>
+                    <a href=""><i class="ico13pl"></i>Генератор UTM-меток</a>
+                </li>
+                <li>
+                    <a href="https://affiliate-program.botfaqtor.ru/">
+                        <i class="ico16pl"></i>Партнерская программа</a>
+                </li>
+                <li>
+                    <a href=""><i class="ico20pl"></i>Вопрос/Ответ</a>
+                </li>
+                <li>
+                    <a href="contacts.html"><i class="ico6pl"></i>О компании</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--sidebar end-->
+    <!--content start-->
+    <div class="content">
+        <div class="b-page__counter">
+            <div class="container-filter">
+                <div class="filter-toolbar">
+                    <div class="site-web">
+                        <div class="dropdown sitename">
+                            <button class="dropbtn">
+                                <span class="hidden-inp">Мой суперсайт</span>
+                                <span class="ico-down-arr"></span>
+                                <span class="tooltip tooltip-filter-right" data-balloon-length="medium"
+                                    data-balloon-pos="down" data-balloon="Выберите страницу"><i
+                                        class="ico-tips"></i></span>
+                            </button>
+                            <div class="popup_tail"></div>
+                            <ul class="dropdown-content">
+                                <li class="dropdown-search">
+                                    <div class="form-control search-table">
+                                        <input class="form-item" name="input-site" value="" type="text"
+                                            placeholder="Поиск">
+                                        <span class="icon-search"></span>
+                                    </div>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">
+                                        http://liveinternet.com</span></li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="item-list"><span class="filtrable"><label></label><img alt=""
+                                            src="https://s2.googleusercontent.com/s2/favicons?domain_url=http://fotosuvenir46.ru/posuda/tarelki/tarelka-d-20-sm-kajomka-mramor">http://liveinternet.com</span>
+                                </li>
+                                <li class="preloader-container">
+                                    <div class="preloader-css"> <span></span> <span></span> <span></span>
+                                        <span></span>
+                                        <span></span></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="url-site">www.analyticsarts.su</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid blocking-add">
+            <div class="row add-antibot">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2>
+                                Добавить блокировку
+                                <a class="none-style-link" href=""><span
+                                        class="link-stat">https://www.analyticsarts.su/</span></a>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 name-blocks">
+                            <div class="cdInputFix">
+                                <input class="form-item" name="input-site" value="" type="text">
+                                <div class="placehold">Введите наименование блокировки</div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="wizard">
+                        <li class="item active">
+                            <div class="ico"><img src="img/ico2pl.svg" alt></div>
+                            <div class="name-wizard">Посадочные страницы</div>
+                            <a href="" class="elements">Выбрано: 2</a>
+                        </li>
+                        <li class="item">
+                            <div class="ico"><img src="img/ico1pl.svg" alt></div>
+                            <div class="name-wizard">Типы ботов</div>
+                            <a href="" class="elements">Выбраны все</a>
+                        </li>
+                        <li class="item">
+                            <div class="ico"><img src="img/ico0pl.svg" alt></div>
+                            <div class="name-wizard">Источники</div>
+                            <a href="" class="elements">Выбрано: 2</a>
+                        </li>
+                        <li class="item">
+                            <div class="ico"><img src="img/ico3pl.svg" alt></div>
+                            <div class="name-wizard">География</div>
+                            <a href="" class="elements">Выбрано: 2</a>
+                        </li>
+                        <li class="item">
+                            <div class="ico"><img src="img/ico14pl.svg" alt></div>
+                            <div class="name-wizard">Подтверждение выбранного</div>
+                        </li>
+                    </ul>
+                    <!-- Посадочные страницы -->
+                    <div id="bt1" class="contener-wizard is-open">
+                        <div class="content-blocks">
+                            <div class="col-headerTable tabl004 title-row">
+                                <div class="col-td">
+                                    <h2>Выберете посадочную страницу</h2>
+                                    <p class="date-p">Данные выводятся за последние 30 дней</p>
+                                </div>
+                                <div class="col-td">
+
+                                    <div class="title-w2 d-flex justify-content-end">
+                                        <div class="radio-buttons-wrapper">
+                                            <input type="radio" class="radio-button" name="radioButtonTest7" value="1"
+                                                id="button399" checked="">
+                                            <label for="button399"><i class="ico-e6"></i></label>
+                                            <input type="radio" class="radio-button" name="radioButtonTest7" value="2"
+                                                id="button499">
+                                            <label for="button499">%</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="container-table col-12 is-open">
+                                    <div class="row bls-inp">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="form-control search-table">
+                                                <input class="form-item" name="input-site" value="" type="text"
+                                                    placeholder="Найдите посадочную страницу">
+                                                <span class="icon-search"></span>
+                                            </div>
+                                            <span class="or">или</span>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="add-page-blocks is-open">
+                                                <div class="cdInputFix">
+                                                    <input class="form-item" name="input-site" value="" type="text">
+                                                    <div class="placehold">Введите URL адрес страницы</div>
+                                                </div>
+                                                <button class="btn-prof btn-green">Добавить адрес</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rotate-block"><img src="img/rotate.svg" alt=""><span>Для просмотра
+                                            таблицы
+                                            поверните горизонтально ваше устройства</span>
+                                    </div>
+                                    <table class="mt-2 rotate-phone">
+                                        <thead>
+                                            <th style="width:40%;">
+                                                <label class="checkbox seckond-chek" style="margin-bottom: 0px;">
+                                                    <input [checked]="isSelectAllItems" (change)="onSelectAllItems()"
+                                                        type="checkbox" />
+                                                    <span class="custom-checkbox"></span>Выбрать все URL
+                                                </label>
+                                            </th>
+                                            <th class="text-center">
+                                                <strong class="ico-stat-09"></strong>
+                                                <span>Трафик</span></th>
+                                            <th class="text-center text-green"><strong class="ico-stat-01"></strong>
+                                                <span>Целевой</span></th>
+                                            <th class="text-center"><strong class="ico-stat-02"></strong>
+                                                <span>Нецелевой</span></th>
+                                            <th class="text-center text-red"><strong class="ico-stat-03"></strong>
+                                                <span>Боты</span></th>
+                                            <th class="text-center">Глубина</th>
+                                            <th class="text-center time-td"><span>Время на сайте</span></th>
+                                            <th class="text-center">Отказы</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="title-total-all">
+                                                <td class="text-center" colspan="8">Вы выбрали все типы ботов для
+                                                    блокировки</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="text-left strong-total"> Итого и среднее:</td>
+                                                <td class="text-center strong-total">3200</td>
+                                                <td class="text-center strong-total">360</td>
+                                                <td class="text-center strong-total">6</td>
+                                                <td class="text-center strong-total">3.54</td>
+                                                <td class="text-center strong-total">3.54</td>
+                                                <td class="text-center strong-total">3.54</td>
+                                                <td class="text-center strong-total">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label class="text-labl">https://maps.google.com</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label
+                                                        class="text-labl">https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label
+                                                        class="text-labl">https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label
+                                                        class="text-labl">https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label
+                                                        class="text-labl">https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label
+                                                        class="text-labl">https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label
+                                                        class="text-labl">https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label
+                                                        class="text-labl">https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label
+                                                        class="text-labl">https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label class="text-labl">https://maps.google.com</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label class="text-labl">https://maps.google.com</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label class="text-labl">https://maps.google.com</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="col-12">
+                                        <div class="pagination justify-content-start align-items-center">
+                                            <button class="btn-prof btn-sm btn-gray">Показать больше</button>
+                                            <div class="load-result">15 из 150</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total-blocks is-open">
+                            <div class="title-total">Вы выбрали</div>
+                            <div class="block-scroll">
+                                <div class="item">
+                                    <div class="lable">
+                                        <label class="checkbox">
+                                            <input type="checkbox" /> <span class="custom-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                        alt="" style="width:16px;">
+                                    <span><a href="">https://maps.google.com</a></span>
+                                </div>
+                                <div class="item">
+                                    <div class="lable">
+                                        <label class="checkbox">
+                                            <input type="checkbox" /> <span class="custom-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                        alt="" style="width:16px;">
+                                    <span><a href="">https://maps.google.com</a></span>
+                                </div>
+                                <div class="item">
+                                    <div class="lable">
+                                        <label class="checkbox">
+                                            <input type="checkbox" checked /> <span class="custom-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                        alt="" style="width:16px;">
+                                    <span><a href="">https://maps.google.com</a></span>
+                                </div>
+                                <div class="item">
+                                    <div class="lable">
+                                        <label class="checkbox">
+                                            <input type="checkbox" /> <span class="custom-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                        alt="" style="width:16px;">
+                                    <span><a href="">https://maps.google.com</a></span>
+                                </div>
+                                <div class="item">
+                                    <div class="lable">
+                                        <label class="checkbox">
+                                            <input type="checkbox" checked /> <span class="custom-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                        alt="" style="width:16px;">
+                                    <span><a
+                                            href="">https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8</a></span>
+                                </div>
+                                <div class="item">
+                                    <div class="lable">
+                                        <label class="checkbox">
+                                            <input type="checkbox" /> <span class="custom-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                        alt="" style="width:16px;">
+                                    <span><a href="">https://maps.google.com</a></span>
+                                </div>
+                            </div>
+
+                            <div class="text-right button-del-total">
+                                <button class="btn-prof btn-red">Удалить выбранное</button>
+                            </div>
+                        </div>
+                        <div class="text-left counter-buttons sticked-buttons-yes">
+                            <button class="btn-prof btn-green" id="L2">Далее</button>
+                        </div>
+                    </div>
+
+                    <!-- Типы ботов -->
+                    <div id="bt2" class="contener-wizard">
+                        <div class="content-blocks">
+
+                            <div class="col-headerTable tabl004 title-row">
+                                <div class="col-td">
+                                    <h2>Выберете типы ботов</h2>
+                                    <p class="date-p">Данные выводятся за последние 30 дней</p>
+                                </div>
+                                <div class="col-td">
+                                    <div class="form-control search-table">
+                                        <input class="form-item" name="input-site" value="" type="text"
+                                            placeholder="Поиск">
+                                        <span class="icon-search"></span>
+                                    </div>
+                                </div>
+                                <div class="col-td">
+                                    <div class="title-w2 d-flex justify-content-end">
+                                        <div class="radio-buttons-wrapper">
+                                            <input type="radio" class="radio-button" name="radioButtonTest12" value="1"
+                                                id="button311" checked="">
+                                            <label for="button311"><i class="ico-e6"></i></label>
+                                            <input type="radio" class="radio-button" name="radioButtonTest12" value="2"
+                                                id="button411">
+                                            <label for="button411">%</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="container-table col-12 is-open">
+                                    <div class="rotate-block"><img src="img/rotate.svg" alt=""><span>Для просмотра
+                                            таблицы
+                                            поверните горизонтально ваше устройства</span>
+                                    </div>
+                                    <table class="mt-2 rotate-phone">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:40%;">
+                                                    <label class="checkbox seckond-chek" style="margin-bottom: 0px;">
+                                                        <input [checked]="isSelectAllItems"
+                                                            (change)="onSelectAllItems()" type="checkbox" />
+                                                        <span class="custom-checkbox"></span>
+                                                        Выбрать все типы ботов
+                                                    </label>
+                                                </th>
+                                                <th class="text-center">Боты </th>
+                                                <th class="text-center">Глубина </th>
+                                                <th class="text-center time-td"><span>Время на сайте</span></th>
+                                                <th class="text-center">Отказы </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="title-total-all">
+                                                <td class="text-center" colspan="8">Вы выбрали все типы ботов для
+                                                    блокировки</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left strong-total"> Итого и среднее:</td>
+                                                <td class="text-center strong-total">3200</td>
+                                                <td class="text-center strong-total">6</td>
+                                                <td class="text-center strong-total">3.54</td>
+                                                <td class="text-center strong-total">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span><span
+                                                                class="color-mark blue"></span></label>
+                                                    </div>
+                                                    <label class="text-labl">Нормальный</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span><span
+                                                                class="color-mark red"></span></label>
+                                                    </div>
+                                                    <label class="text-labl">Нормальный</label>
+
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span><span
+                                                                class="color-mark green"></span></label>
+                                                    </div>
+                                                    <label class="text-labl">Сложный</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span><span
+                                                                class="color-mark yellow"></span></label>
+                                                    </div>
+                                                    <label class="text-labl">Продвинутый</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span><span
+                                                                class="color-mark violet"></span></label>
+                                                    </div>
+                                                    <label class="text-labl">Эксперт</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total-blocks is-open">
+                            <div class="title-total">Вы выбрали</div>
+                            <div class="block-scroll">
+                                <div class="item">
+                                    <label class="checkbox">
+                                        <input type="checkbox" checked />
+                                        <span class="custom-checkbox"></span>
+                                        <span class="color-mark blue"></span>Простой
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="text-right button-del-total">
+                                <button class="btn-prof btn-red">Удалить выбранное</button>
+                            </div>
+                        </div>
+                        <div class="text-left counter-buttons sticked-buttons-yes">
+                            <button class="btn-prof btn-gray" id="R1">Назад</button>
+                            <button class="btn-prof btn-green" id="L3">Далее</button>
+                        </div>
+                    </div>
+
+                    <!-- Источники -->
+                    <div id="bt3" class="contener-wizard allBlocking">
+                        <div class="content-blocks">
+                            <div class="col-headerTable tabl004 title-row">
+                                <div class="col-td">
+                                    <h2>Выберете источники</h2>
+                                    <p class="date-p">Данные выводятся за последние 30 дней</p>
+                                </div>
+                                <div class="col-td">
+                                    <div class="form-control search-table">
+                                        <input class="form-item" name="input-site" value="" type="text"
+                                            placeholder="Поиск">
+                                        <span class="icon-search"></span>
+                                    </div>
+                                </div>
+                                <div class="col-td">
+                                    <div class="title-w2 d-flex justify-content-end">
+                                        <div class="radio-buttons-wrapper">
+                                            <input type="radio" class="radio-button" name="radioButtonTest13" value="1"
+                                                id="button444461" checked="">
+                                            <label for="button444461"><i class="ico-e6"></i></label>
+                                            <input type="radio" class="radio-button" name="radioButtonTest13" value="2"
+                                                id="button415461">
+                                            <label for="button415461">%</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="container-table col-12 is-open">
+                                    <div class="rotate-block"><img src="img/rotate.svg" alt=""><span>Для просмотра
+                                            таблицы
+                                            поверните горизонтально ваше устройства</span>
+                                    </div>
+                                    <table class="mt-2 rotate-phone">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:40%;" class="text-left">
+                                                    <label class="checkbox seckond-chek" style="margin-bottom: 0px;">
+                                                        <input [checked]="isSelectAllItems"
+                                                            (change)="onSelectAllItems()" type="checkbox" checked />
+                                                        <span class="custom-checkbox"></span> Выбрать все источники
+                                                    </label>
+                                                </th>
+                                                <th class="text-center">
+                                                    <strong class="ico-stat-09"></strong>
+                                                    <span>Трафик</span></th>
+                                                <th class="text-center text-green"><strong class="ico-stat-01"></strong>
+                                                    <span>Целевой</span> <i class="ico-down"></i></th>
+                                                <th class="text-center"><strong class="ico-stat-02"></strong>
+                                                    <span>Нецелевой</span>
+                                                    <i class="ico-up"></i></th>
+                                                <th class="text-center text-red"><strong class="ico-stat-03"></strong>
+                                                    <span>Боты</span></th>
+                                                <th class="text-center">Глубина </th>
+                                                <th class="text-center time-td"><span>Время на сайте</span></th>
+                                                <th class="text-center">Отказы </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="title-total-all">
+                                                <td class="text-center" colspan="8">Вы выбрали все источники для
+                                                    блокировки</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left strong-total"> Итого и среднее:</td>
+                                                <td class="text-center strong-total">3200</td>
+                                                <td class="text-center strong-total">360</td>
+                                                <td class="text-center strong-total">360</td>
+                                                <td class="text-center strong-total">60</td>
+                                                <td class="text-center strong-total">2.6</td>
+                                                <td class="text-center strong-total">00:08:08</td>
+                                                <td class="text-center strong-total">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="parrent-level text-left auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="checkbox-plus"></span></label>
+                                                        <label class="checkbox"><input type="checkbox" /><span
+                                                                class="custom-checkbox"></span>
+                                                            <i class="ico-sources sor-02"></i>
+                                                        </label>
+                                                    </div>
+                                                    <label class="text-labl">Переходы</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">600</td>
+                                                <td class="text-center">3.48</td>
+                                                <td class="text-center">00:08:08</td>
+                                                <td class="text-center">50.94%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="parrent-level text-left auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="checkbox-plus"></span></label>
+                                                        <label class="checkbox"><input type="checkbox" /><span
+                                                                class="custom-checkbox"></span>
+                                                            <i class="ico-sources sor-01"></i></label>
+                                                    </div>
+                                                    <label class="text-labl">Поисковыйтрафик</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">216</td>
+                                                <td class="text-center">3.6</td>
+                                                <td class="text-center">00:08:08</td>
+                                                <td class="text-center">50.94%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sub-level text-left auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="checkbox-plus"></span></label>
+                                                        <label class="checkbox"><input type="checkbox" /><span
+                                                                class="custom-checkbox"></span><img
+                                                                src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;"></label>
+                                                    </div>
+                                                    <label class="text-labl">http://google.com</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">2.6</td>
+                                                <td class="text-center">00:08:08</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sub-level text-left auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="checkbox-plus"></span></label>
+                                                        <label class="checkbox"><input type="checkbox" /><span
+                                                                class="custom-checkbox"></span><img
+                                                                src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;"></label>
+                                                    </div>
+                                                    <label class="text-labl">http://google.com</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">2.6</td>
+                                                <td class="text-center">00:08:08</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sub-level2 text-left auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox seckond-chek"><input
+                                                                type="checkbox" /><span
+                                                                class="custom-checkbox"></span><img
+                                                                src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;"></label>
+                                                    </div>
+                                                    <label
+                                                        class="text-labl">https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">2.6</td>
+                                                <td class="text-center">00:08:08</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="parrent-level text-left auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="checkbox-plus"></span></label>
+                                                        <label class="checkbox"><input type="checkbox" /><span
+                                                                class="custom-checkbox"></span>
+                                                            <i class="ico-sources sor-04"></i></label>
+                                                    </div>
+                                                    <label class="text-labl">Внутренние переходы</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">2.6</td>
+                                                <td class="text-center">00:08:08</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="parrent-level text-left auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="checkbox-plus"></span></label>
+                                                        <label class="checkbox"><input type="checkbox" /><span
+                                                                class="custom-checkbox"></span>
+                                                            <i class="ico-sources sor-05"></i></label>
+                                                    </div>
+                                                    <label class="text-labl">Социальные сети</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">2.6</td>
+                                                <td class="text-center">00:08:08</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="parrent-level text-left auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox seckond-chek"><input
+                                                                type="checkbox" /><span class="custom-checkbox"></span>
+                                                            <i class="ico-sources sor-03"></i></label>
+                                                    </div>
+                                                    <label class="text-labl">Другое</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">2.6</td>
+                                                <td class="text-center">00:08:08</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total-blocks">
+
+                            <div class="title-total">Вы выбрали</div>
+                            <div class="block-scroll">
+                                <div class="item">
+                                    <div class="lable">
+                                        <label class="checkbox">
+                                            <input type="checkbox" /> <span class="custom-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                        alt="" style="width:16px;">
+                                    <span class="tx"><a href="">https://maps.google.com</a></span>
+                                </div>
+                                <div class="item">
+                                    <div class="lable">
+                                        <label class="checkbox">
+                                            <input type="checkbox" checked /> <span class="custom-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                        alt="" style="width:16px;">
+                                    <span class="tx"><a
+                                            href="">https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8https://www.google.ru/search?q=white-space&oq=white-space&aqs=chrome..69i57j0l5.1207j0j7&sourceid=chrome&ie=UTF-8</a></span>
+                                </div>
+                                <div class="item">
+                                    <div class="lable">
+                                        <label class="checkbox">
+                                            <input type="checkbox" /> <span class="custom-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <i class="ico-sources sor-04"></i>
+                                    <span class="tx"><a href="">Внутренние переходы</a></span>
+                                </div>
+                            </div>
+                            <div class="text-right button-del-total">
+                                <button class="btn-prof btn-red">Удалить выбранное</button>
+                            </div>
+                        </div>
+                        <div class="text-left counter-buttons sticked-buttons-yes">
+                            <button class="btn-prof btn-gray" id="R2">Назад</button>
+                            <button class="btn-prof btn-green" id="L4">Далее</button>
+                        </div>
+                    </div>
+
+                    <!-- География -->
+                    <div id="bt4" class="contener-wizard">
+                        <div class="content-blocks">
+                            <div class="col-headerTable tabl004 title-row">
+                                <div class="col-td">
+                                    <h2>Выберете геотаргетинг</h2>
+                                    <p class="date-p">Данные выводятся за последние 30 дней</p>
+                                </div>
+                                <div class="col-td">
+                                    <div class="form-control search-table">
+                                        <input class="form-item" name="input-site" value="" type="text"
+                                            placeholder="Поиск">
+                                        <span class="icon-search"></span>
+                                    </div>
+                                </div>
+                                <div class="col-td">
+                                    <div class="title-w2 d-flex justify-content-end">
+                                        <div class="radio-buttons-wrapper">
+                                            <input type="radio" class="radio-button" name="radioButtonTest14" value="1"
+                                                id="button422333" checked="">
+                                            <label for="button422333"><i class="ico-e6"></i></label>
+                                            <input type="radio" class="radio-button" name="radioButtonTest14" value="2"
+                                                id="button4223">
+                                            <label for="button4223">%</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="container-table col-12 is-open">
+                                    <div class="rotate-block"><img src="img/rotate.svg" alt=""><span>Для просмотра
+                                            таблицы
+                                            поверните горизонтально ваше устройства</span>
+                                    </div>
+                                    <table class="mt-2 rotate-phone">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:40%;" class="text-left">
+                                                    <label class="checkbox seckond-chek" style="margin-bottom: 0px;">
+                                                        <input [checked]="isSelectAllItems"
+                                                            (change)="onSelectAllItems()" type="checkbox" />
+                                                        <span class="custom-checkbox"></span> Выбрать все местоположения
+                                                    </label>
+                                                </th>
+                                                <th class="text-center">
+                                                    <strong class="ico-stat-09"></strong>
+                                                    <span>Трафик</span></th>
+                                                <th class="text-center text-green"><strong class="ico-stat-01"></strong>
+                                                    <span>Целевой</span> <i class="ico-down"></i></th>
+                                                <th class="text-center"><strong class="ico-stat-02"></strong>
+                                                    <span>Нецелевой</span> <i class="ico-up"></i></th>
+                                                <th class="text-center text-red"><strong class="ico-stat-03"></strong>
+                                                    <span>Боты</span></th>
+                                                <th class="text-center">Глубина </th>
+                                                <th class="text-center time-td"><span>Время на сайте</span></th>
+                                                <th class="text-center">Отказы </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left strong-total"> Итого и среднее:</td>
+                                                <td class="text-center strong-total">3200</td>
+                                                <td class="text-center strong-total">360</td>
+                                                <td class="text-center strong-total">6</td>
+                                                <td class="text-center strong-total">3.54</td>
+                                                <td class="text-center strong-total">3.54</td>
+                                                <td class="text-center strong-total">3.54</td>
+                                                <td class="text-center strong-total">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping parrent-level">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="checkbox-plus"></span></label>
+                                                        <label class="checkbox ">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://lipis.github.io/flag-icon-css/flags/4x3/ru.svg"
+                                                                alt="" class="flag">
+                                                        </label>
+                                                        <label class="text-labl">Russia</label>
+                                                        </label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sub-level auto-clipping parrent-level">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><input type="checkbox" checked /> <span
+                                                                class="checkbox-plus"></span></label>
+                                                        <label class="checkbox "><input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://lipis.github.io/flag-icon-css/flags/4x3/ru.svg"
+                                                                alt="" class="flag">
+                                                        </label>
+                                                    </div>
+                                                    <label class="text-labl">Moscow region</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="sub-level2 auto-clipping parrent-level">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <input type="checkbox" /> <span
+                                                                class="checkbox-plus"></span></label>
+                                                        <label class="checkbox ">
+                                                            <input type="checkbox" checked /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://lipis.github.io/flag-icon-css/flags/4x3/ru.svg"
+                                                                alt="" class="flag">
+                                                        </label>
+                                                        <label class="text-labl">Moscow</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping parrent-level">
+                                                    <div class="lable">
+                                                        <label class="checkbox seckond-chek">
+                                                            <input type="checkbox" /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://lipis.github.io/flag-icon-css/flags/4x3/ua.svg"
+                                                                alt="" class="flag">
+                                                        </label>
+                                                    </div>
+                                                    <label class="text-labl">Ukraine</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping parrent-level">
+                                                    <div class="lable">
+                                                        <label class="checkbox seckond-chek">
+                                                            <input type="checkbox" /> <span
+                                                                class="custom-checkbox"></span>
+                                                            <img src="https://lipis.github.io/flag-icon-css/flags/4x3/by.svg"
+                                                                alt="" class="flag">
+                                                        </label>
+                                                    </div>
+                                                    <label class="text-labl">Belarus</label>
+                                                </td>
+                                                <td class="text-center">3200</td>
+                                                <td class="text-center">360</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">6</td>
+                                                <td class="text-center">3.54</td>
+                                                <td class="text-center">20%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total-blocks is-open">
+                            <div class="title-total">Вы выбрали</div>
+                            <div class="block-scroll">
+                                <div class="item">
+                                    <div class="lable">
+                                        <label class="checkbox">
+                                            <input type="checkbox" /> <span class="custom-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <img src="https://lipis.github.io/flag-icon-css/flags/4x3/ru.svg" alt=""
+                                        class="flag" style="width:16px;">
+                                    <span class="geo-n"><a href="">Samara</a></span>
+                                </div>
+                                <div class="item">
+                                    <div class="lable">
+                                        <label class="checkbox">
+                                            <input type="checkbox" checked /> <span class="custom-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <img src="https://lipis.github.io/flag-icon-css/flags/4x3/ru.svg" alt=""
+                                        class="flag" style="width:16px;">
+                                    <span class="geo-n"><a href="">Moscow</a></span>
+                                </div>
+                                <div class="item">
+                                    <div class="lable">
+                                        <label class="checkbox">
+                                            <input type="checkbox" /> <span class="custom-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <img src="https://lipis.github.io/flag-icon-css/flags/4x3/ru.svg" alt=""
+                                        class="flag" style="width:16px;">
+                                    <span class="geo-n"><a href="">Rostov-on-Don</a></span>
+                                </div>
+                            </div>
+                            <div class="text-right button-del-total">
+                                <button class="btn-prof btn-red">Удалить выбранное</button>
+                            </div>
+                        </div>
+                        <div class="text-left counter-buttons sticked-buttons-yes">
+                            <button class="btn-prof btn-gray" id="R3">Назад</button>
+                            <button class="btn-prof btn-green" id="L5">Далее</button>
+                        </div>
+                    </div>
+
+                    <!-- Итого -->
+
+                    <div id="bt5" class="contener-wizard all-total-page">
+                        <h2>Вы планируете заблокировать ботов:</h2>
+                        <div class="content-blocks">
+                            <div class="row title-row">
+                                <div class="col-12 col-sm-12 ">
+                                    <h2 class="text-left">Посадочные страницы</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="container-table col-12 is-open">
+                                    <table class="mt-2">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left strong-total"> Выбрано: 3</td>
+                                                <td class="strong-total"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label class="text-labl">https://maps.google.com</label>
+                                                </td>
+                                                <td>
+                                                    <div class="close-alert"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label
+                                                        class="text-labl">https://www.google.ru/search?q=white-space&amp;oq=white-space&amp;aqs=chrome..69i57j0l5.1207j0j7&amp;sourceid=chrome&amp;ie=UTF-8https://www.google.ru/search?q=white-space&amp;oq=white-space&amp;aqs=chrome..69i57j0l5.1207j0j7&amp;sourceid=chrome&amp;ie=UTF-8</label>
+                                                </td>
+                                                <td>
+                                                    <div class="close-alert"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox">
+                                                            <img src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;">
+                                                        </label>
+                                                    </div>
+                                                    <label
+                                                        class="text-labl">https://www.google.ru/search?q=white-space&amp;oq=white-space&amp;aqs=chrome..69i57j0l5.1207j0j7&amp;sourceid=chrome&amp;ie=UTF-8https://www.google.ru/search?q=white-space&amp;oq=white-space&amp;aqs=chrome..69i57j0l5.1207j0j7&amp;sourceid=chrome&amp;ie=UTF-8</label>
+                                                </td>
+                                                <td>
+                                                    <div class="close-alert"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="content-blocks">
+                            <div class="row title-row">
+                                <div class="col-12 col-sm-12 ">
+                                    <h2 class="text-left">Типы ботов</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="container-table col-12 is-open">
+                                    <table class="mt-2">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left strong-total"> Выбрано: 2</td>
+                                                <td class="strong-total"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><span
+                                                                class="color-mark blue"></span></label>
+                                                    </div>
+                                                    <label class="text-labl">Нормальный</label>
+                                                </td>
+                                                <td>
+                                                    <div class="close-alert"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox"><span
+                                                                class="color-mark green"></span></label>
+                                                    </div>
+                                                    <label class="text-labl">Сложный</label>
+                                                </td>
+                                                <td>
+                                                    <div class="close-alert"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-blocks">
+                            <div class="row title-row">
+                                <div class="col-12 col-sm-12 ">
+                                    <h2 class="text-left">Источники</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="container-table col-12 is-open">
+                                    <table class="mt-2">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left strong-total"> Выбрано: 2</td>
+                                                <td class="strong-total"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class=" text-left auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox seckond-chek"><i
+                                                                class="ico-sources sor-03"></i></label>
+                                                    </div>
+                                                    <label class="text-labl">Другое</label>
+                                                </td>
+                                                <td>
+                                                    <div class="close-alert"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class=" text-left auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox seckond-chek"><img
+                                                                src="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"
+                                                                alt="" style="width:16px;"></label>
+                                                    </div>
+                                                    <label
+                                                        class="text-labl">https://www.google.ru/search?q=white-space&amp;oq=white-space&amp;aqs=chrome..69i57j0l5.1207j0j7&amp;sourceid=chrome&amp;ie=UTF-8</label>
+                                                </td>
+                                                <td>
+                                                    <div class="close-alert"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-blocks">
+                            <div class="row title-row">
+                                <div class="col-12 col-sm-12 ">
+                                    <h2 class="text-left">География</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="container-table col-12 is-open">
+                                    <table class="mt-2">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-left strong-total"> Выбрано: 2</td>
+                                                <td class="strong-total"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping ">
+                                                    <div class="lable">
+                                                        <label class="checkbox seckond-chek">
+                                                            <img src="https://lipis.github.io/flag-icon-css/flags/4x3/by.svg"
+                                                                alt="" class="flag">
+                                                        </label>
+                                                    </div>
+                                                    <label class="text-labl">Belarus</label>
+                                                </td>
+                                                <td>
+                                                    <div class="close-alert"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="auto-clipping">
+                                                    <div class="lable">
+                                                        <label class="checkbox seckond-chek">
+                                                            <img src="https://lipis.github.io/flag-icon-css/flags/4x3/ua.svg"
+                                                                alt="" class="flag">
+                                                        </label>
+                                                    </div>
+                                                    <label class="text-labl">Ukraine</label>
+                                                </td>
+                                                <td>
+                                                    <div class="close-alert"></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center counter-buttons sticked-buttons-yes">
+                            <button class="btn-prof btn-gray" id="R4">Назад</button>
+                            <button class="btn-prof btn-green">Добавить блокировку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--content end-->
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="main.js"></script>
+
+</html>

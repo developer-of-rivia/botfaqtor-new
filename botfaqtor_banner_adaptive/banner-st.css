@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.block-wrapp {
+    border: 1px solid#cccccc;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.block-wrapp .link-banner {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.block-wrapp .link-banner:hover {
+    opacity: .7;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.block-wrapp {
+    background: url(bot-n.gif);
+    background-repeat: no-repeat;
+    background-position: 100% 85%;
+    background-size: contain;
+}
+
+.block-wrapp table {
+    table-layout: fixed;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 100%;
+    border-spacing: 0;
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: keep-all;
+    line-break: loose;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+.block-wrapp table td {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: keep-all;
+    line-break: loose;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+.block-wrapp .td1 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 25px;
+    background: #ccc;
+    padding: 5px;
+    color: #4e4e4e;
+}
+
+.block-wrapp .td2 {
+    height: 100%;
+}
+
+.block-wrapp .td2 img {
+    height: 50%;
+    display: inline-block;
+}
+
+.block-wrapp .td3 {
+    color: #444;
+    padding: 0px 15px;
+    font-size: 18px;
+    height: 100%;
+}
+
+.block-wrapp .td4 {
+    padding: 8px;
+    background: #ccc;
+    font-size: 14px;
+    height: 33px;
+}
+
+@media (min-height: 80px) {
+    .block-wrapp .td3 {
+        font-size: 14px;
+    }
+    .block-wrapp .td1 {
+        font-size: 16px;
+    }
+    .block-wrapp .td4 {
+        font-size: 13px;
+        line-height: 13px;
+        height: initial;
+        padding: 7px;
+    }
+}
+
+@media (min-height: 190px) {
+    .block-wrapp .td3 {
+        font-size: 18px;
+    }
+    .block-wrapp .td1 {
+        font-size: 18px;
+    }
+}
+
+@media (min-height: 240px) {
+    .block-wrapp .td3 {
+        font-size: 22px;
+    }
+    .block-wrapp .td1 {
+        font-size: 24px;
+    }
+}
+
+@media (min-height: 400px) {
+    .block-wrapp .td3 {
+        font-size: 22px;
+    }
+}
+
+@media (min-height: 600px) {
+    .block-wrapp .td3 {
+        font-size: 28px;
+    }
+    .block-wrapp .td1 {
+        font-size: 32px;
+        line-height: 34px;
+        padding: 10px 5px;
+    }
+    .block-wrapp .td4 {
+        font-size: 18px;
+        padding: 13px;
+    }
+}
+
+@media (min-height: 800px) {
+    .block-wrapp .td3 {
+        font-size: 36px;
+    }
+    .block-wrapp .td1 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+    .block-wrapp .td4 {
+        font-size: 22px;
+        padding: 15px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 140px) and (min-height: 240px) {
+    .block-wrapp .td1 {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .block-wrapp .td3 {
+        font-size: 12px;
+        padding: 0px 5px;
+    }
+    .block-wrapp .td4 {
+        padding: 5px;
+        font-size: 12px;
+        height: 33px;
+    }
+}
+
+@media (max-width: 125px) and (max-height: 125px) {
+    .block-wrapp .td1 {
+        font-size: 11px;
+        line-height: 11px;
+    }
+    .block-wrapp .td3, .block-wrapp .td4 {
+        display: none;
+    }
+    .block-wrapp tr:nth-child(2), .block-wrapp tr:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (width: 234px) and (height: 60px) {
+    .block-wrapp .td1 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .block-wrapp .td3, .block-wrapp .td4 {
+        display: none;
+    }
+    .block-wrapp tr:nth-child(2), .block-wrapp tr:nth-child(3) {
+        display: none;
+    }
+}

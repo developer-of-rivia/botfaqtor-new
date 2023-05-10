@@ -1,0 +1,43 @@
+/* .tooltip_theme_botfaqtor + div > .tippy-box{
+    background-color: black;
+    color: #fff;
+}
+.tooltip_theme_botfaqtor + div > .tippy-box a{
+    color: lightblue;
+}
+.tooltip_theme_botfaqtor + div > .tooltip-icon{
+    width: 20px;
+    height: 20px;
+    background: black;
+    color: #fff;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.tooltip_theme_botfaqtor + div > .tippy-arrow{
+    border-color: black;
+} */
+
+
+
+[data-theme="tomato"]{
+    background: tomato;
+}
+[data-theme="tomato"] a{
+    color: red;
+}
+[data-theme="tomato"] .tippy-arrow{
+    color: tomato;
+}
+
+
+
+[data-tippy-previous-word="true"] + div{
+    left: -20px !important;
+}
+
+
+.some-element + [data-tippy] *{
+    background: red;
+}

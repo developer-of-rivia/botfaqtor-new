@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>botfaqtor.ru</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/landing.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body style="background-color:rgba(0, 0, 0, 0.5)">
+
+    <!-- Окно авторизации-->
+
+    <div class="modal_content">
+        <div class="cont-pop-up">
+            <div class="close-wind"></div>
+            <h2 class="modal-title pull-left">Войти</h2>
+            <form>
+                <div class="form-control col-12">
+                    <div class="cdInputFix">
+                        <input type="text" name="">
+                        <div class="placehold">E-mail *</div>
+                    </div>
+                </div>
+                <div class="form-control col-12">
+                    <div class="cdInputFix">
+                        <input type="password" name="">
+                        <div class="placehold">Пароль *</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="#" class="recovery">Забыли пароль?</a>
+                    <button type="submit" class="btn btn-primary">Войти</button>
+                </div>
+            </form>
+            <div class="autho_network">
+                <h4>или войдите через социальную сеть:</h4>
+                <a href="#" class="MicroAcc"></a>
+                <a href="#" class="GoogleAcc"></a>
+                <a href="#" class="fbAcc"></a>
+                <a href="#" class="okAcc"></a>
+                <a href="#" class="vkAcc"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Окно авторизации с ошибками полей-->
+    <div class="modal_content">
+        <div class="cont-pop-up">
+            <div class="close-wind"></div>
+            <h2 class="modal-title pull-left">Войти</h2>
+            <form>
+                <div class="form-control error col-12">
+                    <div class="cdInputFix">
+                        <input type="text" name="" class="error-input">
+                        <div class="placehold">E-mail *</div>
+                        <span class="form-notice text-error">Пожалуйста, введите корректный e-mail</span>
+                    </div>
+                </div>
+                <div class="form-control error col-12">
+                    <div class="cdInputFix">
+                        <input type="password" name="" class="error-input">
+                        <div class="placehold">Пароль *</div>
+                        <span class="form-notice text-error">Имя пользователя или пароль указаны не верно.</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="#" class="recovery">Забыли пароль?</a>
+                    <button type="submit" class="btn btn-primary" disabled>Войти</button>
+                </div>
+            </form>
+            <div class="autho_network">
+                <h4>или войдите через социальную сеть:</h4>
+                <a href="#" class="MicroAcc"></a>
+                <a href="#" class="GoogleAcc"></a>
+                <a href="#" class="fbAcc"></a>
+                <a href="#" class="okAcc"></a>
+                <a href="#" class="vkAcc"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Окно авторизации с активацией-->
+    <div class="modal_content">
+        <div class="cont-pop-up">
+            <div class="close-wind"></div>
+            <h2 class="modal-title pull-left">Войти</h2>
+            <form>
+                <div class="form-control col-12">
+                    <div class="cdInputFix">
+                        <input type="text" name="">
+                        <div class="placehold">E-mail *</div>
+                    </div>
+                </div>
+                <div class="form-control col-12">
+                    <div class="cdInputFix">
+                        <input type="password" name="">
+                        <div class="placehold">Пароль *</div>
+                        <span class="form-notice text-error">Ваша учетная запись не активирована. Вам необходимо подтвердить E-mail.</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <a href="#" class="recovery">Забыли пароль?</a>
+                    <button type="submit" class="btn btn-primary">Войти</button>
+                </div>
+                <div class="row">
+                    <a href="#" class="btn btn-activation">Отправить письмо активации</a>
+                </div>
+            </form>
+            <div class="autho_network">
+                <h4>или войдите через социальную сеть:</h4>
+                <a href="#" class="MicroAcc"></a>
+                <a href="#" class="GoogleAcc"></a>
+                <a href="#" class="fbAcc"></a>
+                <a href="#" class="okAcc"></a>
+                <a href="#" class="vkAcc"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <hr style="border-top:1px solid;">
+    <!-- Окно восстановление -->
+    <div class="modal_content">
+        <div class="cont-pop-up">
+            <div class="close-wind"></div>
+            <h2 class="modal-title pull-left">Восстановление учетной записи</h2>
+            <form>
+                <div class="form-control col-12">
+                    <div class="cdInputFix">
+                        <input type="text" name="">
+                        <div class="placehold">E-mail *</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-primary btn-recovery" disabled>Отправить письмо</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Окно восстановление с ошибками -->
+    <div class="modal_content">
+        <div class="cont-pop-up">
+            <div class="close-wind"></div>
+            <h2 class="modal-title pull-left">Восстановление учетной записи</h2>
+            <form>
+                <div class="form-control error col-12">
+                    <div class="cdInputFix">
+                        <input type="text" name="" class="error-input">
+                        <div class="placehold">E-mail *</div>
+                        <span class="form-notice text-error">Пожалуйста, введите корректный e-mail.</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-primary btn-recovery" disabled>Отправить письмо</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Окно восстановление -->
+    <div class="modal_content">
+        <div class="cont-pop-up">
+            <div class="close-wind"></div>
+            <h2 class="modal-title pull-left">Восстановление учетной записи</h2>
+            <form>
+                <div class="form-control col-12">
+                    <div class="cdInputFix">
+                        <input type="text" name="">
+                        <div class="placehold">E-mail *</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-primary btn-recovery">Отправить письмо</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <hr style="border-top:1px solid;">
+    <!-- Окно уведомление -->
+    <div class="modal_content">
+        <div class="cont-pop-up">
+            <div class="close-wind"></div>
+            <h2 class="modal-title pull-left">Уведомление</h2>
+            <form>
+                <div class="col-12 info-text">
+                    <p>Письмо для восстановления аккаунта отправлено на Вашу электроную почту test@botfaqtor.ru</p>
+                </div>
+                <div class="row">
+                    <a href="#" class="btn btn-primary btn-recovery">Ок</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <hr style="border-top:1px solid;">
+    <!-- Окно восстановление пароля -->
+
+    <div class="modal_content">
+        <div class="cont-pop-up">
+            <div class="close-wind"></div>
+            <h2 class="modal-title pull-left">Восстановление пароля</h2>
+            <form>
+                <div class="col-12 email-text">
+                    <p>test@botfaqtor.ru</p>
+                </div>
+                <div class="form-control col-12">
+                    <div class="cdInputFix">
+                        <input type="password" name="">
+                        <div class="placehold">Новый пароль *</div>
+                    </div>
+                </div>
+                <div class="form-control col-12">
+                    <div class="cdInputFix">
+                        <input type="password" name="">
+                        <div class="placehold">Подтвердите новый пароль *</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="submit" class="btn btn-pass-save">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Окно восстановление пароля, Ошибка -->
+    <div class="modal_content">
+        <div class="cont-pop-up">
+            <div class="close-wind"></div>
+            <h2 class="modal-title pull-left">Восстановление пароля</h2>
+            <form>
+                <div class="col-12 email-text">
+                    <p>test@botfaqtor.ru</p>
+                </div>
+                <div class="form-control error col-12">
+                    <div class="cdInputFix">
+                        <input type="password" name="" class="error-input">
+                        <div class="placehold">Новый пароль *</div>
+                        <span class="form-notice text-error">Пароль должен содержать не менее 6 символов</span>
+                    </div>
+                </div>
+                <div class="form-control error col-12">
+                    <div class="cdInputFix">
+                        <input type="password" name="" class="error-input">
+                        <div class="placehold">Подтвердите новый пароль *</div>
+                        <span class="form-notice text-error">Указанные пароли не совпадают</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-pass-save" disabled>Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <hr style="border-top:1px solid;">
+    <!-- Окно регистрации -->
+    <div class="modal_content">
+        <div class="cont-pop-up">
+            <div class="close-wind"></div>
+            <h2 class="modal-title pull-left">Зарегистрироваться</h2>
+            <form>
+                <div class="form-control col-12">
+                    <div class="cdInputFix">
+                        <input type="text" name="">
+                        <div class="placehold">E-mail *</div>
+                    </div>
+                </div>
+                <div class="form-control col-12">
+                    <div class="cdInputFix">
+                        <input type="password" name="">
+                        <div class="placehold">Пароль *</div>
+                    </div>
+                </div>
+                <div class="form-control col-12">
+                    <div class="cdInputFix">
+                        <input type="password" name="">
+                        <div class="placehold">Подтвердите новый пароль *</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-check-in">Зарегистрироваться</button>
+                </div>
+            </form>
+            <div class="autho_network">
+                <h4>или войдите через социальную сеть:</h4>
+                <a href="#" class="MicroAcc"></a>
+                <a href="#" class="GoogleAcc"></a>
+                <a href="#" class="fbAcc"></a>
+                <a href="#" class="okAcc"></a>
+                <a href="#" class="vkAcc"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Окно регистрации, Ошибка -->
+    <div class="modal_content">
+        <div class="cont-pop-up">
+            <div class="close-wind"></div>
+            <h2 class="modal-title pull-left">Зарегистрироваться</h2>
+            <form>
+                <div class="form-control error col-12">
+                    <div class="cdInputFix">
+                        <input type="text" name="" class="error-input">
+                        <div class="placehold">E-mail *</div>
+                        <span class="form-notice text-error">Пожалуйста, введите корректный e-mail.</span>
+                    </div>
+                </div>
+                <div class="form-control error col-12">
+                    <div class="cdInputFix">
+                        <input type="password" name="" class="error-input">
+                        <div class="placehold">Пароль *</div>
+                        <span class="form-notice text-error">Пароль должен содержать не менее 6 символов</span>
+                    </div>
+                </div>
+                <div class="form-control error col-12">
+                    <div class="cdInputFix">
+                        <input type="password" name="" class="error-input">
+                        <div class="placehold">Подтвердите новый пароль *</div>
+                        <span class="form-notice text-error">Указанные пароли не совпадают</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-check-in" disabled>Зарегистрироваться</button>
+                </div>
+            </form>
+            <div class="autho_network">
+                <h4>или войдите через социальную сеть:</h4>
+                <a href="#" class="MicroAcc"></a>
+                <a href="#" class="GoogleAcc"></a>
+                <a href="#" class="fbAcc"></a>
+                <a href="#" class="okAcc"></a>
+                <a href="#" class="vkAcc"></a>
+            </div>
+        </div>
+    </div>
+
+    <hr style="border-top:1px solid;">
+    <!-- Окно Сообщение администратору -->
+    <div class="modal_content">
+            <div class="cont-pop-up">
+                <div class="close-wind"></div>
+                <h2 class="modal-title pull-left">Сообщение администратору</h2>
+                <form>
+                    <div class="form-control col-12">
+                        <div class="cdInputFix">
+                            <input type="text" name="">
+                            <div class="placehold">Имя *</div>
+                        </div>
+                    </div>
+                    <div class="form-control col-12">
+                        <div class="cdInputFix">
+                            <input type="text" name="">
+                            <div class="placehold">E-mail *</div>
+                        </div>
+                    </div>
+                    <div class="form-control col-12">
+                        <div class="cdInputFix">
+                            <textarea name=""></textarea>
+                            <div class="placehold">Текст сообщения *</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <button type="submit" class="btn btn-check-in" disabled>Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>    
+</body>
+
+</html>

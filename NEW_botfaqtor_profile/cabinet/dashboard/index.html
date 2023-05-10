@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пополнить баланс - BotFAQtor.ru</title>
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+
+    <script src="/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="profile">
+        <div class="logo-brand-profile">
+            <a href="/"><img src="/img/brand_botfaqtor.svg" alt="" class="img-fluid"></a>
+        </div>
+        <a href="" class="mysite-button">
+            <i></i>
+            <span>Мои сайты</span>
+        </a>
+        <div class="nav-proj">
+            <div class="mobi-nav-proj">
+                <i class="ico-list"></i>
+                <span>Проекты</span>
+            </div>
+            <ul class="items-proj">
+                <li class="active">
+                    <a href="" data-tooltip="Анализирует весь трафик на сайте и блокирует ботов. Возможно гибко настроить блокировку ботов по: посадочным страницам, гео, источникам (не защищает от скликивания Я.Директ и Google ADS).">
+                        <img src="/img/blocking_pr.svg">
+                        <span>Антибот для сайта</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-tooltip="Экономит до 30% вашего бюджета на рекламу. Получаете отчеты по utm-меткам, ключевым словам, добавлению ботов в сегмент Яндекс и т.д.">
+                        <img src="/img/direct_pr.svg">
+                        <span>Защита Яндекс.Директ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" data-tooltip="Экономит до 30% вашего бюджета на рекламу. Получаете отчеты по utm-меткам, ключевым словам, добавлению ботов в сегмент Google ADS и т.д.">
+                        <img src="/img/ads_pr.svg">
+                        <span>Защита Google Ads</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="block-balance-col">
+            <div class="balance-content">
+                <div class="ico-wallet"></div>
+                <div class="sum-balance"><span>1 000 000, 66</span> ₽</div>
+                <span class="ico-down-arr"></span>
+            </div>
+            <ul class="dropdown-content">
+                <div class="popup_tail"></div>
+                <li class="item-list">Пополнить счет</li>
+                <li class="item-list">История операций</li>
+                <li class="auto-pay-block">
+                    <div class="row items-center">
+                        <div class="col-auto">Автоплатёж <span class="text-red">выключен</span></div>
+                        <div class="col"><button class="button-line line-blue">Настроить</button></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="login-container d-inline-flex">
+            <div class="login-container__info">
+                <div class="person-content">
+                    <span class="login">test@botfaqtor.ru</span>
+                    <span class="balance">Базовый тариф</span>
+                </div>
+                <span class="ico-down-arr"></span>
+            </div>
+            <ul class="dropdown-content">
+                <div class="popup_tail"></div>
+                <li class="item-list">Настройки</li>
+                <li class="item-list">Выйти</li>
+            </ul>
+        </div>
+        <div class="burg-menu">
+            <span class="icon-hidden-menu"></span>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <div class="block-mobile-person">
+            <div class="person-content">
+                <div class="per">
+                    <div class="l">
+                        <span class="person-login">test@botfaqtor.ru</span>
+                        <span class="person-balance">Базовый тариф
+                        </span>
+                    </div>
+                    <div class="r">
+                        <a href="" class="logout"></a>
+                    </div>
+                </div>
+
+                <a href="#">Настройки профиля</a>
+            </div>
+        </div>
+
+        <button class="btn-prof btn-green add-site">Добавить сайт</button>
+        <div class="sidebar-menu-accordion">
+            <ul>
+                <li>
+                    <a href="/">
+                        <i class="ico dashbord-i"></i>
+                        <span>Дашборд</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mysites.html">
+                        <i class="ico mysite-i"></i>
+                        <span>Мои сайты</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sources.html">
+                        <i class="ico report-i"></i>
+                        <span>Отчеты</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="sources.html"><i class="ico0pl"></i>Источники</a></li>
+                        <li><a href="type-bots.html"><i class="ico1pl"></i>Типы ботов</a></li>
+                        <li><a href="inappropriate-traffic.html"><i class="inappr"></i>Нецелевой трафик</a></li>
+                        <li><a href="entry-points.html"><i class="ico2pl"></i>Посадочные страницы</a></li>
+                        <li><a href="geo.html"><i class="ico3pl"></i>География</a></li>
+                        <li><a href="utm.html"><i class="ico13pl"></i>Метки UTM</a></li>
+                        <li><a href="ip_bots.html"><i class="ico15pl"></i>IP Ботов</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="blocking.html">
+                        <i class="ico blocking-i"></i>
+                        <span>Блокировки</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mysites.html">
+                        <i class="ico settings-i"></i>
+                        <span>Настройки сайта</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-menu-accordion pos-bottom">
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="ico utm-i"></i>
+                        <span>Генератор UTM-меток</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://affiliate-program.botfaqtor.ru/">
+                        <i class="ico partner-i"></i>
+                        <span>Партнерская программа</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="ico faq-i"></i>
+                        <span>Вопрос/Ответ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contacts.html">
+                        <i class="ico contact-i"></i>
+                        <span>Контакты</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="/js/mine.js"></script>
+</body>
+
+</html>

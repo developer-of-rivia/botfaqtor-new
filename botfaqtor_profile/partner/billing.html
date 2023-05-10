@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>botfaqtor.ru profile</title>
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!--header start-->
+    <header class="profile">
+        <div class="logo-brand-profile">
+            <a href="index.html"><img src="../img/brand_botfaqtor.svg" alt="" class="img-fluid"></a>
+            <span class="st"><a href="https://botfaqtor.ru/affiliate-program/" target="blink">Partner</a></span>
+        </div>
+        <div class="nav-proj">
+            <div class="mobi-nav-proj">
+                <i class="ico-list"></i>
+                <span>Проекты</span>
+            </div>
+            <ul class="items-proj">
+                <li class="li-goback">
+                    <a href="" class="goback">
+                        <span>Вернуться в личный кабинет Botfaqtor.ru</span>
+                    </a>
+                </li>
+                <li class="about-part">
+                    <a href="https://botfaqtor.ru/affiliate-program/">О программе</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 
+        <div class="action">
+        <span class="btn btn-transparent" style="text-transform: capitalize;"><i class="ico-person"></i>Войти</span>
+        <span class="btn btn-primary" style="text-transform: capitalize;">Регистрация</span>
+        </div>
+        -->
+
+        <div class="ml-auto login-container d-inline-flex">
+            <div class="login-container__info">
+                <div class="person-content">
+                    <span class="foto-person"><img src="../img/avatar.png" alt=""></span>
+                    <span class="login">test@botfaqtor.ru</span>
+                    <a href="" class="out">Выйти</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--header end-->
+
+    <!--sidebar start-->
+    <div class="sidebar">
+        <div class="sidebar-menu-accordion">
+            <ul>
+                <li><br></li>
+                <li>
+                    <a href="index.html">Партнерская программа</a>
+                </li>
+                <li class="active">
+                    <a href="billing.html">Вывод средств</a>
+                </li>
+                <li>
+                    <a href="billing-history.html">История выводов</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-menu-accordion pos-bottom">
+            <ul>
+                <li>
+                    <a href=""><i class="ico13pl"></i>Генератор UTM-меток</a>
+                </li>
+                <li>
+                    <a href="https://affiliate-program.botfaqtor.ru/">
+                        <i class="ico16pl"></i>Партнерская программа</a>
+                </li>
+                <li>
+                    <a href=""><i class="ico20pl"></i>Вопрос/Ответ</a>
+                </li>
+                <li>
+                    <a href="contacts.html"><i class="ico6pl"></i>О компании</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--sidebar end-->
+    <!--content start-->
+    <div class="content">
+
+        <!-- SuccessURL  
+        <div role="alert" class="alert alert-warning-add-object green">
+            <strong><span class="liheight50">Ваш платёж успешно проведён! Зачислено 6 667 проверок</span></strong>
+            <div class="close-alert"></div>
+        </div>
+        
+
+        <div role="alert" class="alert alert-warning-add-object red">
+            <strong><span class="liheight50">Возникла ошибка при оплате!</span></strong>
+            <div class="close-alert"></div>
+        </div>
+    
+
+        <div role="alert" class="alert alert-warning-add-object red">
+            <strong><span class="liheight50">На вашем счете недостаточно проверок!</span></strong>
+            <a href="#" class="add-buttom-bord">Пополнить</a>
+            <div class="close-alert"></div>
+        </div>
+
+         -->
+
+        <div class="container-fluid setting">
+            <div class="row setting-title">
+                <div class="col-sm-12">
+                    <h2>Вывод средств</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="billing">
+                        <main>
+                            <div class="cont-wiz-bill">
+                                <div class="row pay-bill">
+                                    <div class="col-sm-5">
+                                        <div class="pay-method active-header">
+                                            <div class="pay-title">
+                                                <img src="../img/btf-ico-pay.png">Баланс botfaqtor.ru
+                                                <span class="ico-pay-arr"></span>
+                                            </div>
+                                            <div class="pay-content open-content">
+                                                <div class="content-p">
+                                                    <div class="row">
+                                                      
+                                                        <div class="col-sm-6">
+                                                            <div class="form-control">
+                                                                <div class="cdInputFix">
+                                                                    <input class="form-item" name="input-site" value=""
+                                                                        type="text">
+                                                                        <span class="form-notice text-error">Пожалуйста, введите сумму</span>
+                                                                    <div class="placehold">Введите сумму</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <div class="clear"></div>
+
+                                                    <div class="sum-all-p">Доступно для вывода: <u>290 000</u> руб</div>
+                                                 
+                                                    <p>Укажите сумму</p>
+                                                    <button class="btn-prof btn-green">Отправить заявку на вывод</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pay-method">
+                                            <div class="pay-title">
+                                                <img src="../img/wb-ico-pay.png">Webmoney (R)
+                                                <span class="ico-pay-arr"></span>
+                                            </div>
+                                            <div class="pay-content ">
+                                                <div class="content-p">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-control">
+                                                                <div class="cdInputFix">
+                                                                    <input class="form-item" name="input-site" value=""
+                                                                        type="text">
+                                                                        <span class="form-notice text-error">Пожалуйста, введите номер кошелка</span>
+                                                                    <div class="placehold">Введите номер кошелка</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-control">
+                                                                <div class="cdInputFix">
+                                                                    <input class="form-item" name="input-site" value=""
+                                                                        type="text">
+                                                                        <span class="form-notice text-error">Пожалуйста, введите сумму</span>
+                                                                    <div class="placehold">Введите сумму</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <div class="clear"></div>
+
+                                                    <div class="sum-all-p">Доступно для вывода: <u>290 000</u> руб</div>
+                                                 
+                                                    <p>Укажите сумму и номер Webmoney (R) кошелька</p>
+                                                    <button class="btn-prof btn-green">Отправить заявку на вывод</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pay-method">
+                                            <div class="pay-title">
+                                                <img src="../img/ya-ico-pay.png">Яндекс.Деньги
+                                                <span class="ico-pay-arr"></span>
+                                            </div>
+                                            <div class="pay-content">
+                                                <div class="content-p">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-control">
+                                                                <div class="cdInputFix">
+                                                                    <input class="form-item" name="input-site" value=""
+                                                                        type="text">
+                                                                        <span class="form-notice text-error">Пожалуйста, введите номер кошелка</span>
+                                                                    <div class="placehold">Введите номер кошелка</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-control">
+                                                                <div class="cdInputFix">
+                                                                    <input class="form-item" name="input-site" value=""
+                                                                        type="text">
+                                                                        <span class="form-notice text-error">Пожалуйста, введите сумму</span>
+                                                                    <div class="placehold">Введите сумму</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <div class="clear"></div>
+
+                                                    <div class="sum-all-p">Доступно для вывода: <u>290 000</u> руб</div>
+                                                 
+                                                    <p>Укажите сумму и номер Яндекс кошелька</p>
+                                                    <button class="btn-prof btn-green">Отправить заявку на вывод</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pay-method">
+                                            <div class="pay-title">
+                                                <img src="../img/qw-ico-pay.png">QIWI
+                                                <span class="ico-pay-arr"></span>
+                                            </div>
+                                            <div class="pay-content">
+                                                <div class="content-p">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-control">
+                                                                <div class="cdInputFix">
+                                                                    <input class="form-item" name="input-site" value=""
+                                                                        type="text">
+                                                                        <span class="form-notice text-error">Пожалуйста, введите номер кошелка</span>
+                                                                    <div class="placehold">Введите номер кошелка</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-control">
+                                                                <div class="cdInputFix">
+                                                                    <input class="form-item" name="input-site" value=""
+                                                                        type="text">
+                                                                        <span class="form-notice text-error">Пожалуйста, введите сумму</span>
+                                                                    <div class="placehold">Введите сумму</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <div class="clear"></div>
+
+                                                    <div class="sum-all-p">Доступно для вывода: <u>290 000</u> руб</div>
+                                                 
+                                                    <p>Укажите сумму и номер qiwi кошелька</p>
+                                                    <button class="btn-prof btn-green">Отправить заявку на вывод</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+
+                                    </div>
+                                    <div class="col-7">
+                                        
+                                        <div class="widget-container ">
+
+                                            <div class="row">
+                                                <table class="col mt-2">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-left" style="width:20%;">
+                                                                <span>Платежная система</span>
+                                                                <i class="ico-down" style="visibility: visible;"></i>
+                                                            </th>
+                                                            <th class="text-center"><span>Номер счета</span></th>
+                                                            <th class="text-center"><span>Дата и время</span></th>
+                                                            <th class="text-center"><span>Сумма</span></th>
+                                                            <th class="text-center"><span>Статус</span></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="5">
+                                                                <div class="text-err-tabl">
+                                                                    <img src="../img/bots-er-01.png">
+                                                                    <span>Вы ещё ничего не выводили!<br>Чтобы информация появилась, выведите средства.</span>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <!--
+                                                        <tr>
+                                                            <td class="text-left strong-total" style="width:20%;"> Итого:</td>
+                                                            <td class="text-center strong-total"></td>
+                                                            <td class="text-center strong-total"></td>
+                                                            <td class="text-center strong-total">13 000,00</td>
+                                                            <td class="text-center strong-total"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left" style="width:20%;">
+                                                                    <span class="flag-min">
+                                                                        <img src="../img/ya-ico-pay.png" class="ico-pay">
+                                                                        Яндекс.деньги
+                                                                    </span></td>
+                                                            <td class="text-center">410011035296006</td>
+                                                            <td class="text-center">22.03.2019 11:20</td>
+                                                            <td class="text-center">100,00</td>
+                                                            <td class="text-center"><span
+                                                                    class="text-green">Выполнено</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left" style="width:20%;">
+                                                                <span class="flag-min">
+                                                                    <img src="../img/ya-ico-pay.png" class="ico-pay">
+                                                                    Яндекс.деньги
+                                                                </span>
+                                                            </td>
+                                                            <td class="text-center">410011035296006</td>
+                                                            <td class="text-center">22.03.2019 11:20</td>
+                                                            <td class="text-center">100,00</td>
+                                                            <td class="text-center"><span
+                                                                    class="text-green">Выполнено</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left" style="width:20%;">
+                                                                <span class="flag-min">
+                                                                    <img src="../img/btf-ico-pay.png" class="ico-pay">
+                                                                    Баланс botfaqtor.ru
+                                                                </span>
+                                                            </td>
+                                                            <td class="text-center">test@botfaqtor.ru</td>
+                                                            <td class="text-center">22.03.2019 11:20</td>
+                                                            <td class="text-center">100,00</td>
+                                                            <td class="text-center"><span
+                                                                    class="text-green">Выполнено</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left" style="width:20%;">
+                                                                <span class="flag-min">
+                                                                    <img src="../img/ya-ico-pay.png" class="ico-pay">
+                                                                    Яндекс.деньги
+                                                                </span>
+                                                            </td>
+                                                            <td class="text-center">410011035296006</td>
+                                                            <td class="text-center">22.03.2019 11:20</td>
+                                                            <td class="text-center">100,00</td>
+                                                            <td class="text-center"><span
+                                                                    class="text-green">Выполнено</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left" style="width:20%;">
+                                                                <span class="flag-min">
+                                                                    <img alt="" src="../img/qw-ico-pay.png" class="ico-pay">
+                                                                    QIWI
+                                                                </span>
+                                                            </td>
+                                                            <td class="text-center">79263341455</td>
+                                                            <td class="text-center">22.03.2019 11:20</td>
+                                                            <td class="text-center">100,00</td>
+                                                            <td class="text-center"><span
+                                                                    class="text-yellow">В процессе</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left" style="width:20%;">
+                                                                <span class="flag-min">
+                                                                    <img src="../img/ya-ico-pay.png" class="ico-pay">
+                                                                    Яндекс.деньги
+                                                                </span>
+                                                            </td>
+                                                            <td class="text-center">410011035296006</td>
+                                                            <td class="text-center">22.03.2019 11:20</td>
+                                                            <td class="text-center">100,00</td>
+                                                            <td class="text-center"><span
+                                                                    class="text-green">Выполнено</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left" style="width:20%;">
+                                                                <span class="flag-min">
+                                                                    <img src="../img/wb-ico-pay.png" class="ico-pay">
+                                                                    WebMoney
+                                                                </span>
+                                                            </td>
+                                                            <td class="text-center">R0001230220300</td>
+                                                            <td class="text-center">22.03.2019 11:20</td>
+                                                            <td class="text-center">100,00</td>
+                                                            <td class="text-center"><span
+                                                                    class="text-red">отклонено</span></td>
+                                                        </tr>
+                                                        -->
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="pagination justify-content-start align-items-center">
+                                                        <button class="btn-prof btn-sm btn-gray">Показать
+                                                            больше</button>
+                                                        <div class="load-result">7 из 30</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="clear"></div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--content end-->
+
+    <!--
+    <div class="alert-fixed-warning bill-alert">
+        <div>
+            <p><strong>Для вас доступен тариф VIP.</strong> Стоимость каждой проверки 1 коп., 1 млн проверок
+                (включительно), 10к - бесплатных проверок для нового пользователя.<strong>
+                    <br>
+                    Перейти на тариф VIP за - 7 500 руб.</strong></p>
+        </div>
+        <a href="#" class="add-buttom-bord">Подробнее</a>
+    </div>
+-->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="../main.js"></script>
+
+</html>

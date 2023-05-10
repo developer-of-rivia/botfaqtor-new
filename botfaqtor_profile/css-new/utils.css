@@ -1,0 +1,12 @@
+.pos-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+@media (max-width: 1090px) {
+  .pos-bottom {
+    position: static;
+  }
+}

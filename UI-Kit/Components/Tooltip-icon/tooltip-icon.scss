@@ -1,0 +1,23 @@
+.tooltip-icon{
+    width: 12px;
+    height: 12px;
+    background: #a4a4a4;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: inherit;
+}
+
+
+.tooltip-icon_vertical_super{
+    vertical-align: super;
+}
+
+.tooltip-icon_vertical_bottom{
+    vertical-align: text-bottom;;
+}

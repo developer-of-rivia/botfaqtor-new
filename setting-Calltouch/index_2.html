@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <div><a href="/"><img src="img/logo.svg" alt=""></a></div>
+                <div>
+                    <h1>Настройка счетчика</h1>
+                    <a href="#" class="site">https://carro.ru/</a>
+                </div>
+            </div>
+            <p class="description">
+                <strong>BotFAQtor</strong> - анализирует весь трафик вашего сайта по более 100 техническим и
+                поведенческим параметрам - блокирует ботов, экономя ваш рекламный бюджет, а также помогает с выбором
+                источников трафика. Весь трафик разделен на <strong>целевой/нецелевой/подозрительный/боты</strong> и
+                представлен в удобных отчетах.
+            </p>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper">
+            <div class="tabs-setting">
+                <div class="tab-head">
+                    <div class="title-sett active" id="t1">
+                        <span class="not-connect"><img src="img/direct_blue.svg"><span></span></span>
+                        Защита от скликивания Я.Директ
+                    </div>
+                    <div class="title-sett" id="t2">
+                        <span class="not-connect"><img src="img/ads_blue.svg"><span></span></span>
+                        Защита Google ADS
+                    </div>
+                </div>
+
+                <div class="tab-sett active" id="t1">
+                    <div class="cont-tab">
+                        <div class="blocs-direct-setting active">
+                            <div class="title row ">
+                                <div class="col-10">
+                                    <div class="ico">1</div>
+                                    <span>Разрешите Botfaqtor API доступ к Яндекс.Метрика и загрузите список
+                                        счетчиков</span>
+                                </div>
+                                <div class="col-2">
+                                    <div class="status yellow">Требуется настройка</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="direct-alert">Для подключения сервиса “защиты объявлений от
+                                        скликивания” нам необходимо получить доступ к API вашей Я.Метрики.</span>
+                                    
+                                </div>
+                                <div class="col-12">
+                                    <div class="text-left">
+                                        <button class="btn-prof btn-green">Разрешить доступ Google.Analytics</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blocs-direct-setting stage-two" name="campaigns">
+
+                            <div class="title row">
+                                <div class="col-10">
+                                    <div class="ico">2</div>
+                                    <span>Разрешите Botfaqtor API доступ к Яндекс.Директ и загрузите список рекламных
+                                        кампаний</span>
+                                </div>
+                                <div class="col-2">
+                                    <div class="status yellow">Требуется настройка</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-sett" id="t2">
+                    <div class="cont-tab">
+                        <div class="blocs-direct-setting active">
+
+                            <div class="title row">
+                                <div class="col-10">
+                                    <div class="ico">1</div>
+                                    <span>Разрешите Botfaqtor API доступ к Google.Analytics и загрузите список
+                                        счетчиков</span>
+                                </div>
+                                <div class="col-2">
+                                    <div class="status yellow">Требуется настройка</div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="direct-alert">Для подключения сервиса “защиты объявлений от
+                                        скликивания” нам необходимо получить доступ к API вашей Google.Analytics.</span>
+                                    
+                                </div>
+                                <div class="col-12">
+                                    <div class="text-left">
+                                        <button class="google__signin">Войти через Google</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blocs-direct-setting stage-two " name="campaigns">
+                            <div class="title row">
+                                <div class="col-10">
+                                    <div class="ico">2</div>
+                                    <span>Разрешите Botfaqtor API доступ к
+                                        Google.AdWords и загрузить список рекламных кампаний</span>
+                                </div>
+                                <div class="col-2">
+                                    <div class="status yellow">Требуется настройка</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
